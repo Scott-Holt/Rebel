@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#tri-break {
+  background-image: url("/websiteassetshomepageonly/Tri-Break.png");
+  height: 131px; }
+
+.background-img-settings {
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#services {
+  margin-top: -45px; }
+  #services #cards {
+    background-color: blue; }
+    #services #cards #card-1 {
+      background-image: url("/websiteassetshomepageonly/CTA-1.jpg"); }
+    #services #cards #card-2 {
+      background-image: url("/websiteassetshomepageonly/CTA-2.jpg"); }
+    #services #cards #card-3 {
+      background-image: url("/websiteassetshomepageonly/CTA-3.jpg"); }
+    #services #cards #card-4 {
+      background-image: url("/websiteassetshomepageonly/CTA-4.jpg"); }
+    #services #cards .card {
+      width: 100px;
+      height: 100px;
+      background-size: cover; }
+
+#phone-nav {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
