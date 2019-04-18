@@ -10,10 +10,15 @@ $main: 'Montserrat', sans-serif;
 $secondary: 'Roboto', sans-serif;
 
 //mix-ins
+$ipad: 768px;
 
+@mixin ipad{
+    @media(min-width:#{$ipad}) {
+        @content;
+    }
+}
 
-
-//styles
+//styles//////////////////////////////////////////////////////////////////////////////////////
 
 *{
     margin:0;
@@ -21,16 +26,11 @@ $secondary: 'Roboto', sans-serif;
     box-sizing:border-box;
 }
 
-
+//helper classes/////////
 .flex{
     display:flex;
     justify-content: center;
     align-items: center;
-}
-
-#tri-break{
-    background-image:url("/websiteassetshomepageonly/Tri-Break.png");
-    height: 131px;
 }
 
 
@@ -40,40 +40,59 @@ $secondary: 'Roboto', sans-serif;
 }
 
 
+//HEADER///////////
 
-#services{
-    margin-top: -45px;//this brings the Rebels Services Text into the Tri-Break forground. 
-
-        #cards{
-            background-color:blue;
-
-            #card-1{
-                background-image:url("/websiteassetshomepageonly/CTA-1.jpg");
-            }
-            #card-2{
-                background-image:url("/websiteassetshomepageonly/CTA-2.jpg");
-            }
-            #card-3{
-                background-image:url("/websiteassetshomepageonly/CTA-3.jpg");
-            }
-            #card-4{
-                background-image:url("/websiteassetshomepageonly/CTA-4.jpg");
-            }
-        
-            .card{
-                width:100px;
-                height:100px;
-                background-size:cover;
-        }
-    }
+header{
+    background-image:url("/websiteassetshomepageonly/Hero.jpg");
+    background-size:cover;
 }
 
 
-
-
-
-
-
-#phone-nav{
+ .phone-nav{
     display:none;
+}
+
+
+ .tri-break{
+    background-image:url("/websiteassetshomepageonly/Tri-Break.png");
+    height: 131px;
+}
+
+//services/////////
+
+ .services{
+    background-image: url("/websiteassetshomepageonly/CTA-BG.jpg");
+    background-size: cover;
+}
+
+ .cards{
+    flex-wrap:wrap;
+
+    @include ipad {
+        flex-wrap:nowrap;
+    }
+
+     .card-1{
+        background-image:url("/websiteassetshomepageonly/CTA-1.jpg");
+    }
+     .card-2{
+        background-image:url("/websiteassetshomepageonly/CTA-2.jpg");
+    }
+     .card-3{
+        background-image:url("/websiteassetshomepageonly/CTA-3.jpg");
+    }
+     .card-4{
+        background-image:url("/websiteassetshomepageonly/CTA-4.jpg");
+    }
+        
+    .card{
+        background-size:cover;
+        padding: 40px;
+    }
+}
+
+//WHY REBEL/////////////////////////////////////////////
+
+.why-rebel{
+    background-image:url("/websiteassetshomepageonly/Hero.jpg")
 }
