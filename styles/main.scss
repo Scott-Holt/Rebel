@@ -9,12 +9,13 @@ $main: 'Montserrat', sans-serif;
 // $main-bold:
 $secondary: 'Roboto', sans-serif;
 
-//mix-ins
+//media break points
 $ipad: 768px;
 $tablet: 550px;
 $desktop: 802px;
 $large-desktop:1150px;
 
+//mixins
 @mixin ipad{
     @media(min-width:#{$ipad}) {
         @content;
@@ -39,7 +40,9 @@ $large-desktop:1150px;
     }
 }
 
-//styles//////////////////////////////////////////////////////////////////////////////////////
+
+//GLOBAL STYLING//////////////////////////////////////////////////////{
+    
 
 *{
     margin:0;
@@ -49,9 +52,6 @@ $large-desktop:1150px;
     font-family:$main;
 }
 
-
-
-//helper classes/////////
 
 img{
     width: 100%;
@@ -71,7 +71,12 @@ img{
 
 }
 
-//CONTAINER////////////// {
+a{
+    text-decoration: none;
+    color:white;
+}
+
+//CONTAINER///////////////////////////////////////////////////////////////////////////
 .container{
     // border:1px solid black;
     width:90%;
@@ -79,7 +84,7 @@ img{
 }
 
 
-//HEADER///////////
+//HEADER/////////////////////////////////////////////////////////////
 
 header{
     background-image:url("/websiteassetshomepageonly/Mobile-Hero.jpg");
@@ -88,25 +93,26 @@ header{
     background-image:url("/websiteassetshomepageonly/Hero.jpg")
     }
 
-}
-
-.header-content{
-    margin-top:10px;
-}
-
-.logo{
-    width:30%;
-    &:hover{
-        cursor: pointer;
-    }
-
-    @include ipad{
-        width: 21%;
+    .logo{
+        width:30%;
+        
         &:hover{
             cursor: pointer;
         }
+    
+        @include ipad{
+            width: 21%;
+            
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
+
 }
+
+
+
 
 .icon-positioning{
     justify-content: space-between;
@@ -125,9 +131,11 @@ header{
             display:none;
         }
     }
+
 }
 
 
+//DESKTOP NAV/////////////////////////////////////////////////////////////////////////
 .desktop-nav{
     display:none;
 
@@ -136,7 +144,6 @@ header{
         
         ul{
             list-style: none;
-            /* padding: 14px; */
             width: 432px;
             justify-content: space-around;
 
@@ -147,27 +154,33 @@ header{
 
             a{
                 text-shadow: 2px 1px 3px black;
+                
                 &:hover{
                     color:$dark-green;
                     text-shadow: none;
-                    transition:ease .2s;                ;
-                    -webkit-transition:ease .2s                ;
-                    -moz-transition:ease .2s                ;
-                    -ms-transition:ease .2s                ;
-                    -o-transition:ease .2s                ;
-}
+                    transition:ease .2s;                
+                    -webkit-transition:ease .2s;              
+                    -moz-transition:ease .2s;                
+                    -ms-transition:ease .2s;                
+                    -o-transition:ease .2s;                
+                }
             }
         }
     }
 }
 
+
+//PHONE NAV/////////////////////////////////////////////////////////////////////////
+
 .phone-nav{
     display:none;
 }
 
+
+//HERO ELEMENTS/////////////////////////////////////////////////////////////////////////
+
 .hero{
     flex-direction:column;
-    // border:3px solid white;
     padding: 17px;
     text-align:center;
 
@@ -194,7 +207,7 @@ header{
         font-weight: bolder;
         text-shadow: 2px 1px 5px black;
 
-}
+    }
 
     span{
         display:none;
@@ -209,10 +222,8 @@ header{
         flex-direction: column;
         justify-content: space-around;
         margin: 10px;
-        // font-size: 1.8em;
         font-size: 22px;
         padding: 10px;
-        /* height: 200px; */
         text-shadow: 0px 3px 7px black;
 
         @include ipad{
@@ -229,6 +240,8 @@ header{
     }
 }
 
+//BUTTONS/////////////////////////////////////////////////////////////////////////
+
 .green-button, .white-button{
     padding:10px;
     border-radius: 20px;
@@ -241,7 +254,7 @@ header{
 
     &:hover{
         background:$light-green;
-}
+    }
 }
 
 .white-button{
@@ -258,21 +271,13 @@ header{
         -ms-transition: ease-in-out .1s    ;
         -o-transition: ease-in-out .1s    ;
         text-shadow:none;
-}
+    }
 
 }
 
 
-a{
-    text-decoration: none;
-    color:white;
-    // border:1px solid white;
 
-
-}
-
-
-//Triangle Image/////////
+//Triangle Image///////////////////////////////////////////////////////////
 
 .triangle-img{
 
@@ -292,7 +297,7 @@ a{
 }
 
 
-//services/////////
+//services///////////////////////////////////////////////////////////
 
  .services{
 
