@@ -1,7 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif; }
 
 img {
   width: 100%; }
@@ -13,18 +15,156 @@ img {
 
 .background-img-settings {
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
+
+.container {
+  width: 90%;
+  margin-top: 10px; }
 
 header {
-  background-image: url("/websiteassetshomepageonly/Hero.jpg");
-  background-size: cover; }
+  background-image: url("/websiteassetshomepageonly/Mobile-Hero.jpg"); }
+  @media (min-width: 768px) {
+    header {
+      background-image: url("/websiteassetshomepageonly/Hero.jpg"); } }
+
+.header-content {
+  margin-top: 10px; }
+
+.logo {
+  width: 30%; }
+  .logo:hover {
+    cursor: pointer; }
+  @media (min-width: 768px) {
+    .logo {
+      width: 21%; }
+      .logo:hover {
+        cursor: pointer; } }
+
+.icon-positioning {
+  justify-content: space-between; }
+  .icon-positioning #hamburger-icon {
+    color: white;
+    font-size: 2em;
+    margin-top: -10px;
+    text-shadow: 3px 2px 1px black; }
+    .icon-positioning #hamburger-icon:hover {
+      cursor: pointer; }
+    @media (min-width: 802px) {
+      .icon-positioning #hamburger-icon {
+        display: none; } }
+
+.desktop-nav {
+  display: none; }
+  @media (min-width: 802px) {
+    .desktop-nav {
+      display: block; }
+      .desktop-nav ul {
+        list-style: none;
+        /* padding: 14px; */
+        width: 432px;
+        justify-content: space-around; } }
+    @media (min-width: 802px) and (min-width: 1150px) {
+      .desktop-nav ul {
+        width: 494px;
+        font-size: 1.2em; } }
+  @media (min-width: 802px) {
+        .desktop-nav ul a {
+          text-shadow: 2px 1px 3px black; }
+          .desktop-nav ul a:hover {
+            color: #587F77;
+            text-shadow: none;
+            transition: ease .2s;
+            -webkit-transition: ease 0.2s;
+            -moz-transition: ease 0.2s;
+            -ms-transition: ease 0.2s;
+            -o-transition: ease 0.2s; } }
 
 .phone-nav {
   display: none; }
 
-.services {
-  background-image: url("/websiteassetshomepageonly/CTA-BG.jpg");
-  background-size: cover; }
+.hero {
+  flex-direction: column;
+  padding: 17px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .hero {
+      margin-bottom: 57px; } }
+  @media (min-width: 1150px) {
+    .hero {
+      font-size: 1.3em; } }
+  .hero .header-text {
+    margin-top: 68px;
+    font-size: 1.3em; }
+  .hero h1, .hero span, .hero .call-to-action {
+    font-family: "Montserrat", sans-serif;
+    color: white; }
+  .hero h1 {
+    font-weight: bolder;
+    text-shadow: 2px 1px 5px black; }
+  .hero span {
+    display: none;
+    text-shadow: 3px 2px 4px black; }
+    @media (min-width: 550px) {
+      .hero span {
+        display: block; } }
+  .hero .call-to-action {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+    font-size: 22px;
+    padding: 10px;
+    /* height: 200px; */
+    text-shadow: 0px 3px 7px black; }
+    @media (min-width: 768px) {
+      .hero .call-to-action {
+        flex-direction: row;
+        width: 70%;
+        margin-bottom: 85px; } }
+    @media (min-width: 802px) {
+      .hero .call-to-action {
+        width: 460px; } }
+
+.green-button, .white-button {
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 1px 0px 5px black; }
+
+.green-button {
+  background-image: linear-gradient(to bottom, #587F77, #A8BAB5); }
+  .green-button:hover {
+    background: #A8BAB5; }
+
+.white-button {
+  font-size: .9em;
+  border: 3px solid white; }
+  .white-button:hover {
+    background: white;
+    color: #585858;
+    transition: ease-in-out 0.1s;
+    -webkit-transition: ease-in-out 0.1s;
+    -moz-transition: ease-in-out 0.1s;
+    -ms-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    text-shadow: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.triangle-img {
+  display: none; }
+  @media (min-width: 768px) {
+    .triangle-img {
+      display: block;
+      width: 100%;
+      height: 100px;
+      background-image: url("/websiteassetshomepageonly/Tri-Break.png");
+      margin-top: -34px; } }
+  @media (min-width: 802px) {
+    .triangle-img {
+      margin-top: -69px; } }
 
 .cards {
   flex-wrap: wrap; }
@@ -39,11 +179,20 @@ header {
     background-image: url("/websiteassetshomepageonly/CTA-3.jpg"); }
   .cards .card-4 {
     background-image: url("/websiteassetshomepageonly/CTA-4.jpg"); }
-  .cards .card {
-    background-size: cover;
-    padding: 40px; }
 
 .why-rebel {
   background-image: url("/websiteassetshomepageonly/Hero.jpg"); }
+
+.fork-lift {
+  width: 100%; }
+
+.commitment {
+  background-image: url("/websiteassetshomepageonly/Carousel-1.jpg"); }
+
+input {
+  background-color: #fafafa; }
+
+.form-img {
+  background-image: url("/websiteassetshomepageonly/Form_BG.jpg"); }
 
 /*# sourceMappingURL=main.css.map */
