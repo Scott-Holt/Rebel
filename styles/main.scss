@@ -50,6 +50,7 @@ $large-desktop:1150px;
     box-sizing:border-box;
     text-transform: uppercase;
     font-family:$main;
+    overflow-x: hidden;
 }
 
 
@@ -75,6 +76,8 @@ a{
     text-decoration: none;
     color:white;
 }
+
+
 
 //CONTAINER///////////////////////////////////////////////////////////////////////////
 .container{
@@ -172,8 +175,31 @@ header{
 
 //PHONE NAV/////////////////////////////////////////////////////////////////////////
 
-.phone-nav{
+
+#mobile-nav{
     display:none;
+    width:250px;
+    background: $dark-green;
+    position:absolute;
+    right:-250px;
+    z-index:20;
+    transition:ease-in-out .5s;
+    -webkit-transition:ease-in-out .5s;
+    -moz-transition:ease-in-out .5s;
+    -ms-transition:ease-in-out .5s;
+    -o-transition:ease-in-out .5s;
+
+    a{
+        color:black;
+    }
+
+    #close-icon{
+        font-size:3em;
+        font-size: 4em;
+        position: absolute;
+        bottom: 13px;
+        left: 200px;
+    }
 }
 
 
@@ -195,6 +221,7 @@ header{
     .header-text{
         margin-top: 68px;
         font-size: 1.3em;
+        flex-direction: column;
     }
 
     h1,span, .call-to-action{
@@ -238,6 +265,13 @@ header{
         }
         
     }
+}
+
+.green-line{
+    width: 280px;
+    height: 10px;
+    border-bottom: 4px solid $dark-green;
+    margin-top: 10px;
 }
 
 //BUTTONS/////////////////////////////////////////////////////////////////////////
@@ -355,4 +389,17 @@ input{
 
 .form-img{
     background-image: url("/websiteassetshomepageonly/Form_BG.jpg");
+}
+
+//OVERLAY///////////////////////////////////////////////// 
+
+#overlay{
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color:#090909db;
 }

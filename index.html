@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
 </head>
 
-<body id="slide-body">
+<body>
 
     <header class="background-img-settings flex">
+        <!--flex-->
+
         <div class="container">
 
             <div class="icon-positioning flex">
@@ -29,21 +31,12 @@
                     </ul>
                 </nav>
             </div>
-            <!-- PHONE NAV -->
-
-            <nav class="phone-nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#the-rebellion">The Rebellion</a></li>
-                    <li><a href="#our-services">Our Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
 
             <div class="hero flex">
-                <div class="header-text">
+                <div class="header-text flex ">
                     <h1>Absolute Mile Solutions</h1>
                     <span><i>customer focused, commited to excellence</i></span>
+                    <div class="green-line"></div>
                 </div>
                 <div class="call-to-action flex">
                     <a href="#the-rebellion" class="white-button">The Rebellion</a>
@@ -52,6 +45,18 @@
             </div>
         </div>
     </header>
+
+    <!-- PHONE NAV -->
+
+    <nav class="phone-nav" id="mobile-nav">
+        <span id="close-icon">&#215;</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#the-rebellion">The Rebellion</a></li>
+            <li><a href="#our-services">Our Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <div class="triangle-img background-img-settings"></div>
 
@@ -193,7 +198,7 @@
         </div>
     </footer>
 
-
+    <div id="overlay"></div>
 
 
     <script src="/scripts/main.js" async defer></script>
