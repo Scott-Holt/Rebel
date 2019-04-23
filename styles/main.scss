@@ -10,10 +10,11 @@ $main: 'Montserrat', sans-serif;
 $secondary: 'Roboto', sans-serif;
 
 //media break points
-$ipad: 768px;
 $tablet: 550px;
+$ipad: 768px;
 $desktop: 802px;
 $large-desktop:1150px;
+$wrap-cards:802px;
 
 //mixins
 @mixin ipad{
@@ -37,6 +38,12 @@ $large-desktop:1150px;
 @mixin large-desktop{
     @media(min-width:#{$large-desktop}){
         @content
+    }
+}
+
+@mixin wrap-cards{
+    @media(min-width:#{$desktop}){
+        @content;
     }
 }
 
@@ -177,29 +184,61 @@ header{
 
 
 #mobile-nav{
-    display:none;
+    // display:none;
     width:250px;
-    background: $dark-green;
+    background:#587f77f0;
     position:absolute;
-    right:-250px;
+    left:-250px;
     z-index:20;
-    transition:ease-in-out .5s;
-    -webkit-transition:ease-in-out .5s;
-    -moz-transition:ease-in-out .5s;
-    -ms-transition:ease-in-out .5s;
-    -o-transition:ease-in-out .5s;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    transition:ease .5s;   
+    -webkit-transition:ease .5s;   
+    -moz-transition:ease .5s;   
+    -ms-transition:ease .5s;   
+    -o-transition:ease .5s;   
 
-    a{
-        color:black;
+    ul{
+        height: 65%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // box-shadow: 0 0 7px 0px black;
+        background-color: #ffffff17;
+        margin-top: 81px;
+
+        li{
+            margin-left: 10px;
+            padding: 25px;
+            font-size: 1.3em;
+        
+        
+            a{
+                color: white;
+                font-size: 1.2em;
+                text-shadow: 3px 3px 7px black;
+            }
+        }
     }
 
     #close-icon{
-        font-size:3em;
-        font-size: 4em;
         position: absolute;
-        bottom: 13px;
-        left: 200px;
+        color: white;
+        text-shadow: 5px 3px black;
+        font-size: 4.5em;
+        right: 10px;
     }
+
+    .nav-logo{
+    margin-bottom: -12px;
+    width: 73%;
+    position: absolute;
+    bottom: 35px;
+    margin-left: 30px;
+    padding: 10px;
+    }
+    
 }
 
 
@@ -319,10 +358,10 @@ header{
 
     @include ipad{
         display:block;
-    width:100%;
-    height:100px;
-    background-image: url("/websiteassetshomepageonly/Tri-Break.png");
-    margin-top: -34px;
+        width:100%;
+        height:100px;
+        background-image: url("/websiteassetshomepageonly/Tri-Break.png");
+        margin-top: -34px;
     }
 
     @include desktop{
@@ -333,14 +372,51 @@ header{
 
 //services///////////////////////////////////////////////////////////
 
- .services{
+.services{
+    margin-bottom: 4em;
 
+    @include tablet(){
+        margin-top: -53px;
+    }
 }
+
+ .services-header{
+    flex-direction: column;
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 55px;
+
+    @include tablet(){
+        margin-top: 87px;
+    }
+
+    @include ipad(){
+        margin-top: 44px;
+    }
+
+    @include desktop(){
+        margin-bottom:30px;
+    }
+
+    h1{
+        color:$dark-gray;
+        margin-bottom: 10px;
+        font-size:2.4em;
+
+    }
+
+    span{
+        color:$light-gray;
+    }
+}
+
+
+//CARDS///////////////////////////////////////////////////
 
  .cards{
     flex-wrap:wrap;
 
-    @include ipad {
+    @include desktop() {
         flex-wrap:nowrap;
     }
 
@@ -356,7 +432,65 @@ header{
      .card-4{
         background-image:url("/websiteassetshomepageonly/CTA-4.jpg");
     }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+        margin-bottom: 25px;
+        line-height:25px;
+        box-shadow: 0px 1px 4px 0px black;
+
+
+
+        @include tablet(){
+            padding: 114px 36px;
+        }
+
+        @include desktop() {
+            padding: 10px;
+            align-self: stretch;
+            font-size: .4em;
+            line-height:13px;
+        }
+
+        @include large-desktop(){
+            margin: 0px 10px;
+        }
         
+        
+
+         .gray-h1{
+             color:$dark-gray;
+        }
+
+        .green-h1{
+            color:$dark-green;
+        }
+
+        p{
+            width: 90%;
+            margin-top: 15px;
+            text-align:center;
+
+            @include ipad(){
+                width:72%;
+            }
+
+            @include desktop(){
+                width:100%;
+            }
+
+        }
+    }
+        
+}
+
+.services-footer{
+    color:$light-gray;
+    margin-bottom:25px;
 }
 
 //WHY REBEL/////////////////////////////////////////////

@@ -8,13 +8,14 @@ function openNav(e) {
     console.log('fuck');
 
     overlay.style.display = 'block';
-    mobileNav.style.right = '0px';
+    mobileNav.style = 'left:0px; display:block;';
+
+
 }
 
 function closeNav() {
-    console.log('fuck');
     overlay.style.display = 'none';
-    mobileNav.style.right = '-250px';
+    mobileNav.style = 'left:-250px;';
 }
 
 
