@@ -14,9 +14,10 @@ $tablet: 550px;
 $ipad: 768px;
 $desktop: 802px;
 $large-desktop:1150px;
-$wrap-cards:802px;
+$xtra-large-desktop:1400px;
 
 //mixins
+
 @mixin ipad{
     @media(min-width:#{$ipad}) {
         @content;
@@ -41,11 +42,14 @@ $wrap-cards:802px;
     }
 }
 
-@mixin wrap-cards{
-    @media(min-width:#{$desktop}){
-        @content;
+@mixin xtra-large-desktop{
+    @media(min-width:#{$xtra-large-desktop}){
+        @content
     }
 }
+
+
+
 
 
 //GLOBAL STYLING//////////////////////////////////////////////////////{
@@ -88,7 +92,6 @@ a{
 
 //CONTAINER///////////////////////////////////////////////////////////////////////////
 .container{
-    // border:1px solid black;
     width:90%;
     margin-top:10px;
 }
@@ -186,7 +189,7 @@ header{
 #mobile-nav{
     // display:none;
     width:250px;
-    background:#587f77f0;
+    background:#587f77ba;
     position:absolute;
     left:-250px;
     z-index:20;
@@ -225,16 +228,17 @@ header{
     #close-icon{
         position: absolute;
         color: white;
-        text-shadow: 5px 3px black;
+        text-shadow: 5px 3px #00000066;
         font-size: 4.5em;
         right: 10px;
+        text-shadow: 3px 1px 4px black;
     }
 
     .nav-logo{
     margin-bottom: -12px;
     width: 73%;
     position: absolute;
-    bottom: 35px;
+    bottom: 52px;
     margin-left: 30px;
     padding: 10px;
     }
@@ -291,16 +295,18 @@ header{
         font-size: 22px;
         padding: 10px;
         text-shadow: 0px 3px 7px black;
-
-        @include ipad{
-            flex-direction: row;
-            width: 70%;
-            // height: 200px;
-            margin-bottom: 85px;
-        }
+     
+        // @include ipad{
+        //     flex-direction: row;
+        //     width: 70%;
+        //     // height: 200px;
+        //     margin-bottom: 85px;
+        // }
 
         @include desktop{
             width:460px;
+            margin-bottom: 32px;
+            font-size: 1.4em;
         }
         
     }
@@ -311,41 +317,6 @@ header{
     height: 10px;
     border-bottom: 4px solid $dark-green;
     margin-top: 10px;
-}
-
-//BUTTONS/////////////////////////////////////////////////////////////////////////
-
-.green-button, .white-button{
-    padding:10px;
-    border-radius: 20px;
-    margin-top:10px;
-    box-shadow: 1px 0px 5px black;
-}
-
-.green-button{
-    background-image:linear-gradient(to bottom, $dark-green, $light-green);
-
-    &:hover{
-        background:$light-green;
-    }
-}
-
-.white-button{
-    font-size: .9em;
-    border:3px solid white;
-
-
-    &:hover{
-        background:white;
-        color:$dark-gray;
-        transition: ease-in-out .1s    ;
-        -webkit-transition: ease-in-out .1s    ;
-        -moz-transition: ease-in-out .1s    ;
-        -ms-transition: ease-in-out .1s    ;
-        -o-transition: ease-in-out .1s    ;
-        text-shadow:none;
-    }
-
 }
 
 
@@ -373,11 +344,11 @@ header{
 //services///////////////////////////////////////////////////////////
 
 .services{
-    margin-bottom: 4em;
 
     @include tablet(){
         margin-top: -53px;
     }
+
 }
 
  .services-header{
@@ -406,19 +377,45 @@ header{
     }
 
     span{
-        color:$light-gray;
+        color: #636363;
+        font-size: 1.2em;
+        font-family:$secondary;
     }
 }
 
 
 //CARDS///////////////////////////////////////////////////
 
+.card-border{
+    display:none;
+
+    @include large-desktop(){
+        display: block;
+        width: 95%;
+        border: 1px solid #00000059;
+        position: absolute;
+        z-index: -1;
+        height: 209px;
+        bottom: 270px;
+        left: 34px;
+    }
+}
+
  .cards{
     flex-wrap:wrap;
 
     @include desktop() {
         flex-wrap:nowrap;
+        // display:none;
+
     }
+
+    .card-row{
+
+        @include large-desktop(){
+        display:flex;
+        align-self: stretch;
+        }
 
      .card-1{
         background-image:url("/websiteassetshomepageonly/CTA-1.jpg");
@@ -445,62 +442,171 @@ header{
 
 
 
-        @include tablet(){
-            padding: 114px 36px;
-        }
-
-        @include desktop() {
-            padding: 10px;
-            align-self: stretch;
-            font-size: .4em;
-            line-height:13px;
-        }
-
-        @include large-desktop(){
-            margin: 0px 10px;
-        }
-        
-        
-
-         .gray-h1{
-             color:$dark-gray;
-        }
-
-        .green-h1{
-            color:$dark-green;
-        }
-
-        p{
-            width: 90%;
-            margin-top: 15px;
-            text-align:center;
-
-            @include ipad(){
-                width:72%;
+            @include tablet(){
+                padding: 114px 36px;
             }
 
-            @include desktop(){
-                width:100%;
+        
+            @include desktop() {
+                align-self: stretch;
+                margin: 17px 10px;           
             }
 
+            @include large-desktop(){
+                padding: 18px;
+                line-height: 19px;
+            }
+
+            @include xtra-large-desktop(){
+                padding: 32px;
+                line-height: 28px;
+            }
+
+            
+
+            .gray-h1{
+                color:$dark-gray;
+            }
+
+            .green-h1{
+                color:$dark-green;
+            }
+
+            p{
+                width: 90%;
+                margin-top: 15px;
+                text-align:center;
+
+                @include ipad(){
+                    width:72%;
+                }
+
+                @include desktop(){
+                    width:100%;
+                }
+
+            }
         }
     }
         
 }
 
 .services-footer{
-    color:$light-gray;
-    margin-bottom:25px;
+    color: #636363;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    text-align:center;
 }
 
 //WHY REBEL/////////////////////////////////////////////
 
 .why-rebel{
-    background-image:url("/websiteassetshomepageonly/Hero.jpg")
+    background-image:url("/websiteassetshomepageonly/Hero.jpg");
+    color:white;
+
+    .why-rebel-overlay{
+        background:#2e2e2ebd;
+
+        .why-rebel-container{
+            flex-direction:column;
+
+            @include ipad(){
+                margin: 56px;
+            }
+
+            @include large-desktop(){
+                flex-direction: row;
+            }
+
+        }
+    }
+}
+
+.col-1{
+    font-size: 1.2em;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+    @include tablet(){
+        font-size: 1.2em;
+        padding: 0px 56px;
+    }
+
+    @include desktop(){
+        font-size: 1.2em;
+        padding: 0px;
+        width: 54%;
+    }
+    
+    span{
+        font-family: "Roboto", sans-serif;
+        color: #636363;
+        color: #909090d6;
+        text-shadow: 3px 2px 5px black;
+    }
+
+    p{
+        font-size: 0.8em;
+        margin-top: 17px;
+
+        @include tablet(){
+            line-height: 24px;
+        }
+
+        @include ipad(){
+            width: 70%;
+        }
+
+        @include desktop(){
+            width: 100%;
+        }
+    }
+}
+
+.col-2{
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    @include desktop(){
+        width: 100%;
+    }
+
+    @include large-desktop(){
+        width: 30%;
+    }
 }
 
 //BACK 2 BASICS///////////////////////////////////////
 
+.back2basics{
+
+    .b2b-content{
+        text-align: center;
+        margin-top: 20px;
+
+        @include desktop(){
+            margin-top: 15px;
+    padding: 0px 96px;
+        }
+
+    h1{
+        color:$dark-gray;
+    }
+
+    span{
+        color:$dark-green;
+        font-family:$secondary;
+        font-size: 1.3em;
+    }
+
+    p{
+        margin-top:15px;
+    }
+}
+}
 .fork-lift{
     width:100%;
 }
@@ -537,3 +643,38 @@ input{
     z-index: 10;
     background-color:#090909db;
 }
+
+//BUTTONS/////////////////////////////////////////////////////////////////////////
+
+.green-button, .white-button{
+    padding:10px;
+    border-radius: 20px;
+    margin-top:10px;
+    box-shadow: 1px 0px 5px black;
+}
+
+.green-button{
+    background-image:linear-gradient(to bottom, $dark-green, $light-green);
+
+    &:hover{
+        background:$light-green;
+    }
+}
+
+.set1, .set2{
+    border:3px solid white;
+    padding: 9px 77px;
+    font-size: .9em;
+
+    &:hover{
+        background:white;
+        color:$dark-gray;
+        transition: ease-in-out .1s    ;
+        -webkit-transition: ease-in-out .1s    ;
+        -moz-transition: ease-in-out .1s    ;
+        -ms-transition: ease-in-out .1s    ;
+        -o-transition: ease-in-out .1s    ;
+        text-shadow:none;
+    }
+}
+
