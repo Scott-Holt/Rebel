@@ -13,6 +13,7 @@ $secondary: 'Roboto', sans-serif;
 $tablet: 550px;
 $ipad: 768px;
 $desktop: 802px;
+$med-desktop:920px;
 $large-desktop:1150px;
 $xtra-large-desktop:1400px;
 
@@ -32,6 +33,12 @@ $xtra-large-desktop:1400px;
 
 @mixin desktop{
     @media(min-width:#{$desktop}){
+        @content;
+    }
+}
+
+@mixin med-desktop{
+    @media(min-width:#{$med-desktop}){
         @content;
     }
 }
@@ -62,6 +69,7 @@ $xtra-large-desktop:1400px;
     text-transform: uppercase;
     font-family:$main;
     overflow-x: hidden;
+    letter-spacing: 1px;
 }
 
 
@@ -582,15 +590,23 @@ header{
 //BACK 2 BASICS///////////////////////////////////////
 
 .back2basics{
+    .container{
+        flex-direction:column;
 
+        @include desktop(){
+            flex-direction:row;
+        }
     .b2b-content{
         text-align: center;
         margin-top: 20px;
+        flex-direction:column;
 
         @include desktop(){
             margin-top: 15px;
-    padding: 0px 96px;
+            width: 1000px;
+            margin-right: 20px;
         }
+
 
     h1{
         color:$dark-gray;
@@ -605,7 +621,9 @@ header{
     p{
         margin-top:15px;
     }
+
 }
+    }
 }
 .fork-lift{
     width:100%;
@@ -618,7 +636,72 @@ header{
     
 .commitment{
     background-image:url("/websiteassetshomepageonly/Carousel-1.jpg");
+    color: white;
 
+    .container{
+        flex-direction:column;
+        margin:20px;
+
+        @include desktop(){
+    margin: 40px 20px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 132px;
+}
+
+
+        @include med-desktop(){
+            margin-right: 186px;
+            margin: 73px 20px;
+
+            margin-right:132px;
+        }
+
+        @include large-desktop(){
+            margin-right: 220px;
+        }
+
+    h1{
+        font-style: italic;
+        text-shadow: 3px 2px 5px black;
+        padding: 0px 10px;
+
+        @include ipad(){
+            font-size: 2.4em;
+        }
+    }
+
+    span{
+        color: $dark-green;
+    font-size: 1.2em;
+    text-shadow: 2px 1px 2px #000000d4;
+    font-weight: 800;
+    /* text-shadow: 1px 1px 1px #000000d6; */
+    }
+
+    p{
+        text-align: center;
+        font-size: .8em;
+        padding: 12px;
+        line-height: 19px;
+        text-shadow: 2px 3px 8px black;
+
+        @include ipad(){
+            width: 400px;
+        }
+
+        @include desktop(){
+            text-align: right;
+            width: 500px;
+            line-height: 24px;
+        }
+
+        @include large-desktop(){
+            width: 600px;
+        }
+
+    }
+}
 }
 
 //FORM///////////////////////////////////////////////// 

@@ -4,7 +4,8 @@
   box-sizing: border-box;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  letter-spacing: 1px; }
 
 img {
   width: 100%; }
@@ -342,27 +343,82 @@ header {
     .col-2 {
       width: 30%; } }
 
-.back2basics .b2b-content {
-  text-align: center;
-  margin-top: 20px; }
+.back2basics .container {
+  flex-direction: column; }
   @media (min-width: 802px) {
-    .back2basics .b2b-content {
-      margin-top: 15px;
-      padding: 0px 96px; } }
-  .back2basics .b2b-content h1 {
-    color: #585858; }
-  .back2basics .b2b-content span {
-    color: #587F77;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.3em; }
-  .back2basics .b2b-content p {
-    margin-top: 15px; }
+    .back2basics .container {
+      flex-direction: row; } }
+  .back2basics .container .b2b-content {
+    text-align: center;
+    margin-top: 20px;
+    flex-direction: column; }
+    @media (min-width: 802px) {
+      .back2basics .container .b2b-content {
+        margin-top: 15px;
+        width: 1000px;
+        margin-right: 20px; } }
+    .back2basics .container .b2b-content h1 {
+      color: #585858; }
+    .back2basics .container .b2b-content span {
+      color: #587F77;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.3em; }
+    .back2basics .container .b2b-content p {
+      margin-top: 15px; }
 
 .fork-lift {
   width: 100%; }
 
 .commitment {
-  background-image: url("/websiteassetshomepageonly/Carousel-1.jpg"); }
+  background-image: url("/websiteassetshomepageonly/Carousel-1.jpg");
+  color: white; }
+  .commitment .container {
+    flex-direction: column;
+    margin: 20px; }
+    @media (min-width: 802px) {
+      .commitment .container {
+        margin: 40px 20px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 132px; } }
+    @media (min-width: 920px) {
+      .commitment .container {
+        margin-right: 186px;
+        margin: 73px 20px;
+        margin-right: 132px; } }
+    @media (min-width: 1150px) {
+      .commitment .container {
+        margin-right: 220px; } }
+    .commitment .container h1 {
+      font-style: italic;
+      text-shadow: 3px 2px 5px black;
+      padding: 0px 10px; }
+      @media (min-width: 768px) {
+        .commitment .container h1 {
+          font-size: 2.4em; } }
+    .commitment .container span {
+      color: #587F77;
+      font-size: 1.2em;
+      text-shadow: 2px 1px 2px #000000d4;
+      font-weight: 800;
+      /* text-shadow: 1px 1px 1px #000000d6; */ }
+    .commitment .container p {
+      text-align: center;
+      font-size: .8em;
+      padding: 12px;
+      line-height: 19px;
+      text-shadow: 2px 3px 8px black; }
+      @media (min-width: 768px) {
+        .commitment .container p {
+          width: 400px; } }
+      @media (min-width: 802px) {
+        .commitment .container p {
+          text-align: right;
+          width: 500px;
+          line-height: 24px; } }
+      @media (min-width: 1150px) {
+        .commitment .container p {
+          width: 600px; } }
 
 input {
   background-color: #fafafa; }
