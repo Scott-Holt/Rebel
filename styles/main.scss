@@ -96,6 +96,46 @@ a{
     color:white;
 }
 
+.button{
+    border: 2px solid white;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 3px 3px 4px 0px #000000bd;
+    text-shadow: 1px 1px 0px black;
+
+    @include tablet(){
+        width: 75%;
+    }
+
+    @include ipad(){
+        width: 60%;
+    }
+
+    @include desktop(){
+        width:100%;
+    }
+
+}
+
+.white-button{
+    &:hover{
+        background-color:#ffffffc4;
+        color:$dark-gray;
+    }
+}
+
+.green-button{
+    background-image:linear-gradient(to bottom, $dark-green, $light-green);
+    border:none;
+
+    &:hover{
+        background:$light-green;
+    }
+}
+
+
+
 
 
 //CONTAINER///////////////////////////////////////////////////////////////////////////
@@ -115,18 +155,15 @@ header{
     }
 
     .logo{
-        width:30%;
+        width: 48%;
+    
         
         &:hover{
             cursor: pointer;
         }
-    
-        @include ipad{
-            width: 21%;
-            
-            &:hover{
-                cursor: pointer;
-            }
+
+        @include tablet(){
+            width:30%;
         }
     }
 
@@ -292,29 +329,21 @@ header{
             display:block;
         }
     }
+}
 
-    .call-to-action{
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 10px;
-        font-size: 22px;
-        padding: 10px;
-        text-shadow: 0px 3px 7px black;
-     
-        // @include ipad{
-        //     flex-direction: row;
-        //     width: 70%;
-        //     // height: 200px;
-        //     margin-bottom: 85px;
-        // }
-
-        @include desktop{
-            width:460px;
-            margin-bottom: 32px;
-            font-size: 1.4em;
-        }
-        
+.call-to-action{
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    justify-content: space-around;
+    margin-top: 1em;
+ 
+    @include desktop{
+        width:460px;
+        margin-bottom: 32px;
+        font-size: 1.4em;
     }
+    
 }
 
 .green-line{
@@ -391,20 +420,6 @@ header{
 
 //CARDS///////////////////////////////////////////////////
 
-.card-border{
-    display:none;
-
-    @include large-desktop(){
-        display: block;
-        width: 95%;
-        border: 1px solid #00000059;
-        position: absolute;
-        z-index: -1;
-        height: 209px;
-        bottom: 270px;
-        left: 34px;
-    }
-}
 
  .cards{
     flex-wrap:wrap;
@@ -527,7 +542,7 @@ header{
                 margin: 56px;
             }
 
-            @include large-desktop(){
+            @include desktop(){
                 flex-direction: row;
             }
 
@@ -550,6 +565,8 @@ header{
         font-size: 1.2em;
         padding: 0px;
         width: 54%;
+        margin-right: 33px;
+        height: 400px;
     }
     
     span{
@@ -580,13 +597,20 @@ header{
 .col-2{
     flex-direction: column;
     margin-bottom: 15px;
+    width: 100%;
+    margin-top: 10px;
+    height: 109px;
+    justify-content: space-around;
+    text-align: center;
 
     @include desktop(){
-        width: 100%;
+        width: 48%;
+        justify-content: space-around;
+        text-align: center;
     }
 
-    @include large-desktop(){
-        width: 30%;
+    @include xtra-large-desktop(){
+        width: 32%;
     }
 }
 
@@ -685,7 +709,8 @@ header{
     font-size: 1.2em;
     text-shadow: 2px 1px 2px #000000d4;
     font-weight: 800;
-    /* text-shadow: 1px 1px 1px #000000d6; */
+        padding: 0px 10px;
+
     }
 
     p{
@@ -721,6 +746,10 @@ header{
     font-family:$secondary;
     color:white;
 
+    @include desktop(){
+        background-image: url("/websiteassetshomepageonly/Form_BG.jpg");
+    }
+
     .container{
 
         .section1{
@@ -728,25 +757,23 @@ header{
             flex-direction: column;
 
             @include desktop(){
-                font-size: .5em;
+                font-size: .7em;
+                align-items: flex-start;
             }
 
             h1{
                 text-shadow: 1px 3px 4px black;
+
+                @include desktop(){
+                    font-size: 3em;
+                }
             }
 
             span{
                 color:white;
                 text-align: center;
+                margin-bottom:1.2em;
             }
-        }
-    }
-
-    .form-image{
-        display:none;
-    
-        @include desktop(){
-            display:block;
         }
     }
 }
@@ -755,9 +782,13 @@ header{
 
 
 form{
-    margin: 1.2em;
     font-size: 1.2em;
     text-shadow: 2px 0px 4px black;
+    padding: 10px;
+
+    @include desktop(){
+        width: 43%;
+    }
 
     input{
         background-color: #fafafa;
@@ -767,24 +798,78 @@ form{
     }
 
     .message{
-        font-size: 3em;
+        width: 100%;
         margin-bottom:0px;
     }
 
     .submit{
-        color: white;
-        border-radius: 100px;
-        border: 2px solid white;
+        font-size: 1.2em;
+        border-radius: 30px;
         background-color: transparent;
-        padding: -6px;
-        font-size: .8em;
-        box-shadow: 2px 2px 5px 0px #00000087;
+        color: white;
+        text-shadow: 2px 1px 2px black;
+        box-shadow: 0px 2px 3px 0px #0000008a;
+
+        &:hover{
+            background-color:$light-green;
+            transition:ease-in-out .2s;
+            -webkit-transition:ease-in-out .2s;
+            -moz-transition:ease-in-out .2s;
+            -ms-transition:ease-in-out .2s;
+            -o-transition:ease-in-out .2s;
+            
+            cursor: pointer;
+}
 
         @include desktop(){
-            font-size: 1.6em;
+            font-size: 1.2em;
         }
     }
 }
+
+
+//FOOTER///////////////////////////////////////////////// 
+
+footer{
+    flex-direction: column;
+    background-color: $light-gray;
+    
+    nav{
+        width: 100%;
+        background-color: $dark-gray;
+        color:white;
+
+        ul{
+            flex-direction:column;
+            line-height: 30px;
+
+            @include ipad(){
+            width: 70%;
+            display:flex;
+            justify-content: space-around;
+            margin: 20px auto;
+            flex-direction:row;
+            }
+
+            a{
+                &:hover{
+                    color:$light-green;
+                }
+            }
+
+        }
+    }
+
+}
+
+.footer-logo{
+    img{
+        width: 40%;
+        margin-bottom: 11px;
+    }
+}
+
+
 
 
 
@@ -801,37 +886,48 @@ form{
     background-color:#090909db;
 }
 
-//BUTTONS/////////////////////////////////////////////////////////////////////////
 
-.green-button, .white-button{
-    padding:10px;
-    border-radius: 20px;
-    margin-top:10px;
-    box-shadow: 1px 0px 5px black;
-}
 
-.green-button{
-    background-image:linear-gradient(to bottom, $dark-green, $light-green);
 
-    &:hover{
-        background:$light-green;
-    }
-}
 
-.set1, .set2{
-    border:3px solid white;
-    padding: 9px 77px;
-    font-size: .9em;
 
-    &:hover{
-        background:white;
-        color:$dark-gray;
-        transition: ease-in-out .1s    ;
-        -webkit-transition: ease-in-out .1s    ;
-        -moz-transition: ease-in-out .1s    ;
-        -ms-transition: ease-in-out .1s    ;
-        -o-transition: ease-in-out .1s    ;
-        text-shadow:none;
-    }
-}
+
+
+// .green-button, .white-button{
+//     padding:10px;
+//     border-radius: 20px;
+//     margin-top:10px;
+//     box-shadow: 1px 0px 5px black;
+// }
+
+// .green-button{
+//     background-image:linear-gradient(to bottom, $dark-green, $light-green);
+
+//     &:hover{
+//         background:$light-green;
+//     }
+// }
+
+// .set1, .set2{
+//     border:3px solid white;
+//     padding: 9px 77px;
+//     font-size: .9em;
+
+//     &:hover{
+//         background:white;
+//         color:$dark-gray;
+//         transition: ease-in-out .1s    ;
+//         -webkit-transition: ease-in-out .1s    ;
+//         -moz-transition: ease-in-out .1s    ;
+//         -ms-transition: ease-in-out .1s    ;
+//         -o-transition: ease-in-out .1s    ;
+//         text-shadow:none;
+//     }
+// }
+
+// .set1 {
+//     .white-button{
+//         padding: 8px 73px;
+//     }
+// }
 
