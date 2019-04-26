@@ -165,6 +165,10 @@ header{
         @include tablet(){
             width:30%;
         }
+
+        @include desktop(){
+            width: 18%;
+        }
     }
 
 }
@@ -199,30 +203,14 @@ header{
 
     @include desktop{
         display:block;
-        
-        ul{
-            list-style: none;
-            width: 432px;
-            justify-content: space-around;
+        width: 65%;
+    }
 
-            @include large-desktop{
-                width: 494px;
-                font-size: 1.2em;
-            }
+    ul{
+        justify-content: space-around;
 
-            a{
-                text-shadow: 2px 1px 3px black;
-                
-                &:hover{
-                    color:$dark-green;
-                    text-shadow: none;
-                    transition:ease .2s;                
-                    -webkit-transition:ease .2s;              
-                    -moz-transition:ease .2s;                
-                    -ms-transition:ease .2s;                
-                    -o-transition:ease .2s;                
-                }
-            }
+        @include large-desktop(){
+            font-size: 1.2em;
         }
     }
 }

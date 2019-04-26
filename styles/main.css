@@ -67,6 +67,9 @@ header {
     @media (min-width: 550px) {
       header .logo {
         width: 30%; } }
+    @media (min-width: 802px) {
+      header .logo {
+        width: 18%; } }
 
 .icon-positioning {
   justify-content: space-between; }
@@ -85,26 +88,13 @@ header {
   display: none; }
   @media (min-width: 802px) {
     .desktop-nav {
-      display: block; }
+      display: block;
+      width: 65%; } }
+  .desktop-nav ul {
+    justify-content: space-around; }
+    @media (min-width: 1150px) {
       .desktop-nav ul {
-        list-style: none;
-        width: 432px;
-        justify-content: space-around; } }
-    @media (min-width: 802px) and (min-width: 1150px) {
-      .desktop-nav ul {
-        width: 494px;
         font-size: 1.2em; } }
-  @media (min-width: 802px) {
-        .desktop-nav ul a {
-          text-shadow: 2px 1px 3px black; }
-          .desktop-nav ul a:hover {
-            color: #587F77;
-            text-shadow: none;
-            transition: ease .2s;
-            -webkit-transition: ease .2s;
-            -moz-transition: ease .2s;
-            -ms-transition: ease .2s;
-            -o-transition: ease .2s; } }
 
 #mobile-nav {
   width: 250px;
