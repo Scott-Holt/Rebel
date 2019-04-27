@@ -15,7 +15,7 @@ function openNav(e) {
 
 function closeNav() {
     overlay.style.display = 'none';
-    mobileNav.style = 'left:-250px;';
+    mobileNav.style = 'left:-800px;';
 }
 
 

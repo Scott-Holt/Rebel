@@ -97,10 +97,10 @@ header {
         font-size: 1.2em; } }
 
 #mobile-nav {
-  width: 250px;
+  width: 100%;
   background: #587f77ba;
   position: absolute;
-  left: -250px;
+  left: -800px;
   z-index: 20;
   height: 600px;
   position: absolute;
@@ -133,12 +133,9 @@ header {
     right: 10px;
     text-shadow: 3px 1px 4px black; }
   #mobile-nav .nav-logo {
-    margin-bottom: -12px;
-    width: 73%;
-    position: absolute;
-    bottom: 52px;
-    margin-left: 30px;
-    padding: 10px; }
+    width: 38%;
+    margin-top: 22px;
+    margin-left: 25px; }
 
 .hero {
   flex-direction: column;
