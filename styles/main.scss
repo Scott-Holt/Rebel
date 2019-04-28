@@ -78,6 +78,15 @@ $xtra-large-desktop:1400px;
     letter-spacing: 1px;
 }
 
+html{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    max-width:1200px;
+}
+
 
 img{
     width: 100%;
@@ -218,6 +227,15 @@ header{
         @include large-desktop(){
             font-size: 1.2em;
         }
+
+        li{
+            a{
+                &:hover{
+                    color:$dark-green;
+                }
+            }
+        }
+
     }
 }
 
@@ -239,6 +257,10 @@ header{
     -moz-transition: ease .5s;
     -ms-transition: ease .5s;
     -o-transition: ease .5s;   
+
+    @include desktop(){
+        display:none;
+    }
 
     ul{
         height: 65%;
@@ -398,9 +420,11 @@ header{
     }
 
     h1{
-        color:$dark-gray;
+        color: #585858;
         margin-bottom: 10px;
-        font-size:2.4em;
+        font-size: 2.4em;
+        text-shadow: 3px 1px 1px #000000e3;
+        padding: 10px;
 
     }
 
