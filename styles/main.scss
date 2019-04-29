@@ -164,10 +164,10 @@ a{
 //HEADER/////////////////////////////////////////////////////////////
 
 header{
-    background-image:url("/websiteassetshomepageonly/Mobile-Hero.jpg");
+    background-image:url("../websiteassetshomepageonly/Mobile-Hero.jpg");
 
     @include ipad{
-    background-image:url("/websiteassetshomepageonly/Hero.jpg")
+    background-image:url("../websiteassetshomepageonly/Hero.jpg")
     }
 
     .logo{
@@ -383,7 +383,7 @@ header{
         display:block;
         width:100%;
         height:100px;
-        background-image: url("/websiteassetshomepageonly/Tri-Break.png");
+        background-image: url("../websiteassetshomepageonly/Tri-Break.png");
         margin-top: -34px;
     }
 
@@ -462,16 +462,16 @@ main{
      }
 
      .card-1{
-        background-image:url("/websiteassetshomepageonly/CTA-1.jpg");
+        background-image:url("../websiteassetshomepageonly/CTA-1.jpg");
     }
      .card-2{
-        background-image:url("/websiteassetshomepageonly/CTA-2.jpg");
+        background-image:url("../websiteassetshomepageonly/CTA-2.jpg");
     }
      .card-3{
-        background-image:url("/websiteassetshomepageonly/CTA-3.jpg");
+        background-image:url("../websiteassetshomepageonly/CTA-3.jpg");
     }
      .card-4{
-        background-image:url("/websiteassetshomepageonly/CTA-4.jpg");
+        background-image:url("../websiteassetshomepageonly/CTA-4.jpg");
     }
 
     .card{
@@ -570,7 +570,7 @@ main{
 //WHY REBEL/////////////////////////////////////////////
 
 .why-rebel{
-    background-image:url("/websiteassetshomepageonly/Hero.jpg");
+    background-image:url("../websiteassetshomepageonly/Hero.jpg");
     color:white;
 
     .why-rebel-overlay{
@@ -703,7 +703,7 @@ main{
 
     
 .commitment{
-    background-image:url("/websiteassetshomepageonly/Carousel-1.jpg");
+    background-image:url("../websiteassetshomepageonly/Carousel-1.jpg");
     color: white;
 
     .container{
@@ -788,7 +788,7 @@ main{
     color:white;
 
     @include desktop(){
-        background-image: url("/websiteassetshomepageonly/Form_BG.jpg");
+        background-image: url("../websiteassetshomepageonly/Form_BG.jpg");
     }
 
     .container{

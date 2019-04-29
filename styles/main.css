@@ -64,10 +64,10 @@ a {
   margin-top: 10px; }
 
 header {
-  background-image: url("/websiteassetshomepageonly/Mobile-Hero.jpg"); }
+  background-image: url("../websiteassetshomepageonly/Mobile-Hero.jpg"); }
   @media (min-width: 768px) {
     header {
-      background-image: url("/websiteassetshomepageonly/Hero.jpg"); } }
+      background-image: url("../websiteassetshomepageonly/Hero.jpg"); } }
   header .logo {
     width: 48%; }
     header .logo:hover {
@@ -201,7 +201,7 @@ header {
       display: block;
       width: 100%;
       height: 100px;
-      background-image: url("/websiteassetshomepageonly/Tri-Break.png");
+      background-image: url("../websiteassetshomepageonly/Tri-Break.png");
       margin-top: -34px; } }
   @media (min-width: 802px) {
     .triangle-img {
@@ -250,13 +250,13 @@ header {
     .cards {
       flex-direction: row; } }
   .cards .card-1 {
-    background-image: url("/websiteassetshomepageonly/CTA-1.jpg"); }
+    background-image: url("../websiteassetshomepageonly/CTA-1.jpg"); }
   .cards .card-2 {
-    background-image: url("/websiteassetshomepageonly/CTA-2.jpg"); }
+    background-image: url("../websiteassetshomepageonly/CTA-2.jpg"); }
   .cards .card-3 {
-    background-image: url("/websiteassetshomepageonly/CTA-3.jpg"); }
+    background-image: url("../websiteassetshomepageonly/CTA-3.jpg"); }
   .cards .card-4 {
-    background-image: url("/websiteassetshomepageonly/CTA-4.jpg"); }
+    background-image: url("../websiteassetshomepageonly/CTA-4.jpg"); }
   .cards .card {
     padding: 10px;
     margin: 10px;
@@ -325,7 +325,7 @@ header {
   text-align: center; }
 
 .why-rebel {
-  background-image: url("/websiteassetshomepageonly/Hero.jpg");
+  background-image: url("../websiteassetshomepageonly/Hero.jpg");
   color: white; }
   .why-rebel .why-rebel-overlay {
     background: #2e2e2ebd; }
@@ -416,7 +416,7 @@ header {
   width: 100%; }
 
 .commitment {
-  background-image: url("/websiteassetshomepageonly/Carousel-1.jpg");
+  background-image: url("../websiteassetshomepageonly/Carousel-1.jpg");
   color: white; }
   .commitment .container {
     flex-direction: column;
@@ -477,7 +477,7 @@ header {
   color: white; }
   @media (min-width: 802px) {
     .form-section {
-      background-image: url("/websiteassetshomepageonly/Form_BG.jpg"); } }
+      background-image: url("../websiteassetshomepageonly/Form_BG.jpg"); } }
   .form-section .container .section1 {
     margin-top: 20px;
     flex-direction: column; }
