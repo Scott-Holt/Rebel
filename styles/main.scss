@@ -425,7 +425,7 @@ header{
         color: #585858;
         margin-bottom: 10px;
         font-size: 2.4em;
-        text-shadow: 3px 1px 1px #000000e3;
+        text-shadow: 3px 1px 1px #00000030;
         padding: 10px;
 
     }
@@ -443,6 +443,13 @@ header{
 main{
     @include desktop(){
         margin-top: -85px;
+    }
+}
+
+.cards-container{
+
+    @include large-desktop(){
+        width:100%;
     }
 }
 
@@ -521,6 +528,10 @@ main{
         width: 100%;
     }
 
+    @include large-desktop(){
+        font-size: 1em;
+    }
+
     h1{
         padding: 10px;
     }
@@ -535,8 +546,12 @@ main{
 }
 
 .gray-button{
-    background-color:$light-gray;
+    background-color:$dark-gray;
     border:none;
+
+    &:hover{
+        background-color:$light-gray;
+    }
 }
 
 
