@@ -14,13 +14,13 @@
 
 <body>
 
-    <header class="background-img-settings flex">
+    <header id="home" class="background-img-settings flex">
         <!--flex-->
 
         <div class="container">
 
             <div class="icon-positioning flex">
-                <img class="logo" src="./websiteassetshomepageonly/Logo-ColorCorrection.png" />
+                <a href="#home"><img class="logo" src="./websiteassetshomepageonly/Logo-ColorCorrection.png" /></a>
                 <span id="hamburger-icon">&#9776;</span>
 
                 <!-- DESKTOP NAV -->
@@ -54,10 +54,10 @@
         <img class="nav-logo" src="./websiteassetshomepageonly/Logo-White.png" alt="rebel logo">
         <span id="close-icon">&#215;</span>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#the-rebellion">The Rebellion</a></li>
-            <li><a href="#our-services">Our Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="list-item"><a href="#home">Home</a></li>
+            <li class="list-item"><a href="#the-rebellion">The Rebellion</a></li>
+            <li class="list-item"><a href="#our-services">Our Services</a></li>
+            <li class="list-item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -71,7 +71,7 @@
     <main class="flex">
         <div class="container cards-container">
 
-            <div class="services-header flex">
+            <div id="our-services" class="services-header flex">
                 <h1>Rebel's services </h1>
                 <span>superior service based around customer service</span>
             </div>
@@ -86,7 +86,7 @@
                         <h1 class="green-h1"><i>Cross Dock</i></h1>
                         <p>A straight forward solution that speeds product to market, reduces shipment touches and
                             claims. This
-                            service can be combined with our white glove ...</p>
+                            service can be combined ...</p>
                         <a href="#" class="button gray-button">Read more</a>
                     </div>
                 </div>
@@ -135,20 +135,20 @@
 
     <!-- WHY REBEL -------------------------------------------------------------------->
 
-    <div class="why-rebel background-img-settings flex">
+    <div id="the-rebellion" class="why-rebel background-img-settings flex">
         <div class="why-rebel-overlay flex">
 
             <div class="why-rebel-container container flex">
                 <div class="col col-1 flex">
                     <h1>Why Choose Rebel?</h1>
-                    <span>commitment to excellence</span>
+                    <span>effective pool distribution</span>
                     <p>Rebel Logistic Services will analyze your unique data and delivery
                         requirements to provide your company with a customized solution that will
                         ultimately increase service and decrease your supply chain costs.</p>
                 </div>
                 <div class="col col-2 flex">
-                    <a class="white-button button" href="#">the rebellion</a>
-                    <a class="green-button button" href="#">contact</a>
+                    <a class="white-button button" href="#the-rebellion">learn more</a>
+                    <a class="green-button button" href="#contact">contact</a>
                 </div>
             </div>
         </div>
@@ -190,7 +190,7 @@
     <!--FORM--------------------------------------------------------------------------------->
     <div class="form-section flex background-img-settings">
         <div class="container">
-            <div class="section1 flex">
+            <div id="contact" class="section1 flex">
                 <h1>Contact Us</h1>
                 <span>for more information</span>
                 <form action="/action_page.php">
@@ -226,6 +226,13 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- <div class="direct-contact flex">
+            <ul>
+                <li>Jack Holt</li>
+                <li>847-899-2233</li>
+                <li>jack@go2rebel.com</li>
+            </ul>
+        </div> -->
         <div class="container">
             <div class="footer-logo flex">
                 <img src="./websiteassetshomepageonly/Logo-White.png" alt="rebel logo">

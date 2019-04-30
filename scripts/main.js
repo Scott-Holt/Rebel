@@ -2,15 +2,12 @@ const hamIcon = document.getElementById("hamburger-icon");
 const closeIcon = document.getElementById('close-icon');
 const mobileNav = document.getElementById('mobile-nav');
 const overlay = document.getElementById('overlay');
+const listItem = document.querySelectorAll('.list-item');
 
 
 function openNav(e) {
-    console.log('fuck');
-
     overlay.style.display = 'block';
     mobileNav.style = 'left:0px; display:block;';
-
-
 }
 
 function closeNav() {
@@ -20,11 +17,10 @@ function closeNav() {
 
 
 
+
+
 hamIcon.addEventListener('click', openNav);
 closeIcon.addEventListener('click', closeNav);
+listItem.forEach(item => item.addEventListener('click', closeNav));
 
 
-
-//took away header-text FLEX..so put that back in
-//commented out OVERLAY, MOBILE-NAV AND CLOSE ICON
-//commented out PHONE NAV in HTML
