@@ -81,6 +81,7 @@ $xtra-large-desktop:1400px;
 html{
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
 }
 
 // body{

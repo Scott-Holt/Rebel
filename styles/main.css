@@ -9,7 +9,8 @@
 
 html {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  scroll-behavior: smooth; }
 
 img {
   width: 100%; }
