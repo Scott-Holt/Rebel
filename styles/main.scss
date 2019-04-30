@@ -83,9 +83,9 @@ html{
     justify-content: center;
 }
 
-body{
-    max-width:1200px;
-}
+// body{
+//     max-width:1200px;
+// }
 
 
 img{
@@ -184,7 +184,7 @@ header{
         }
 
         @include desktop(){
-            width: 18%;
+            width: 47%;
         }
     }
 
@@ -220,7 +220,11 @@ header{
 
     @include desktop{
         display:block;
-        width: 65%;
+        width:83%;
+    }
+
+    @include large-desktop(){
+        width: 60%;
     }
 
     ul{
@@ -300,11 +304,6 @@ header{
         width: 38%;
         margin-top: 22px;
         margin-left: 25px;
-
-        // @include small-iphone(){
-        //     bottom: 42px;
-
-        //}
     }
     
 }
@@ -415,11 +414,11 @@ header{
     }
 
     @include ipad(){
-        margin-top: 44px;
+        margin-top: -18px;
     }
 
     @include desktop(){
-        margin-bottom:30px;
+        margin: 30px auto;
     }
 
     h1{
@@ -447,18 +446,10 @@ main{
     }
 }
 
-.cards-container{
-
-    @include large-desktop(){
-        width:100%;
-    }
-}
-
-
 .cards{
     flex-direction: column;
 
-    @include desktop(){
+    @include med-desktop(){
         flex-direction: row;
      }
 
@@ -483,11 +474,15 @@ main{
         box-shadow: 2px 0px 4px 0px #000000b8;
 
         @include desktop(){
-            height: 250px;
+            width: 90%;
         }
         
-        @include large-desktop(){
-            height: 400px;
+        @include med-desktop(){
+            height: 273px;
+        }
+
+        @include xtra-large-desktop(){
+            height: 325px;
         }
 
         a{
@@ -498,11 +493,15 @@ main{
             font-family: $secondary;
 
             @include desktop(){
-                width: 100%;
+                width: 50%;
+            }
+
+            @include med-desktop(){
+                width: 84%;
             }
 
             @include large-desktop(){
-                width:70%;
+                width: 60%;
             }
         }
     }
@@ -523,18 +522,25 @@ main{
         font-size: 1.2em;
     }
 
-    @include desktop(){
-        font-size: .5em;
+    @include med-desktop(){
         height: 100%;
         width: 100%;
+        font-size: .7em;
+        padding:0px;
     }
 
-    @include large-desktop(){
+    @include xtra-large-desktop(){
         font-size: 1em;
+        padding: 10px;
     }
 
     h1{
         padding: 10px;
+
+        @include med-desktop(){
+            font-size: 1.7em;
+
+        }
     }
 }
 
