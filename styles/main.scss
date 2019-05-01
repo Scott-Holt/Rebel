@@ -17,6 +17,7 @@ $desktop: 802px;
 $med-desktop:920px;
 $large-desktop:1150px;
 $xtra-large-desktop:1400px;
+$large-card:1700px;
 
 //mixins
 
@@ -51,6 +52,12 @@ $xtra-large-desktop:1400px;
 
 @mixin large-desktop{
     @media(min-width:#{$large-desktop}){
+        @content
+    }
+}
+
+@mixin large-card{
+    @media(min-width:#{$large-card}){
         @content
     }
 }
@@ -165,13 +172,19 @@ a{
 
 
 
-
-
-//CONTAINER///////////////////////////////////////////////////////////////////////////
+//CONTAINERS///////////////////////////////////////////////////////////////////////////
 .container{
     width:84%;
     min-width: 300px;
-    margin: 18px auto;
+    // margin: 18px auto;
+}
+
+.row-container{
+    margin: 50px 0px;
+
+    @include large-desktop(){
+        margin: 95px 0px;
+    }
 }
 
 
@@ -253,7 +266,7 @@ header{
     @include desktop{
         display:block;
         width: 43%;
-        font-size: .65em;
+        font-size: .75em;
     }
 
     @include large-desktop(){
@@ -514,6 +527,18 @@ main{
         flex-direction: row;
      }
 
+     @include large-desktop(){
+        height: 326px;
+     }
+
+     @include xtra-large-desktop(){
+        height: 420px;
+     }
+
+     @include large-card(){
+         height:510px;
+     }
+
      .card-1{
         background-image:url("../websiteassetshomepageonly/CTA-1.jpg");
     }
@@ -535,6 +560,11 @@ main{
         box-shadow: 2px 0px 4px 0px #000000b8;
         text-align: center;
 
+        @include tablet(){
+            text-align: left;
+
+        }
+
         @include desktop(){
             width: 90%;
         }
@@ -543,8 +573,8 @@ main{
             height: 273px;
         }
 
-        @include xtra-large-desktop(){
-            height: 325px;
+        @include large-desktop(){
+            height: 90%;
         }
 
 
@@ -576,10 +606,11 @@ main{
 
 .card-content{
     flex-direction:column;
-    align-items:flex-start;
+    align-items:center;
     padding: 10px;
 
     @include tablet(){
+        align-items:flex-start;
         height: 80%;
         width: 80%;
     }
@@ -593,6 +624,12 @@ main{
         width: 100%;
         font-size: .7em;
         padding:0px;
+        justify-content: space-around;
+    }
+
+    @include large-desktop(){
+        justify-content: center;
+        font-size: .8em;
     }
 
     @include xtra-large-desktop(){
@@ -633,6 +670,7 @@ main{
 
 .services-footer{
     color: #636363;
+    margin-top: 10px;
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
@@ -649,12 +687,12 @@ main{
     .why-rebel-overlay{
         background:#2e2e2ebd;
 
-        .why-rebel-container{
+        .container{
             flex-direction:column;
 
-            @include tablet(){
-                margin: 56px;
-            }
+            // @include tablet(){
+            //     margin: 90px;
+            // }
 
             @include desktop(){
                 flex-direction: row;
@@ -682,12 +720,18 @@ main{
         margin-right: 33px;
         /* height: 400px; */
     }
+
+    h1{
+        width: 100%;
+
+    }
     
     span{
         font-family: "Roboto", sans-serif;
         color: #636363;
         color: #909090d6;
         text-shadow: 3px 2px 5px black;
+        width: 100%;
     }
 
     p{
@@ -733,9 +777,9 @@ main{
 .back2basics{
 
     .container{
-        @include tablet(){
-            margin: 56px;
-        }
+        // @include tablet(){
+        //     margin: 90px;
+        // }
 
     .b2b-assets{
         flex-direction:column;
@@ -755,12 +799,14 @@ main{
             
                 h1{
                     color:$dark-gray;
+                    
                 }
                 
                 span{
                     color:$dark-green;
                     font-family:$secondary;
                     text-shadow: none;
+                    
                 }
                 
                 p{
