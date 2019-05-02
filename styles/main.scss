@@ -698,6 +698,14 @@ main{
                 flex-direction: row;
             }
 
+            @include large-desktop(){
+                width: 70%;
+            }
+
+            @include xtra-large-desktop(){
+                width: 62%;
+            }
+
         }
     }
 }
@@ -719,6 +727,10 @@ main{
         /* width: 54%; */
         margin-right: 33px;
         /* height: 400px; */
+    }
+
+    @include large-desktop(){
+        margin-right: 75px;
     }
 
     h1{
@@ -768,7 +780,7 @@ main{
     }
 
     @include xtra-large-desktop(){
-        width: 32%;
+        width: 60%;
     }
 }
 
@@ -777,9 +789,15 @@ main{
 .back2basics{
 
     .container{
-        // @include tablet(){
-        //     margin: 90px;
-        // }
+
+        @include large-desktop(){
+            width: 70%;
+        }
+
+        @include xtra-large-desktop(){
+            width: 62%;
+        }
+
 
     .b2b-assets{
         flex-direction:column;
@@ -916,12 +934,21 @@ main{
 
     @include desktop(){
         background-image: url("../websiteassetshomepageonly/Form_BG.jpg");
+
+        @include xtra-large-desktop(){
+            background-position-y: top;
+        }
+
     }
 
     .container{
 
+        @include xtra-large-desktop(){
+            width: 75%;
+        }
+
         .section1{
-            margin-top: 20px;
+            margin: 36px;
             flex-direction: column;
 
             @include desktop(){
@@ -929,8 +956,17 @@ main{
                 align-items: flex-start;
             }
 
+            @include large-desktop(){
+                margin: 60px 37px;
+            }
+
             h1{
                 text-shadow: 1px 3px 4px black;
+                font-size: 1.8em;
+
+                @include ipad(){
+                    font-size: 2em;
+                }
 
                 @include desktop(){
                     font-size: 3em;
@@ -1006,17 +1042,31 @@ footer{
         width: 100%;
         background-color: $dark-gray;
         color:white;
+        text-align: center;
+
+        @include ipad(){
+            font-size: .7em;
+        }
 
         ul{
             flex-direction:column;
             line-height: 30px;
 
             @include ipad(){
-            width: 70%;
+            width: 50%;
             display:flex;
             justify-content: space-around;
             margin: 20px auto;
             flex-direction:row;
+            }
+
+            @include med-desktop(){
+                width: 42%;
+            }
+
+            @include large-desktop(){
+                font-size: 1.3em;
+                width: 37%;
             }
 
             a{
@@ -1032,8 +1082,12 @@ footer{
 
 .footer-logo{
     img{
-        width: 40%;
-        margin-bottom: 11px;
+        width: 20%;
+        margin: 10px 0px;
+
+        @include xtra-large-desktop(){
+            width: 13%;  
+        }
     }
 }
 
