@@ -107,28 +107,35 @@ header {
     header .container {
       height: 90%; } }
 
-.icon-positioning {
-  justify-content: space-between;
-  width: 96%;
-  margin-top: 10px; }
-  .icon-positioning #hamburger-icon {
-    color: white;
-    font-size: 2em;
-    margin-top: -10px;
-    text-shadow: 3px 2px 1px black;
-    margin-right: .3em; }
-    .icon-positioning #hamburger-icon:hover {
-      cursor: pointer; }
-    @media (min-width: 802px) {
-      .icon-positioning #hamburger-icon {
-        display: none; } }
-  .icon-positioning .logo {
-    width: 40%; }
-    .icon-positioning .logo:hover {
-      cursor: pointer; }
-    @media (min-width: 1400px) {
-      .icon-positioning .logo {
-        width: 43%; } }
+.nav-gradient {
+  height: 105px;
+  background: transparent;
+  width: 100%;
+  top: 0px;
+  background: linear-gradient(180deg, #0000009c 0%, rgba(0, 0, 0, 0) 100%); }
+  .nav-gradient .icon-positioning {
+    justify-content: space-between;
+    width: 96%;
+    margin-top: 10px; }
+    .nav-gradient .icon-positioning #hamburger-icon {
+      color: white;
+      font-size: 2em;
+      margin-top: -10px;
+      text-shadow: 3px 2px 1px black;
+      margin-right: .3em; }
+      .nav-gradient .icon-positioning #hamburger-icon:hover {
+        cursor: pointer; }
+      @media (min-width: 802px) {
+        .nav-gradient .icon-positioning #hamburger-icon {
+          display: none; } }
+    .nav-gradient .icon-positioning .logo {
+      width: 40%;
+      margin-left: 1em; }
+      .nav-gradient .icon-positioning .logo:hover {
+        cursor: pointer; }
+      @media (min-width: 1400px) {
+        .nav-gradient .icon-positioning .logo {
+          width: 43%; } }
 
 .desktop-nav {
   display: none; }
@@ -342,6 +349,7 @@ header {
 
 .why-rebel {
   background-image: url("../websiteassetshomepageonly/Hero.jpg");
+  background-attachment: fixed;
   color: white; }
   .why-rebel .why-rebel-overlay {
     background: #2e2e2ebd; }
@@ -371,11 +379,13 @@ header {
   .col-1 h1 {
     width: 100%; }
   .col-1 span {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     color: #636363;
-    color: #909090d6;
-    text-shadow: 3px 2px 5px black;
-    width: 100%; }
+    /* color: #909090d6; */
+    /* text-shadow: 3px 2px 5px black; */
+    width: 100%;
+    color: white;
+    font-size: 1.2em; }
   .col-1 p {
     margin-top: 17px; }
     @media (min-width: 550px) {

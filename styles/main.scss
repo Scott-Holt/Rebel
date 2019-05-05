@@ -209,6 +209,7 @@ header{
     background-repeat: no-repeat;
     flex-direction:column;
 
+
     @include ipad{
     background-image:url("../websiteassetshomepageonly/Hero.jpg");
     background-position-x: right;
@@ -233,46 +234,58 @@ header{
 
 
 
+.nav-gradient{
+    height: 105px;
+    background: transparent;
+    width: 100%;
+    top: 0px;
 
-.icon-positioning{
-    justify-content: space-between;
-    width: 96%;
-    margin-top: 10px;
+    // @include med-desktop(){
+        background: linear-gradient(180deg, #0000009c 0%, rgba(0, 0, 0, 0) 100%);
+    // }
 
-    #hamburger-icon{
-        color:white;
-        font-size:2em;
-        margin-top: -10px;
-        text-shadow: 3px 2px 1px black;
-        margin-right: .3em;
+    .icon-positioning{
+        justify-content: space-between;
+        width: 96%;
+        margin-top: 10px;
 
-        &:hover{
-            cursor: pointer;
+        #hamburger-icon{
+            color:white;
+            font-size:2em;
+            margin-top: -10px;
+            text-shadow: 3px 2px 1px black;
+            margin-right: .3em;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            @include desktop{
+                display:none;
+            }
         }
 
-        @include desktop{
-            display:none;
+        .logo{
+            width: 40%;
+            margin-left: 1em;
+            
+            &:hover{
+                cursor: pointer;
+            }
+
+            @include xtra-large-desktop(){
+                width: 43%;
+            }
+
         }
+
     }
-
-    .logo{
-        width: 40%;
-    
-        
-        &:hover{
-            cursor: pointer;
-        }
-
-        @include xtra-large-desktop(){
-            width: 43%;
-        }
-
-    }
-
 }
 
 
 //DESKTOP NAV/////////////////////////////////////////////////////////////////////////
+
+
 .desktop-nav{
     display:none;
 
@@ -598,6 +611,7 @@ header{
 
 .why-rebel{
     background-image:url("../websiteassetshomepageonly/Hero.jpg");
+    background-attachment: fixed;
     color:white;
 
     .why-rebel-overlay{
@@ -655,11 +669,13 @@ header{
     }
     
     span{
-        font-family: "Roboto", sans-serif;
-        color: #636363;
-        color: #909090d6;
-        text-shadow: 3px 2px 5px black;
-        width: 100%;
+    /* font-family: "Roboto", sans-serif; */
+    color: #636363;
+    /* color: #909090d6; */
+    /* text-shadow: 3px 2px 5px black; */
+    width: 100%;
+    color: white;
+    font-size: 1.2em;
     }
 
     p{
