@@ -317,7 +317,7 @@ header {
     .icons-container .icons .icon {
       flex-direction: column;
       margin-bottom: 2em;
-      padding: 20px; }
+      padding: 40px; }
       @media (min-width: 802px) {
         .icons-container .icons .icon {
           margin-bottom: .5em;
