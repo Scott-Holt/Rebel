@@ -293,14 +293,14 @@ header {
       margin-top: -18px; } }
   .services-header h1 {
     color: #585858;
-    margin-bottom: 10px;
     font-size: 2.4em;
     text-shadow: 3px 1px 1px #00000030;
     padding: 10px; }
   .services-header span {
     color: #636363;
     font-size: 1.2em;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    margin-top: -10px; }
 
 .icons-container {
   flex-direction: column; }
@@ -316,7 +316,9 @@ header {
         justify-content: space-between; } }
     .icons-container .icons .icon {
       flex-direction: column;
-      margin-bottom: 2em; }
+      margin-bottom: 2em;
+      border: 1px solid black;
+      padding: 10px; }
       @media (min-width: 802px) {
         .icons-container .icons .icon {
           margin-bottom: .5em;
@@ -345,7 +347,8 @@ header {
     text-align: center; }
     @media (min-width: 920px) {
       .icons-container .services-footer {
-        margin-bottom: 3em; } }
+        margin-bottom: 9em;
+        margin-top: 5em; } }
 
 .why-rebel {
   background-image: url("../websiteassetshomepageonly/Hero.jpg");
@@ -357,7 +360,8 @@ header {
       flex-direction: column; }
       @media (min-width: 802px) {
         .why-rebel .why-rebel-overlay .container {
-          flex-direction: row; } }
+          flex-direction: row;
+          margin: 125px 0px; } }
 
 .col-1 {
   flex-direction: column;
@@ -416,6 +420,9 @@ header {
     .col-2 {
       width: 60%; } }
 
+@media (min-width: 802px) {
+  .back2basics .container {
+    margin: 125px 0px; } }
 .back2basics .container .b2b-assets {
   flex-direction: column; }
   @media (min-width: 802px) {

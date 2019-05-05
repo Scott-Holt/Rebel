@@ -523,7 +523,6 @@ header{
 
     h1{
         color: #585858;
-        margin-bottom: 10px;
         font-size: 2.4em;
         text-shadow: 3px 1px 1px #00000030;
         padding: 10px;
@@ -534,6 +533,7 @@ header{
         color: #636363;
         font-size: 1.2em;
         font-family:$secondary;
+        margin-top: -10px;
     }
 }
 
@@ -560,6 +560,8 @@ header{
         .icon{
             flex-direction:column;
             margin-bottom: 2em;
+            border: 1px solid black;
+            padding: 10px;
 
             @include desktop(){
                 margin-bottom: .5em;
@@ -603,7 +605,8 @@ header{
         text-align:center;
 
         @include med-desktop(){
-            margin-bottom: 3em;
+            margin-bottom: 9em;
+            margin-top: 5em;
         }
     }
 }
@@ -628,6 +631,7 @@ header{
 
             @include desktop(){
                 flex-direction: row;
+                margin: 125px 0px;
             }
 
             // @include large-desktop(){
@@ -636,6 +640,10 @@ header{
 
             // @include xtra-large-desktop(){
             //     width: 62%;
+            // }
+
+            // .row-container{
+            //     margin: 125px 0px;
             // }
 
         }
@@ -724,6 +732,10 @@ header{
 .back2basics{
 
     .container{
+
+        @include desktop(){
+            margin: 125px 0px;
+        }
 
     //     @include large-desktop(){
     //         width: 70%;
