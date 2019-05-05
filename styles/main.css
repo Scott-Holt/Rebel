@@ -316,9 +316,7 @@ header {
         justify-content: space-between; } }
     .icons-container .icons .icon {
       flex-direction: column;
-      margin-bottom: 2em;
-      border: 1px solid black;
-      padding: 40px; }
+      margin-bottom: 2em; }
       @media (min-width: 802px) {
         .icons-container .icons .icon {
           margin-bottom: .5em;
