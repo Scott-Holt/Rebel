@@ -73,6 +73,15 @@ a {
 .container {
   width: 84%;
   min-width: 300px; }
+  @media (min-width: 802px) {
+    .container {
+      width: 80%; } }
+  @media (min-width: 1150px) {
+    .container {
+      width: 70%; } }
+  @media (min-width: 1400px) {
+    .container {
+      width: 60%; } }
 
 .row-container {
   margin: 50px 0px; }
@@ -106,7 +115,8 @@ header {
     color: white;
     font-size: 2em;
     margin-top: -10px;
-    text-shadow: 3px 2px 1px black; }
+    text-shadow: 3px 2px 1px black;
+    margin-right: .3em; }
     .icon-positioning #hamburger-icon:hover {
       cursor: pointer; }
     @media (min-width: 802px) {
@@ -204,7 +214,8 @@ header {
     flex-direction: column; }
   .hero h1, .hero span, .hero .call-to-action {
     font-family: "Montserrat", sans-serif;
-    color: white; }
+    color: white;
+    padding: 0px 10px; }
   .hero h1 {
     font-weight: bolder;
     text-shadow: 2px 1px 5px black; }
@@ -234,7 +245,7 @@ header {
       width: 65%; } }
   @media (min-width: 1400px) {
     .call-to-action {
-      width: 50%; } }
+      width: 70%; } }
 
 .green-line {
   width: 60%;
@@ -273,9 +284,6 @@ header {
   @media (min-width: 768px) {
     .services-header {
       margin-top: -18px; } }
-  @media (min-width: 802px) {
-    .services-header {
-      margin: 30px auto; } }
   .services-header h1 {
     color: #585858;
     margin-bottom: 10px;
@@ -287,122 +295,50 @@ header {
     font-size: 1.2em;
     font-family: "Roboto", sans-serif; }
 
-@media (min-width: 802px) {
-  main {
-    margin-top: -85px; } }
-
-.cards {
+.icons-container {
   flex-direction: column; }
-  @media (min-width: 920px) {
-    .cards {
-      flex-direction: row; } }
-  @media (min-width: 1150px) {
-    .cards {
-      height: 326px; } }
-  @media (min-width: 1400px) {
-    .cards {
-      height: 420px; } }
-  @media (min-width: 1700px) {
-    .cards {
-      height: 510px; } }
-  .cards .card-1 {
-    background-image: url("../websiteassetshomepageonly/CTA-1.jpg"); }
-  .cards .card-2 {
-    background-image: url("../websiteassetshomepageonly/CTA-2.jpg"); }
-  .cards .card-3 {
-    background-image: url("../websiteassetshomepageonly/CTA-3.jpg"); }
-  .cards .card-4 {
-    background-image: url("../websiteassetshomepageonly/CTA-4.jpg"); }
-  .cards .card {
-    padding: 10px;
-    margin: 10px;
-    height: 400px;
+  .icons-container .icons {
     flex-direction: column;
-    box-shadow: 2px 0px 4px 0px #000000b8;
-    text-align: center; }
-    @media (min-width: 550px) {
-      .cards .card {
-        text-align: left; } }
+    width: 70%; }
     @media (min-width: 802px) {
-      .cards .card {
-        width: 90%; } }
-    @media (min-width: 920px) {
-      .cards .card {
-        height: 273px; } }
-    @media (min-width: 1150px) {
-      .cards .card {
-        height: 90%; } }
-    .cards .card a {
-      margin-top: 10px;
-      display: inline-block;
-      text-align: center;
-      font-family: "Roboto", sans-serif; }
-      @media (min-width: 550px) {
-        .cards .card a {
-          width: 75%; } }
+      .icons-container .icons {
+        flex-direction: row;
+        width: 100%; } }
+    @media (min-width: 1700px) {
+      .icons-container .icons {
+        justify-content: space-between; } }
+    .icons-container .icons .icon {
+      flex-direction: column;
+      margin-bottom: 2em; }
       @media (min-width: 802px) {
-        .cards .card a {
-          width: 50%; } }
-      @media (min-width: 920px) {
-        .cards .card a {
-          width: 84%; } }
-      @media (min-width: 1150px) {
-        .cards .card a {
-          width: 60%; } }
-
-.card-content {
-  flex-direction: column;
-  align-items: center;
-  padding: 10px; }
-  @media (min-width: 550px) {
-    .card-content {
-      align-items: flex-start;
-      height: 80%;
-      width: 80%; } }
-  @media (min-width: 768px) {
-    .card-content {
-      font-size: 1.2em; } }
-  @media (min-width: 920px) {
-    .card-content {
-      height: 100%;
-      width: 100%;
-      font-size: .7em;
-      padding: 0px;
-      justify-content: space-around; } }
-  @media (min-width: 1150px) {
-    .card-content {
-      justify-content: center;
-      font-size: .8em; } }
-  @media (min-width: 1400px) {
-    .card-content {
-      font-size: 1em;
-      padding: 10px; } }
-  .card-content h1 {
-    padding: 10px; }
+        .icons-container .icons .icon {
+          margin-bottom: .5em;
+          text-align: center;
+          width: 250px; } }
+      @media (min-width: 802px) {
+        .icons-container .icons .icon img {
+          width: 90%; } }
+      .icons-container .icons .icon span {
+        font-family: "Montserrat", sans-serif;
+        color: #585858;
+        font-weight: bolder;
+        font-size: 1.6em; }
+        @media (min-width: 802px) {
+          .icons-container .icons .icon span {
+            font-size: 1.2em; } }
+    .icons-container .icons .cross-dock-icon span {
+      color: #587F77; }
+  .icons-container .services-footer {
+    color: #636363;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    text-align: center; }
     @media (min-width: 920px) {
-      .card-content h1 {
-        font-size: 1.7em; } }
-
-.green-h1 {
-  color: #587F77; }
-
-.gray-h1 {
-  color: #636363; }
-
-.gray-button {
-  background-color: #585858;
-  border: none; }
-  .gray-button:hover {
-    background-color: #636363; }
-
-.services-footer {
-  color: #636363;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: center;
-  font-size: .8em;
-  text-align: center; }
+      .icons-container .services-footer {
+        margin-bottom: 3em; } }
 
 .why-rebel {
   background-image: url("../websiteassetshomepageonly/Hero.jpg");
@@ -414,12 +350,6 @@ header {
       @media (min-width: 802px) {
         .why-rebel .why-rebel-overlay .container {
           flex-direction: row; } }
-      @media (min-width: 1150px) {
-        .why-rebel .why-rebel-overlay .container {
-          width: 70%; } }
-      @media (min-width: 1400px) {
-        .why-rebel .why-rebel-overlay .container {
-          width: 62%; } }
 
 .col-1 {
   flex-direction: column;
@@ -475,12 +405,6 @@ header {
     .col-2 {
       width: 60%; } }
 
-@media (min-width: 1150px) {
-  .back2basics .container {
-    width: 70%; } }
-@media (min-width: 1400px) {
-  .back2basics .container {
-    width: 62%; } }
 .back2basics .container .b2b-assets {
   flex-direction: column; }
   @media (min-width: 802px) {

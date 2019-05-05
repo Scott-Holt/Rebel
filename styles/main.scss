@@ -177,6 +177,18 @@ a{
     width:84%;
     min-width: 300px;
     // margin: 18px auto;
+
+    @include desktop(){
+        width:80%;
+    }
+
+    @include large-desktop(){
+        width:70%;
+    }
+
+    @include xtra-large-desktop(){
+        width:60%;
+    }
 }
 
 .row-container{
@@ -232,6 +244,7 @@ header{
         font-size:2em;
         margin-top: -10px;
         text-shadow: 3px 2px 1px black;
+        margin-right: .3em;
 
         &:hover{
             cursor: pointer;
@@ -383,8 +396,9 @@ header{
     }
 
     h1,span, .call-to-action{
-    font-family: $main;
-    color:white;
+        font-family: $main;
+        color:white;
+        padding: 0px 10px;
     }
 
     h1{
@@ -418,6 +432,7 @@ header{
         flex-direction: row;
         width:75%;
 
+
         a{
             margin:10px;
         }
@@ -429,7 +444,7 @@ header{
     }
 
     @include xtra-large-desktop(){
-        width: 50%;
+        width: 70%;
     }
     
 }
@@ -491,10 +506,6 @@ header{
         margin-top: -18px;
     }
 
-    @include desktop(){
-        margin: 30px auto;
-    }
-
     h1{
         color: #585858;
         margin-bottom: 10px;
@@ -512,171 +523,76 @@ header{
 }
 
 
-//CARDS///////////////////////////////////////////////////
+//ICONS///////////////////////////////////////////////////
 
-main{
-    @include desktop(){
-        margin-top: -85px;
-    }
-}
 
-.cards{
+.icons-container{
     flex-direction: column;
-
-    @include med-desktop(){
-        flex-direction: row;
-     }
-
-     @include large-desktop(){
-        height: 326px;
-     }
-
-     @include xtra-large-desktop(){
-        height: 420px;
-     }
-
-     @include large-card(){
-         height:510px;
-     }
-
-     .card-1{
-        background-image:url("../websiteassetshomepageonly/CTA-1.jpg");
-    }
-     .card-2{
-        background-image:url("../websiteassetshomepageonly/CTA-2.jpg");
-    }
-     .card-3{
-        background-image:url("../websiteassetshomepageonly/CTA-3.jpg");
-    }
-     .card-4{
-        background-image:url("../websiteassetshomepageonly/CTA-4.jpg");
-    }
-
-    .card{
-        padding: 10px;
-        margin: 10px;
-        height: 400px;
+    
+    .icons{
         flex-direction: column;
-        box-shadow: 2px 0px 4px 0px #000000b8;
-        text-align: center;
-
-        @include tablet(){
-            text-align: left;
-
-        }
+        width:70%;
 
         @include desktop(){
-            width: 90%;
-        }
-        
-        @include med-desktop(){
-            height: 273px;
+            flex-direction: row;
+            width: 100%;
         }
 
-        @include large-desktop(){
-            height: 90%;
+        @include large-card(){
+            justify-content: space-between;
         }
 
-
-        a{
-            margin-top: 10px;
-            display: inline-block;
-            text-align: center;
-            font-family: $secondary;
-
-            @include tablet(){
-                width: 75%;
-            }
+        .icon{
+            flex-direction:column;
+            margin-bottom: 2em;
 
             @include desktop(){
-                width: 50%;
+                margin-bottom: .5em;
+                text-align: center;
+                width: 250px;
             }
 
-            @include med-desktop(){
-                width: 84%;
+            img{
+                @include desktop(){
+                    width: 90%;
+                }
             }
 
-            @include large-desktop(){
-                width: 60%;
+            span{
+                font-family:$main;
+                color:$dark-gray;
+                font-weight: bolder;
+                font-size: 1.6em;
+
+                @include desktop(){
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .cross-dock-icon{
+            span{
+                color:$dark-green;
             }
         }
     }
 
-}
 
-.card-content{
-    flex-direction:column;
-    align-items:center;
-    padding: 10px;
-
-    @include tablet(){
-        align-items:flex-start;
-        height: 80%;
-        width: 80%;
-    }
-
-    @include ipad(){
-        font-size: 1.2em;
-    }
-
-    @include med-desktop(){
-        height: 100%;
-        width: 100%;
-        font-size: .7em;
-        padding:0px;
-        justify-content: space-around;
-    }
-
-    @include large-desktop(){
+    .services-footer{
+        color: #636363;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        display: flex;
         justify-content: center;
         font-size: .8em;
-    }
-
-    @include xtra-large-desktop(){
-        font-size: 1em;
-        padding: 10px;
-    }
-
-    h1{
-        padding: 10px;
+        text-align:center;
 
         @include med-desktop(){
-            font-size: 1.7em;
-
+            margin-bottom: 3em;
         }
     }
 }
 
-.green-h1{
-    color:$dark-green;
-}
-
-.gray-h1{
-    color:$light-gray;
-}
-
-.gray-button{
-    background-color:$dark-gray;
-    border:none;
-
-    &:hover{
-        background-color:$light-gray;
-    }
-}
-
-
-
-
-
-.services-footer{
-    color: #636363;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    font-size: .8em;
-    text-align:center;
-}
 
 //WHY REBEL/////////////////////////////////////////////
 
@@ -698,13 +614,13 @@ main{
                 flex-direction: row;
             }
 
-            @include large-desktop(){
-                width: 70%;
-            }
+            // @include large-desktop(){
+            //     width: 70%;
+            // }
 
-            @include xtra-large-desktop(){
-                width: 62%;
-            }
+            // @include xtra-large-desktop(){
+            //     width: 62%;
+            // }
 
         }
     }
@@ -790,13 +706,13 @@ main{
 
     .container{
 
-        @include large-desktop(){
-            width: 70%;
-        }
+    //     @include large-desktop(){
+    //         width: 70%;
+    //     }
 
-        @include xtra-large-desktop(){
-            width: 62%;
-        }
+    //     @include xtra-large-desktop(){
+    //         width: 62%;
+    //     }
 
 
     .b2b-assets{
