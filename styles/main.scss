@@ -560,7 +560,9 @@ header{
         .icon{
             flex-direction:column;
             margin-bottom: 2em;
+            border:1px solid black;
             padding: 40px;
+            
 
             @include desktop(){
                 margin-bottom: .5em;
