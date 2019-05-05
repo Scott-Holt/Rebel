@@ -53,7 +53,7 @@ a {
 .white-button:hover {
   background-color: #ffffffc4;
   color: #585858;
-  transition: ease-in-out .7s;
+  transition: ease-in-out .2s;
   -webkit-transition: ease-in-out .2s;
   -moz-transition: ease-in-out .2s;
   -ms-transition: ease-in-out .2s;
@@ -63,12 +63,12 @@ a {
   background-image: linear-gradient(to bottom, #587F77, #A8BAB5);
   border: none; }
   .green-button:hover {
-    background: #A8BAB5;
-    transition: ease-in-out .7s;
-    -webkit-transition: ease-in-out .2s;
-    -moz-transition: ease-in-out .2s;
-    -ms-transition: ease-in-out .2s;
-    -o-transition: ease-in-out .2s; }
+    background-image: linear-gradient(to bottom, #A8BAB5, #A8BAB5);
+    transition: ease-in-out .5s;
+    -webkit-transition: ease-in-out .5s;
+    -moz-transition: ease-in-out .5s;
+    -ms-transition: ease-in-out .5s;
+    -o-transition: ease-in-out .5s; }
 
 .container {
   width: 84%;
@@ -405,7 +405,8 @@ header {
   margin-top: 10px;
   height: 109px;
   justify-content: space-around;
-  text-align: center; }
+  text-align: center;
+  padding: 0px 10px; }
   @media (min-width: 802px) {
     .col-2 {
       width: 48%;
