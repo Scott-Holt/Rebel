@@ -70,7 +70,8 @@ a {
 
 .container {
   width: 84%;
-  min-width: 300px; }
+  min-width: 300px;
+  padding: 1em; }
   @media (min-width: 802px) {
     .container {
       width: 80%; } }
@@ -80,6 +81,9 @@ a {
   @media (min-width: 1400px) {
     .container {
       width: 60%; } }
+  @media (min-width: 1700px) {
+    .container {
+      width: 45%; } }
 
 .row-container {
   margin: 50px 0px; }
@@ -95,7 +99,7 @@ header {
   flex-direction: column; }
   @media (min-width: 768px) {
     header {
-      background-image: url("../websiteassetshomepageonly/Hero.jpg");
+      background-image: url("../websiteassetshomepageonly/Hero-V2.jpg");
       background-position-x: right; } }
   @media (min-width: 1400px) {
     header {
@@ -337,17 +341,15 @@ header {
         margin-top: 2em; } }
 
 .why-rebel {
-  background-image: url("../websiteassetshomepageonly/Hero.jpg");
+  background-image: url("../websiteassetshomepageonly/BG-V2.jpg");
   background-attachment: fixed;
   color: white; }
-  .why-rebel .why-rebel-overlay {
-    background: #2e2e2ebd; }
-    .why-rebel .why-rebel-overlay .container {
-      flex-direction: column; }
-      @media (min-width: 802px) {
-        .why-rebel .why-rebel-overlay .container {
-          flex-direction: row;
-          margin: 125px 0px; } }
+  .why-rebel .container {
+    flex-direction: column; }
+    @media (min-width: 802px) {
+      .why-rebel .container {
+        flex-direction: row;
+        margin: 125px 0px; } }
 
 .col-1 {
   flex-direction: column;
@@ -419,7 +421,8 @@ header {
     flex-direction: column; }
     @media (min-width: 802px) {
       .back2basics .container .b2b-assets .b2b-content {
-        text-align: left; } }
+        text-align: left;
+        align-items: flex-start; } }
     .back2basics .container .b2b-assets .b2b-content h1 {
       color: #585858; }
     .back2basics .container .b2b-assets .b2b-content span {
@@ -427,13 +430,25 @@ header {
       font-family: "Roboto", sans-serif; }
     .back2basics .container .b2b-assets .b2b-content p {
       margin-top: 15px; }
+    .back2basics .container .b2b-assets .b2b-content a {
+      margin: 1em 0em 3em 0em;
+      text-align: center; }
+      @media (min-width: 802px) {
+        .back2basics .container .b2b-assets .b2b-content a {
+          margin: 1em 0em 0em 0em;
+          width: 60%; } }
 
-.fork-lift {
-  width: 100%; }
+.b2b-logo {
+  width: 50%; }
+  @media (min-width: 802px) {
+    .b2b-logo {
+      width: 100%; } }
 
 .commitment {
   background-image: url("../websiteassetshomepageonly/Carousel-1.jpg");
   height: 740px; }
+  .commitment img {
+    width: 17%; }
 
 .form-section {
   background-image: linear-gradient(to bottom, #587F77, #A8BAB5);
@@ -446,19 +461,17 @@ header {
     .form-section {
       background-position-y: top; } }
 
-  @media (min-width: 1400px) {
-    .form-section .container {
-      width: 75%; } }
+  @media (min-width: 802px) {
+    .form-section .container #contact {
+      width: 42%; } }
   .form-section .container .section1 {
     margin: 36px;
     flex-direction: column; }
     @media (min-width: 802px) {
       .form-section .container .section1 {
         font-size: .7em;
-        align-items: flex-start; } }
-    @media (min-width: 1150px) {
-      .form-section .container .section1 {
-        margin: 60px 37px; } }
+        align-items: flex-start;
+        margin: 60px 0px; } }
     .form-section .container .section1 h1 {
       font-size: 1.8em; }
       @media (min-width: 768px) {
@@ -466,17 +479,24 @@ header {
           font-size: 2em; } }
       @media (min-width: 802px) {
         .form-section .container .section1 h1 {
-          font-size: 3em; } }
+          font-size: 3em;
+          width: 100%;
+          /* justify-content: center; */
+          /* align-items: center; */
+          text-align: center; } }
     .form-section .container .section1 span {
       color: white;
       text-align: center;
       margin-bottom: 1.2em; }
+      @media (min-width: 802px) {
+        .form-section .container .section1 span {
+          width: 100%; } }
 
 form {
   font-size: 1.2em; }
   @media (min-width: 802px) {
     form {
-      width: 43%; } }
+      width: 100%; } }
   form input {
     background-color: #fafafa;
     width: 100%;

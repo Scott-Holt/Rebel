@@ -178,7 +178,8 @@ a{
 .container{
     width:84%;
     min-width: 300px;
-    // margin: 18px auto;
+    padding: 1em;
+    // border:1px solid red;
 
     @include desktop(){
         width:80%;
@@ -190,6 +191,10 @@ a{
 
     @include xtra-large-desktop(){
         width:60%;
+    }
+
+    @include large-card(){
+        width:45%;
     }
 }
 
@@ -213,7 +218,7 @@ header{
 
 
     @include ipad{
-    background-image:url("../websiteassetshomepageonly/Hero.jpg");
+    background-image:url("../websiteassetshomepageonly/Hero-V2.jpg");
     background-position-x: right;
     }
 
@@ -625,12 +630,12 @@ header{
 //WHY REBEL/////////////////////////////////////////////
 
 .why-rebel{
-    background-image:url("../websiteassetshomepageonly/Hero.jpg");
+    background-image:url("../websiteassetshomepageonly/BG-V2.jpg");
     background-attachment: fixed;
     color:white;
 
-    .why-rebel-overlay{
-        background:#2e2e2ebd;
+    // .why-rebel-overlay{
+    //     background:#2e2e2ebd;
 
         .container{
             flex-direction:column;
@@ -658,7 +663,7 @@ header{
 
         }
     }
-}
+// }
 
 .col-1{
     // font-size: 1.2em;
@@ -769,7 +774,12 @@ header{
             
                 @include desktop(){
                     text-align: left;
-                }                
+                    align-items: flex-start;
+                }
+                
+                // @include med-desktop(){
+                //     align-items: flex-start;
+                // }
             
             
                 h1{
@@ -787,6 +797,16 @@ header{
                 p{
                     margin-top:15px;
                 }
+
+                a{
+                    margin: 1em 0em 3em 0em;
+                    text-align: center;
+
+                    @include desktop(){
+                        margin: 1em 0em 0em 0em;
+                        width: 60%;
+                    }
+                }
             
             }  
               
@@ -795,8 +815,12 @@ header{
 }
 
 
-.fork-lift{
-    width:100%;
+.b2b-logo{
+    width: 50%;
+
+    @include desktop(){
+        width: 100%;
+    }
 }
 
 
@@ -808,6 +832,10 @@ header{
     background-image:url("../websiteassetshomepageonly/Carousel-1.jpg");
     // color: white;
     height:740px;
+
+    img{
+        width: 17%;
+    }
 
 //     .container{
 //         flex-direction:column;
@@ -901,8 +929,15 @@ header{
 
     .container{
 
-        @include xtra-large-desktop(){
-            width: 75%;
+        // @include xtra-large-desktop(){
+        //     width: 75%;
+        // }
+
+        #contact{
+            @include desktop(){
+                // border: 3px solid white;
+                width: 42%;
+            }
         }
 
         .section1{
@@ -912,11 +947,12 @@ header{
             @include desktop(){
                 font-size: .7em;
                 align-items: flex-start;
+                margin: 60px 0px;
             }
 
-            @include large-desktop(){
-                margin: 60px 37px;
-            }
+            // @include large-desktop(){
+            //     margin: 60px 37px;
+            // }
 
             h1{
                 // text-shadow: 1px 3px 4px black;
@@ -928,6 +964,10 @@ header{
 
                 @include desktop(){
                     font-size: 3em;
+                    width: 100%;
+                    /* justify-content: center; */
+                    /* align-items: center; */
+                    text-align: center;
                 }
             }
 
@@ -935,6 +975,10 @@ header{
                 color:white;
                 text-align: center;
                 margin-bottom:1.2em;
+
+                @include desktop(){
+                    width: 100%;
+                }
             }
         }
     }
@@ -949,7 +993,7 @@ form{
 
 
     @include desktop(){
-        width: 43%;
+        width:  100%;
     }
 
     input{
