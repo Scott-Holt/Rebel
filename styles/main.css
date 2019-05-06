@@ -347,10 +347,11 @@ header {
         font-family: "Montserrat", sans-serif;
         color: #585858;
         font-weight: bolder;
-        font-size: 1.6em; }
+        font-size: 1.6em;
+        text-align: center; }
         @media (min-width: 802px) {
           .icons-container .icons .icon span {
-            font-size: 1.2em; } }
+            font-size: 1.1em; } }
     .icons-container .icons .cross-dock-icon span {
       color: #587F77; }
   .icons-container .services-footer {
