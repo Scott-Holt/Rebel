@@ -839,7 +839,11 @@ header{
 
 
 .b2b-logo{
-    width: 50%;
+    width: 100;
+
+    @include tablet(){
+        width:50%
+    }
 
     @include desktop(){
         width: 100%;
@@ -979,7 +983,7 @@ header{
 
             h1{
                 // text-shadow: 1px 3px 4px black;
-                font-size: 1.8em;
+                font-size: 1.67em;
 
                 @include ipad(){
                     font-size: 2em;
@@ -1074,8 +1078,9 @@ footer{
         }
 
         ul{
-            flex-direction:column;
+            flex-direction: column;
             line-height: 30px;
+            padding: 1em 0em;
 
             @include ipad(){
             width: 50%;
@@ -1107,12 +1112,15 @@ footer{
 
 .footer-logo{
     img{
-        width: 20%;
+        width: 41%;
         margin: 10px 0px;
 
-        @include xtra-large-desktop(){
-            width: 13%;  
+        @include ipad(){
+            width: 20%;
         }
+        // @include xtra-large-desktop(){
+        //     width: 13%;  
+        // }
     }
 }
 
