@@ -450,6 +450,12 @@ header {
       .back2basics .container .b2b-assets .b2b-content {
         text-align: left;
         align-items: flex-start; } }
+    @media (min-width: 1150px) {
+      .back2basics .container .b2b-assets .b2b-content {
+        width: 62%; } }
+    @media (min-width: 1700px) {
+      .back2basics .container .b2b-assets .b2b-content {
+        width: 50%; } }
     .back2basics .container .b2b-assets .b2b-content h1 {
       color: #585858; }
     .back2basics .container .b2b-assets .b2b-content span {
@@ -465,13 +471,14 @@ header {
           margin: 1em 0em 0em 0em;
           width: 60%; } }
 
-.b2b-logo {
-  width: 100; }
-  @media (min-width: 550px) {
-    .b2b-logo {
-      width: 50%; } }
+.column-2 {
+  order: -1;
+  margin-bottom: 2em; }
   @media (min-width: 802px) {
-    .b2b-logo {
+    .column-2 {
+      order: 0; } }
+  @media (min-width: 802px) {
+    .column-2 .b2b-logo {
       width: 100%; } }
 
 .commitment {

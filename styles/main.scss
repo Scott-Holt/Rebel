@@ -17,7 +17,7 @@ $desktop: 802px;
 $med-desktop:920px;
 $large-desktop:1150px;
 $xtra-large-desktop:1400px;
-$large-card:1700px;
+$largest:1700px;
 
 //mixins
 
@@ -56,8 +56,8 @@ $large-card:1700px;
     }
 }
 
-@mixin large-card{
-    @media(min-width:#{$large-card}){
+@mixin largest{
+    @media(min-width:#{$largest}){
         @content
     }
 }
@@ -193,7 +193,7 @@ a{
         width:60%;
     }
 
-    @include large-card(){
+    @include largest(){
         width: 50%;
     }
 }
@@ -567,7 +567,7 @@ header{
             width: 100%;
         }
 
-        @include large-card(){
+        @include largest(){
             justify-content: space-between;
         }
 
@@ -803,6 +803,14 @@ header{
                 // @include med-desktop(){
                 //     align-items: flex-start;
                 // }
+
+                @include large-desktop(){
+                    width: 62%;
+                }
+
+                @include largest(){
+                    width: 50%;
+                }
             
             
                 h1{
@@ -838,15 +846,23 @@ header{
 }
 
 
-.b2b-logo{
-    width: 100;
-
-    @include tablet(){
-        width:50%
-    }
+.column-2{
+    order: -1;
+    margin-bottom: 2em;
 
     @include desktop(){
-        width: 100%;
+        order: 0;
+    }
+
+    .b2b-logo{  
+
+        // @include tablet(){
+        //     width:50%
+        // }
+
+        @include desktop(){
+            width: 100%;
+        }
     }
 }
 
