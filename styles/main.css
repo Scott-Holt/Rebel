@@ -13,7 +13,8 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  max-width: 2500px; }
+  max-width: 2100px;
+  width: 100%; }
 
 img {
   width: 100%; }
@@ -268,6 +269,10 @@ header {
   @media (min-width: 1150px) {
     .triangle-img {
       margin-top: -85px; } }
+  @media (min-width: 1700px) {
+    .triangle-img {
+      height: 115px;
+      margin-top: -89px; } }
 
 @media (min-width: 550px) {
   .services {

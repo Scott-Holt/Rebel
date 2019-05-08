@@ -16,11 +16,7 @@ function closeNav() {
 }
 
 
-
-
-
 hamIcon.addEventListener('click', openNav);
 closeIcon.addEventListener('click', closeNav);
 listItem.forEach(item => item.addEventListener('click', closeNav));
-
 
