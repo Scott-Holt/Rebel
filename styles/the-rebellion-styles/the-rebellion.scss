@@ -4,21 +4,173 @@ header{
     background-image:url("../../websiteassetshomepageonly/the-rebellion-images/BG.jpg");
 }
 
-//////////MAIN//////////////////////////////////////////////////////@at-root
 
-main{
-    .container{
-        flex-direction:column;
-    }
+//////////TRIANGLE IMAGE///////////////////////////////////////////////////////////
 
-    .bio-top{
-        flex-direction:column;
-    }
+.triangle-img{
+    background-image: url("../../websiteassetshomepageonly/Tri-Break.png");
 }
 
 
 
 
+
+//////////WHO WE ARE///////////////////////////////////////////////////////////
+
+main{
+    flex-direction: column;
+
+    // @include large-desktop(){
+    //     flex-direction: column;
+    // }
+
+    .container{
+        flex-direction:column;
+    }
+
+    #our-services{
+        margin-top:1em;
+
+        @include large-desktop(){
+            margin-bottom: 4em;
+        }
+
+        span{
+
+            @include large-desktop(){
+            width: 80%;
+            }
+        }
+    }
+
+
+    .bio-section{
+        ///all of this is media querires to adjust font size as screen gets bigger
+        p{
+
+            @include large-desktop(){
+                font-size: 7.8px;
+            }
+
+            @include text-bp1(){
+                font-size: 8.9px;
+            }
+
+            @include xtra-large-desktop(){
+                font-size: 8.5px;
+            }
+
+            @include text-bp2{
+                font-size: 9.9px;
+            }
+
+            @include largest(){
+                font-size: 8.5px;
+            }
+
+            @media(min-width:1836px){
+                font-size: 9.5px;
+            }   
+
+            @media(min-width:1945px){
+                font-size: 10px;
+            }
+
+            @media(min-width:2000){
+                font-size: 10px;
+            } 
+        }
+
+
+        .bio-top{
+            flex-direction:column;
+
+            @include large-desktop(){
+                flex-direction: row;
+                margin-bottom: 1em;
+                margin-top: 3em;
+                align-items:flex-start;
+            }
+
+            
+
+            .kare-img{
+
+                @include large-desktop(){
+                order: 1;
+
+                padding-left: 2em;
+                }
+            }
+
+            .kare-top-content{
+                @include large-desktop(){
+
+                    h2{
+                        margin-top: 2em;
+                    }
+                }
+            }
+
+            .top-content{
+                margin-bottom: 3em;
+
+                @include desktop(){
+                    width: 100%;
+                    margin-top: 40px;
+                    margin-bottom:0px;
+                }
+
+                h2{
+                    color:$dark-gray;
+                }
+
+                span{
+                    color:$dark-green;
+                }
+
+            }
+
+            img{
+                margin-top: 1.5em;
+
+                @include desktop(){
+                    margin-top:0px;
+                    margin-right: 2em;
+                }
+
+            }
+
+            p{
+                // font-size: .4em;
+                margin-top: 1em;
+
+            }
+        }
+
+        .bio-bottom{
+            display:none;
+
+            @include desktop(){
+                display:block;
+                margin-bottom: 8em;
+            }
+
+        }
+    }
+}
+
+
+.karestin{
+    @include large-desktop(){
+        margin-top: 69px;
+    }
+}
+
+
+.kare{
+    background-color: #ECECEC;
+}
 
 
 

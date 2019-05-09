@@ -157,11 +157,10 @@ header {
 #mobile-nav {
   width: 100%;
   background: #587f77ba;
-  position: absolute;
   left: -800px;
   z-index: 20;
   height: 600px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   transition: ease .5s;
   -webkit-transition: ease .5s;
@@ -417,9 +416,10 @@ header {
         line-height: 19px; } }
     @media (min-width: 768px) {
       .col-1 p {
-        width: 70%; } }
+        line-height: 27px; } }
     @media (min-width: 802px) {
       .col-1 p {
+        line-height: 22px;
         width: 100%; } }
 
 .col-2 {
@@ -616,9 +616,91 @@ footer {
 header {
   background-image: url("../../websiteassetshomepageonly/the-rebellion-images/BG.jpg"); }
 
-main .container {
+.triangle-img {
+  background-image: url("../../websiteassetshomepageonly/Tri-Break.png"); }
+
+main {
   flex-direction: column; }
-main .bio-top {
-  flex-direction: column; }
+  main .container {
+    flex-direction: column; }
+  main #our-services {
+    margin-top: 1em; }
+    @media (min-width: 1150px) {
+      main #our-services {
+        margin-bottom: 4em; } }
+    @media (min-width: 1150px) {
+      main #our-services span {
+        width: 80%; } }
+  @media (min-width: 1150px) {
+    main .bio-section p {
+      font-size: 7.8px; } }
+  @media (min-width: 1290px) {
+    main .bio-section p {
+      font-size: 8.9px; } }
+  @media (min-width: 1400px) {
+    main .bio-section p {
+      font-size: 8.5px; } }
+  @media (min-width: 1560px) {
+    main .bio-section p {
+      font-size: 9.9px; } }
+  @media (min-width: 1700px) {
+    main .bio-section p {
+      font-size: 8.5px; } }
+  @media (min-width: 1836px) {
+    main .bio-section p {
+      font-size: 9.5px; } }
+  @media (min-width: 1945px) {
+    main .bio-section p {
+      font-size: 10px; } }
+  @media (min-width: 2000) {
+    main .bio-section p {
+      font-size: 10px; } }
+  main .bio-section .bio-top {
+    flex-direction: column; }
+    @media (min-width: 1150px) {
+      main .bio-section .bio-top {
+        flex-direction: row;
+        margin-bottom: 1em;
+        margin-top: 3em;
+        align-items: flex-start; } }
+    @media (min-width: 1150px) {
+      main .bio-section .bio-top .kare-img {
+        order: 1;
+        padding-left: 2em; } }
+    @media (min-width: 1150px) {
+      main .bio-section .bio-top .kare-top-content h2 {
+        margin-top: 2em; } }
+    main .bio-section .bio-top .top-content {
+      margin-bottom: 3em; }
+      @media (min-width: 802px) {
+        main .bio-section .bio-top .top-content {
+          width: 100%;
+          margin-top: 40px;
+          margin-bottom: 0px; } }
+      main .bio-section .bio-top .top-content h2 {
+        color: #585858; }
+      main .bio-section .bio-top .top-content span {
+        color: #587F77; }
+    main .bio-section .bio-top img {
+      margin-top: 1.5em; }
+      @media (min-width: 802px) {
+        main .bio-section .bio-top img {
+          margin-top: 0px;
+          margin-right: 2em; } }
+    main .bio-section .bio-top p {
+      margin-top: 1em; }
+  main .bio-section .bio-bottom {
+    display: none; }
+    @media (min-width: 802px) {
+      main .bio-section .bio-bottom {
+        display: block;
+        margin-bottom: 8em; } }
+
+@media (min-width: 1150px) {
+  .karestin {
+    margin-top: 69px; } }
+
+.kare {
+  background-color: #ECECEC; }
 
 /*# sourceMappingURL=the-rebellion.css.map */

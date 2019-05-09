@@ -16,8 +16,11 @@ $ipad: 768px;
 $desktop: 802px;
 $med-desktop:920px;
 $large-desktop:1150px;
+$text-bp1:1290px;
 $xtra-large-desktop:1400px;
+$text-bp2:1560px;
 $largest:1700px;
+
 
 
 //mixins
@@ -53,19 +56,31 @@ $largest:1700px;
 
 @mixin large-desktop{
     @media(min-width:#{$large-desktop}){
-        @content
+        @content;
+    }
+}
+
+@mixin text-bp1{
+    @media(min-width:#{$text-bp1}){
+        @content;
     }
 }
 
 @mixin xtra-large-desktop{
     @media(min-width:#{$xtra-large-desktop}){
-        @content
+        @content;
+    }
+}
+
+@mixin text-bp2{
+    @media(min-width:#{$text-bp2}){
+        @content;
     }
 }
 
 @mixin largest{
     @media(min-width:#{$largest}){
-        @content
+        @content;
     }
 }
 
@@ -338,17 +353,18 @@ header{
 #mobile-nav{
     width: 100%;
     background: #587f77ba;
-    position: absolute;
     left: -800px;
     z-index: 20;
     height: 600px;
-    position: absolute;
+    position: fixed;
+    // position: absolute;
     top: 0px;
     transition: ease .5s;
     -webkit-transition: ease .5s;
     -moz-transition: ease .5s;
     -ms-transition: ease .5s;
-    -o-transition: ease .5s;   
+    -o-transition: ease .5s;  
+ 
 
     @include desktop(){
         display:none;
@@ -742,10 +758,11 @@ header{
         }
 
         @include ipad(){
-            width: 70%;
+            line-height: 27px;
         }
 
         @include desktop(){
+            line-height: 22px;
             width: 100%;
         }
     }
