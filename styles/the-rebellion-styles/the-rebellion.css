@@ -661,13 +661,6 @@ main {
     main .bio-section .bio-top {
       height: 478px; } }
 
-    @media (min-width: 1150px) {
-      main .bio-section .bio-top .kare-img {
-        order: 1;
-        padding-left: 2em; } }
-    @media (min-width: 1150px) {
-      main .bio-section .bio-top .kare-top-content h2 {
-        margin-top: 2em; } }
     @media (min-width: 802px) {
       main .bio-section .bio-top .top-content {
         width: 100%; } }
@@ -698,13 +691,25 @@ main {
       main .bio-section .bio-bottom {
         display: block;
         margin-bottom: 8em; } }
+    @media (min-width: 1150px) {
+      main .bio-section .bio-bottom {
+        margin-bottom: 16em; } }
 
-@media (min-width: 1150px) {
-  .karestin {
-    margin-top: 69px; } }
-
-.kare {
+.kare-container {
+  width: 100%;
   background-color: #ECECEC; }
+  @media (min-width: 1150px) {
+    .kare-container .container .bio-top {
+      margin-top: 5em; } }
+  @media (min-width: 1150px) {
+    .kare-container .container .bio-top img {
+      order: 1;
+      padding-left: 2em; } }
+  @media (min-width: 1150px) {
+    .kare-container .container .bio-top .top-content h2 {
+      margin-top: 2em; }
+    .kare-container .container .bio-top .top-content p {
+      margin-top: 1em; } }
 
 .why {
   background-image: url("../../websiteassetshomepageonly/the-rebellion-images/BG-1Row.jpg");
