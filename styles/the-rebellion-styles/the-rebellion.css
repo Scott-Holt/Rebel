@@ -703,4 +703,24 @@ main {
 .kare {
   background-color: #ECECEC; }
 
+.why {
+  background-image: url("../../websiteassetshomepageonly/the-rebellion-images/BG-1Row.jpg");
+  color: white;
+  background-attachment: fixed; }
+  .why .why-content {
+    padding: 4em 0em;
+    text-align: center; }
+    @media (min-width: 1150px) {
+      .why .why-content {
+        padding: 8em 0em; } }
+    .why .why-content h1 {
+      font-size: 2.4em; }
+    .why .why-content span {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.4em; }
+
+@media (min-width: 802px) {
+  .form-section {
+    background-image: url("../../websiteassetshomepageonly/Form_BG.jpg"); } }
+
 /*# sourceMappingURL=the-rebellion.css.map */

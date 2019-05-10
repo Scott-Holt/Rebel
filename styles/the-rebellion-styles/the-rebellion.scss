@@ -174,10 +174,44 @@ main{
 
 
 
+//////WHY WE DO IT/////////////////////////////////////////////////////////////@include
 
 
 
+.why{
+    background-image:url("../../websiteassetshomepageonly/the-rebellion-images/BG-1Row.jpg");
+    color:white;
+    background-attachment: fixed;
+    
+    .why-content{
+        padding: 4em 0em;
+        text-align: center;
 
+        @include large-desktop(){
+            padding: 8em 0em;
+        }
+
+        h1{
+            font-size: 2.4em;
+        }
+
+        span{
+            font-family: $secondary;
+            font-size: 1.4em;
+        }
+    }
+}
+
+
+///////////////////FORM////////////////////////////////////////////////////////@include
+
+
+.form-section{
+
+    @include desktop(){
+        background-image:url("../../websiteassetshomepageonly/Form_BG.jpg");
+    }
+}
 
 
 
