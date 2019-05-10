@@ -643,13 +643,13 @@ main {
         width: 80%; } }
   @media (min-width: 1150px) {
     main .bio-section {
-      font-size: .74em; } }
+      font-size: .67em; } }
   @media (min-width: 1400px) {
     main .bio-section {
-      font-size: .75em; } }
+      font-size: .74em; } }
   @media (min-width: 1700px) {
     main .bio-section {
-      font-size: .87em; } }
+      font-size: .85em; } }
   main .bio-section .bio-top {
     flex-direction: column; }
     @media (min-width: 1150px) {
@@ -683,12 +683,13 @@ main {
       height: 76%; } }
 
     main .bio-section .bio-top .top-content h2 {
-      color: #585858; }
+      color: #585858;
+      font-size: 2em; }
     main .bio-section .bio-top .top-content span {
-      color: #587F77; }
-    @media (min-width: 1700px) {
-      main .bio-section .bio-top .top-content p {
-        margin-top: 1em; } }
+      color: #587F77;
+      font-size: 1.5em; }
+    main .bio-section .bio-top .top-content p {
+      margin-top: .5em; }
     main .bio-section .bio-top img {
       margin-right: 2em; }
   main .bio-section .bio-bottom {

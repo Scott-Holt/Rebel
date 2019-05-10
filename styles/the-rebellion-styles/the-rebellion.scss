@@ -62,15 +62,15 @@ main{
     .bio-section{
 
         @include large-desktop(){
-            font-size: .74em;
+            font-size: .67em;
         }
 
         @include xtra-large-desktop(){
-            font-size: .75em;
+            font-size: .74em;
         }
 
         @include largest(){
-            font-size: .87em;
+            font-size: .85em;
         }
   
 
@@ -131,18 +131,17 @@ main{
 
                 h2{
                     color:$dark-gray;
+                    font-size: 2em;
                 }
 
                 span{
                     color:$dark-green;
+                    font-size: 1.5em;
                 }
 
                 p{
-                    @include largest(){
-                        margin-top: 1em;
-                    }
+                    margin-top: .5em;
                 }
-
             }
 
             img{
