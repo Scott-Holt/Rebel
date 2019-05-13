@@ -15,7 +15,7 @@ body {
   max-width: 2100px;
   width: 100%; }
 
-h1, span, a {
+h1, h2, span, a, button {
   text-transform: uppercase; }
 
 img {

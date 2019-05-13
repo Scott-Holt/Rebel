@@ -25,6 +25,24 @@
 
 header{
     background-image:url("../../websiteassetshomepageonly/the-rebellion-images/BG.jpg");
+
+    .overlay-gradient{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0) 100%);
+        width: 100%;
+        flex-direction:column;
+    }
+
+    .hero{
+        @include desktop(){
+            width:100%;
+        }
+    }
+
+    .call-to-action{
+        @include largest(){
+            width: 57%;
+        }
+    }
 }
 
 
@@ -184,10 +202,17 @@ main{
     background-image:url("../../websiteassetshomepageonly/the-rebellion-images/BG-1Row.jpg");
     color:white;
     background-attachment: fixed;
+
+    .container{
+        @include xtra-large-desktop(){
+            width: 1000px;
+        }
+    }
     
     .why-content{
         padding: 4em 0em;
         text-align: center;
+        flex-direction: column;
 
         @include large-desktop(){
             padding: 8em 0em;

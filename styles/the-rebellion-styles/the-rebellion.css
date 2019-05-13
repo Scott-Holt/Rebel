@@ -15,7 +15,7 @@ body {
   max-width: 2100px;
   width: 100%; }
 
-h1, span, a {
+h1, h2, span, a, button {
   text-transform: uppercase; }
 
 img {
@@ -641,6 +641,16 @@ footer {
 
 header {
   background-image: url("../../websiteassetshomepageonly/the-rebellion-images/BG.jpg"); }
+  header .overlay-gradient {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    flex-direction: column; }
+  @media (min-width: 802px) {
+    header .hero {
+      width: 100%; } }
+  @media (min-width: 1700px) {
+    header .call-to-action {
+      width: 57%; } }
 
 .triangle-img {
   background-image: url("../../websiteassetshomepageonly/Tri-Break.png"); }
@@ -724,9 +734,13 @@ main {
   background-image: url("../../websiteassetshomepageonly/the-rebellion-images/BG-1Row.jpg");
   color: white;
   background-attachment: fixed; }
+  @media (min-width: 1400px) {
+    .why .container {
+      width: 1000px; } }
   .why .why-content {
     padding: 4em 0em;
-    text-align: center; }
+    text-align: center;
+    flex-direction: column; }
     @media (min-width: 1150px) {
       .why .why-content {
         padding: 8em 0em; } }
