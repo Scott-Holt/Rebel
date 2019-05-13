@@ -1164,21 +1164,38 @@ footer{
         }
     }
 
-}
+    .container{
 
-.footer-logo{
-    img{
-        width: 41%;
-        margin: 10px 0px;
+        .footer-logo{
+            flex-direction:column;
+            justify-content: space-around;
 
-        @include ipad(){
-            width: 20%;
+
+            @include desktop(){
+                width: 50%;
+                flex-direction:row;
+            }
+        
+            img{
+                width: 41%;
+                margin: 10px 0px;
+        
+                @include tablet(){
+                    width: 35%;
+                }
+
+                @include desktop(){
+                    width:35%;
+                }
+
+            }
         }
-        // @include xtra-large-desktop(){
-        //     width: 13%;  
-        // }
+
     }
+
 }
+
+
 
 
 
