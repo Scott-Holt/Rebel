@@ -608,13 +608,22 @@ footer {
           width: 37%; } }
       footer nav ul a:hover {
         color: #A8BAB5; }
-
-.footer-logo img {
-  width: 41%;
-  margin: 10px 0px; }
-  @media (min-width: 768px) {
-    .footer-logo img {
-      width: 20%; } }
+  footer .container .footer-logo {
+    flex-direction: column;
+    justify-content: space-around; }
+    @media (min-width: 802px) {
+      footer .container .footer-logo {
+        width: 50%;
+        flex-direction: row; } }
+    footer .container .footer-logo img {
+      width: 41%;
+      margin: 10px 0px; }
+      @media (min-width: 550px) {
+        footer .container .footer-logo img {
+          width: 35%; } }
+      @media (min-width: 802px) {
+        footer .container .footer-logo img {
+          width: 35%; } }
 
 #overlay {
   display: none;
