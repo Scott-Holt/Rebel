@@ -74,6 +74,10 @@ main{
             @include large-desktop(){
             width: 80%;
             }
+
+            @include xtra-large-desktop(){
+                width: 60%;
+            }
         }
     }
 
@@ -236,7 +240,11 @@ main{
 .form-section{
 
     @include desktop(){
-        background-image:url("../../websiteassetshomepageonly/Form_BG.jpg");
+        background-image:url("../../websiteassetshomepageonly/the-rebellion-images/50-50.jpg");
+
+        @include xtra-large-desktop(){
+            background-position-y: bottom;
+        }
     }
 }
 

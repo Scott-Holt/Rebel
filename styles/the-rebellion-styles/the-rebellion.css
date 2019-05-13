@@ -674,6 +674,9 @@ main {
     @media (min-width: 1150px) {
       main #our-services span {
         width: 80%; } }
+    @media (min-width: 1400px) {
+      main #our-services span {
+        width: 60%; } }
   @media (min-width: 1150px) {
     main .bio-section {
       font-size: .8em; } }
@@ -761,6 +764,9 @@ main {
 
 @media (min-width: 802px) {
   .form-section {
-    background-image: url("../../websiteassetshomepageonly/Form_BG.jpg"); } }
+    background-image: url("../../websiteassetshomepageonly/the-rebellion-images/50-50.jpg"); } }
+  @media (min-width: 802px) and (min-width: 1400px) {
+    .form-section {
+      background-position-y: bottom; } }
 
 /*# sourceMappingURL=the-rebellion.css.map */
