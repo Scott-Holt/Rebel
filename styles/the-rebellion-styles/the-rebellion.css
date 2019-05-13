@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   letter-spacing: 1px; }
@@ -16,6 +15,9 @@ body {
   max-width: 2100px;
   width: 100%; }
 
+h1, span, a {
+  text-transform: uppercase; }
+
 img {
   width: 100%; }
 
@@ -28,6 +30,9 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+p {
+  font-family: "Roboto", sans-serif; }
 
 a {
   text-decoration: none;
@@ -445,13 +450,15 @@ header {
     margin: 125px 0px; } }
 .back2basics .container .b2b-assets {
   flex-direction: column; }
-  @media (min-width: 802px) {
+  @media (min-width: 920px) {
     .back2basics .container .b2b-assets {
-      flex-direction: row; } }
+      flex-direction: row;
+      text-align: left;
+      align-items: flex-start; } }
   .back2basics .container .b2b-assets .b2b-content {
     text-align: center;
     flex-direction: column; }
-    @media (min-width: 802px) {
+    @media (min-width: 920px) {
       .back2basics .container .b2b-assets .b2b-content {
         text-align: left;
         align-items: flex-start; } }
@@ -466,6 +473,9 @@ header {
     .back2basics .container .b2b-assets .b2b-content span {
       color: #587F77;
       font-family: "Roboto", sans-serif; }
+      @media (min-width: 1150px) {
+        .back2basics .container .b2b-assets .b2b-content span {
+          font-size: 1em; } }
     .back2basics .container .b2b-assets .b2b-content p {
       margin-top: 15px; }
     .back2basics .container .b2b-assets .b2b-content a {
@@ -475,11 +485,14 @@ header {
         .back2basics .container .b2b-assets .b2b-content a {
           margin: 1em 0em 0em 0em;
           width: 60%; } }
+      @media (min-width: 920px) {
+        .back2basics .container .b2b-assets .b2b-content a {
+          width: 80%; } }
 
 .column-2 {
   order: -1;
   margin-bottom: 2em; }
-  @media (min-width: 802px) {
+  @media (min-width: 920px) {
     .column-2 {
       order: 0; } }
   @media (min-width: 802px) {
@@ -614,7 +627,8 @@ footer {
   background-color: #090909db; }
 
 .container {
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 3em; }
   @media (min-width: 1150px) {
     .container {
       width: 1020px; } }
@@ -643,13 +657,13 @@ main {
         width: 80%; } }
   @media (min-width: 1150px) {
     main .bio-section {
-      font-size: .67em; } }
+      font-size: .8em; } }
   @media (min-width: 1400px) {
     main .bio-section {
-      font-size: .74em; } }
+      font-size: .89em; } }
   @media (min-width: 1700px) {
     main .bio-section {
-      font-size: .85em; } }
+      font-size: .97em; } }
   main .bio-section .bio-top {
     flex-direction: column; }
     @media (min-width: 1150px) {
@@ -691,9 +705,6 @@ main {
       main .bio-section .bio-bottom {
         display: block;
         margin-bottom: 8em; } }
-    @media (min-width: 1150px) {
-      main .bio-section .bio-bottom {
-        margin-bottom: 16em; } }
 
 .kare-container {
   width: 100%;
@@ -707,9 +718,7 @@ main {
       padding-left: 2em; } }
   @media (min-width: 1150px) {
     .kare-container .container .bio-top .top-content h2 {
-      margin-top: 2em; }
-    .kare-container .container .bio-top .top-content p {
-      margin-top: 1em; } }
+      margin-top: 2em; } }
 
 .why {
   background-image: url("../../websiteassetshomepageonly/the-rebellion-images/BG-1Row.jpg");

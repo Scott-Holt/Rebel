@@ -5,6 +5,7 @@
 
 .container{
     flex-direction:column;
+    margin-bottom: 3em;
 
     @include large-desktop(){
         // width: 85%;
@@ -62,15 +63,15 @@ main{
     .bio-section{
 
         @include large-desktop(){
-            font-size: .67em;
+            font-size: .8em;
         }
 
         @include xtra-large-desktop(){
-            font-size: .74em;
+            font-size: .89em;
         }
 
         @include largest(){
-            font-size: .85em;
+            font-size: .97em;
         }
   
 
@@ -139,10 +140,6 @@ main{
                 display:block;
                 margin-bottom: 8em;
             }
-
-            @include large-desktop(){
-                margin-bottom: 16em;
-            }
         }
     }
 }
@@ -171,10 +168,6 @@ main{
                 @include large-desktop(){
                     h2{
                         margin-top: 2em;
-                    }
-
-                    p{
-                        margin-top:1em;
                     }
                 }
             }

@@ -93,7 +93,6 @@ $largest:1700px;
     margin:0;
     padding:0;
     box-sizing:border-box;
-    text-transform: uppercase;
     font-family:$main;
     overflow-x: hidden;
     letter-spacing: 1px;
@@ -110,7 +109,9 @@ body{
     width: 100%;
 }
 
-
+h1, span, a{
+    text-transform:uppercase;
+}
 
 
 img{
@@ -129,6 +130,11 @@ img{
     background-position: center;
     background-size:cover;
 }
+
+p{
+    font-family:$secondary;
+}
+
 
 
 a{
@@ -811,15 +817,17 @@ header{
     .b2b-assets{
         flex-direction:column;
 
-        @include desktop(){
+        @include med-desktop(){
             flex-direction:row;
+            text-align: left;
+            align-items: flex-start;
         }
             
             .b2b-content{
                 text-align: center;
                 flex-direction:column;
             
-                @include desktop(){
+                @include med-desktop(){
                     text-align: left;
                     align-items: flex-start;
                 }
@@ -846,6 +854,10 @@ header{
                     color:$dark-green;
                     font-family:$secondary;
                     // text-shadow: none;
+
+                    @include large-desktop(){
+                        font-size: 1em;
+                    }
                     
                 }
                 
@@ -861,6 +873,10 @@ header{
                         margin: 1em 0em 0em 0em;
                         width: 60%;
                     }
+
+                    @include med-desktop(){
+                        width:80%;
+                    }
                 }
             
             }  
@@ -874,7 +890,7 @@ header{
     order: -1;
     margin-bottom: 2em;
 
-    @include desktop(){
+    @include med-desktop(){
         order: 0;
     }
 
