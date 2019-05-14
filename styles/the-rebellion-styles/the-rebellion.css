@@ -637,9 +637,6 @@ footer {
   z-index: 10;
   background-color: #090909db; }
 
-body {
-  background-color: Red; }
-
 .container {
   flex-direction: column;
   margin-bottom: 3em; }
@@ -669,7 +666,7 @@ header {
     overflow-y: hidden; }
 
 .triangle-img {
-  background-image: url("../../images/Tri-Break.png"); }
+  background-image: url("../../images/index-images/Tri-Break.png"); }
 
 main {
   flex-direction: column; }

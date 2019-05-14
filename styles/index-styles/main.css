@@ -14,8 +14,7 @@ html {
 body {
   max-width: 2100px;
   width: 100%;
-  overflow-y: scroll;
-  background-color: green; }
+  overflow-y: scroll; }
 
 h1, h2, span, a, button {
   text-transform: uppercase; }
