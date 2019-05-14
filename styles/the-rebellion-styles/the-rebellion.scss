@@ -24,7 +24,7 @@
 /////////header////////////////////////////////////////////////////////////
 
 header{
-    background-image:url("../../websiteassetshomepageonly/the-rebellion-images/BG.jpg");
+    background-image:url("../../images/the-rebellion-images/BG.jpg");
 
     .overlay-gradient{
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0) 100%);
@@ -53,7 +53,7 @@ header{
 //////////TRIANGLE IMAGE///////////////////////////////////////////////////////////
 
 .triangle-img{
-    background-image: url("../../websiteassetshomepageonly/Tri-Break.png");
+    background-image: url("../../images/Tri-Break.png");
 }
 
 
@@ -212,7 +212,7 @@ main{
 
 
 .why{
-    background-image:url("../../websiteassetshomepageonly/the-rebellion-images/BG-1Row.jpg");
+    background-image:url("../../images/the-rebellion-images/BG-1Row.jpg");
     color:white;
     background-attachment: fixed;
 
@@ -249,7 +249,7 @@ main{
 .form-section{
 
     @include desktop(){
-        background-image:url("../../websiteassetshomepageonly/the-rebellion-images/50-50.jpg");
+        background-image:url("../../images/the-rebellion-images/50-50.jpg");
 
         @include xtra-large-desktop(){
             background-position-y: bottom;

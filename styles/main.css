@@ -13,7 +13,8 @@ html {
 
 body {
   max-width: 2100px;
-  width: 100%; }
+  width: 100%;
+  overflow-y: scroll; }
 
 h1, h2, span, a, button {
   text-transform: uppercase; }
@@ -98,14 +99,14 @@ a {
       margin: 95px 0px; } }
 
 header {
-  background-image: url("../websiteassetshomepageonly/Mobile-Hero.jpg");
+  background-image: url("../images/index-images/Mobile-Hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   flex-direction: column; }
   @media (min-width: 768px) {
     header {
-      background-image: url("../websiteassetshomepageonly/Hero-V2.jpg");
+      background-image: url("../images/index-images/Hero-V2.jpg");
       background-position-x: right; } }
   @media (min-width: 1400px) {
     header {
@@ -265,7 +266,7 @@ header {
       display: block;
       width: 100%;
       height: 100px;
-      background-image: url("../websiteassetshomepageonly/Tri-Break.png");
+      background-image: url("../images/index-images/Tri-Break.png");
       margin-top: -34px; } }
   @media (min-width: 802px) {
     .triangle-img {
@@ -377,7 +378,7 @@ header {
         margin-top: 2em; } }
 
 .why-rebel {
-  background-image: url("../websiteassetshomepageonly/BG-V2.jpg");
+  background-image: url("../images/index-images/BG-V2.jpg");
   background-attachment: fixed;
   color: white; }
   .why-rebel .container {
@@ -500,7 +501,7 @@ header {
       width: 100%; } }
 
 .commitment {
-  background-image: url("../websiteassetshomepageonly/Carousel-1.jpg");
+  background-image: url("../images/index-images/Carousel-1.jpg");
   height: 740px; }
   .commitment img {
     width: 17%; }
@@ -511,7 +512,7 @@ header {
   color: white; }
   @media (min-width: 802px) {
     .form-section {
-      background-image: url("../websiteassetshomepageonly/Form_BG.jpg"); } }
+      background-image: url("../images/index-images/Form_BG.jpg"); } }
   @media (min-width: 802px) and (min-width: 1400px) {
     .form-section {
       background-position-y: top; } }

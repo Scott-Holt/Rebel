@@ -233,7 +233,7 @@ a{
 //HEADER/////////////////////////////////////////////////////////////
 
 header{
-    background-image:url("../websiteassetshomepageonly/Mobile-Hero.jpg");
+    background-image:url("../images/index-images/Mobile-Hero.jpg");
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ header{
 
 
     @include ipad{
-    background-image:url("../websiteassetshomepageonly/Hero-V2.jpg");
+    background-image:url("../images/index-images/Hero-V2.jpg");
     background-position-x: right;
     }
 
@@ -521,7 +521,7 @@ header{
         display:block;
         width:100%;
         height:100px;
-        background-image: url("../websiteassetshomepageonly/Tri-Break.png");
+        background-image: url("../images/index-images/Tri-Break.png");
         margin-top: -34px;
     }
 
@@ -683,7 +683,7 @@ header{
 //WHY REBEL/////////////////////////////////////////////
 
 .why-rebel{
-    background-image:url("../websiteassetshomepageonly/BG-V2.jpg");
+    background-image:url("../images/index-images/BG-V2.jpg");
     background-attachment: fixed;
     color:white;
 
@@ -913,7 +913,7 @@ header{
 
     
 .commitment{
-    background-image:url("../websiteassetshomepageonly/Carousel-1.jpg");
+    background-image:url("../images/index-images/Carousel-1.jpg");
     // color: white;
     height:740px;
 
@@ -1003,7 +1003,7 @@ header{
     color:white;
 
     @include desktop(){
-        background-image: url("../websiteassetshomepageonly/Form_BG.jpg");
+        background-image: url("../images/index-images/Form_BG.jpg");
 
         @include xtra-large-desktop(){
             background-position-y: top;
