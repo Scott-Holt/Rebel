@@ -99,14 +99,14 @@ a {
       margin: 95px 0px; } }
 
 header {
-  background-image: url("../websiteassetshomepageonly/Mobile-Hero.jpg");
+  background-image: url("../images/index-images/Mobile-Hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   flex-direction: column; }
   @media (min-width: 768px) {
     header {
-      background-image: url("../websiteassetshomepageonly/Hero-V2.jpg");
+      background-image: url("../images/index-images/Hero-V2.jpg");
       background-position-x: right; } }
   @media (min-width: 1400px) {
     header {
@@ -266,7 +266,7 @@ header {
       display: block;
       width: 100%;
       height: 100px;
-      background-image: url("../websiteassetshomepageonly/Tri-Break.png");
+      background-image: url("../images/index-images/Tri-Break.png");
       margin-top: -34px; } }
   @media (min-width: 802px) {
     .triangle-img {
@@ -378,7 +378,7 @@ header {
         margin-top: 2em; } }
 
 .why-rebel {
-  background-image: url("../websiteassetshomepageonly/BG-V2.jpg");
+  background-image: url("../images/index-images/BG-V2.jpg");
   background-attachment: fixed;
   color: white; }
   .why-rebel .container {
@@ -501,7 +501,7 @@ header {
       width: 100%; } }
 
 .commitment {
-  background-image: url("../websiteassetshomepageonly/Carousel-1.jpg");
+  background-image: url("../images/index-images/Carousel-1.jpg");
   height: 740px; }
   .commitment img {
     width: 17%; }
@@ -512,7 +512,7 @@ header {
   color: white; }
   @media (min-width: 802px) {
     .form-section {
-      background-image: url("../websiteassetshomepageonly/Form_BG.jpg"); } }
+      background-image: url("../images/index-images/Form_BG.jpg"); } }
   @media (min-width: 802px) and (min-width: 1400px) {
     .form-section {
       background-position-y: top; } }
@@ -650,7 +650,7 @@ footer {
       width: 1260px; } }
 
 header {
-  background-image: url("../../websiteassetshomepageonly/the-rebellion-images/BG.jpg"); }
+  background-image: url("../../images/the-rebellion-images/BG.jpg"); }
   header .overlay-gradient {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0) 100%);
     width: 100%;
@@ -665,7 +665,7 @@ header {
     overflow-y: hidden; }
 
 .triangle-img {
-  background-image: url("../../websiteassetshomepageonly/Tri-Break.png"); }
+  background-image: url("../../images/Tri-Break.png"); }
 
 main {
   flex-direction: column; }
@@ -750,7 +750,7 @@ main {
       margin-top: 2em; } }
 
 .why {
-  background-image: url("../../websiteassetshomepageonly/the-rebellion-images/BG-1Row.jpg");
+  background-image: url("../../images/the-rebellion-images/BG-1Row.jpg");
   color: white;
   background-attachment: fixed; }
   @media (min-width: 1400px) {
@@ -771,7 +771,7 @@ main {
 
 @media (min-width: 802px) {
   .form-section {
-    background-image: url("../../websiteassetshomepageonly/the-rebellion-images/50-50.jpg"); } }
+    background-image: url("../../images/the-rebellion-images/50-50.jpg"); } }
   @media (min-width: 802px) and (min-width: 1400px) {
     .form-section {
       background-position-y: bottom; } }
