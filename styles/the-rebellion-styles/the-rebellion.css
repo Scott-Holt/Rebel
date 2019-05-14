@@ -661,6 +661,8 @@ header {
   @media (min-width: 1700px) {
     header .call-to-action {
       width: 57%; } }
+  header .icon-positioning {
+    overflow-y: hidden; }
 
 .triangle-img {
   background-image: url("../../websiteassetshomepageonly/Tri-Break.png"); }
@@ -678,6 +680,8 @@ main {
     @media (min-width: 1400px) {
       main #our-services span {
         width: 60%; } }
+    main #our-services .green-line {
+      width: 33%; }
   @media (min-width: 1150px) {
     main .bio-section {
       font-size: .8em; } }
@@ -698,13 +702,15 @@ main {
     main .bio-section .bio-top {
       height: 478px; } }
 
-    @media (min-width: 802px) {
-      main .bio-section .bio-top .top-content {
-        width: 100%; } }
-    @media (min-width: 1150px) {
-      main .bio-section .bio-top .top-content {
-        margin-bottom: 1%;
-        height: 80%; } }
+    main .bio-section .bio-top .top-content {
+      overflow-y: hidden; }
+      @media (min-width: 802px) {
+        main .bio-section .bio-top .top-content {
+          width: 100%; } }
+      @media (min-width: 1150px) {
+        main .bio-section .bio-top .top-content {
+          margin-bottom: 1%;
+          height: 80%; } }
   @media (min-width: 1150px) and (min-width: 1400px) {
     main .bio-section .bio-top .top-content {
       height: 68%; } }
@@ -712,14 +718,14 @@ main {
     main .bio-section .bio-top .top-content {
       height: 76%; } }
 
-    main .bio-section .bio-top .top-content h2 {
-      color: #585858;
-      font-size: 2em; }
-    main .bio-section .bio-top .top-content span {
-      color: #587F77;
-      font-size: 1.5em; }
-    main .bio-section .bio-top .top-content p {
-      margin-top: .5em; }
+      main .bio-section .bio-top .top-content h2 {
+        color: #585858;
+        font-size: 2em; }
+      main .bio-section .bio-top .top-content span {
+        color: #587F77;
+        font-size: 1.5em; }
+      main .bio-section .bio-top .top-content p {
+        margin-top: .5em; }
     main .bio-section .bio-top img {
       margin-right: 2em; }
   main .bio-section .bio-bottom {

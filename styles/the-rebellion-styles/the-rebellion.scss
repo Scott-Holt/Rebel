@@ -43,6 +43,10 @@ header{
             width: 57%;
         }
     }
+
+    .icon-positioning{
+        overflow-y:hidden;
+    }
 }
 
 
@@ -79,6 +83,10 @@ main{
                 width: 60%;
             }
         }
+
+        .green-line{
+            width: 33%;
+        }
     }
 
 
@@ -113,6 +121,7 @@ main{
 
 
             .top-content{
+                overflow-y: hidden;
 
                 @include desktop(){
                     width: 100%;
