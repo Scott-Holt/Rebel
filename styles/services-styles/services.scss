@@ -1,8 +1,30 @@
-
 @import "../index-styles/main.scss";
 
-////////HEADER////////////////////////////////////////////////
+/////////HEADER////////////////////////////////////////
 
 header{
     background-image:url("../../images/Services/BG-V2.jpg");
+}
+/////////MAIN////////////////////////////////////////
+
+main{
+
+    .container{
+        flex-direction:column;
+    }
+
+    .main-section-header{
+        p{
+            color:$light-gray;
+            margin-top: 1em;
+        }
+    }
+}
+
+
+
+///////////BLOCKS///////////////////////////////////////
+
+.blocks{
+    text-align: center;
 }

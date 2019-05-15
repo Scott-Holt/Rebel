@@ -108,6 +108,7 @@ body{
     max-width:2100px;
     width: 100%;
     overflow-y: scroll;   
+    // background: blue;
 }
 
 h1, h2, span, a, button{
@@ -551,7 +552,7 @@ header{
 
 }
 
- .services-header{
+ .main-section-header{
     flex-direction: column;
     text-align: center;
     margin-top: 15px;
@@ -595,6 +596,10 @@ header{
         @include desktop(){
             flex-direction: row;
             width: 100%;
+        }
+
+        @include large-desktop(){
+            margin-top: 3em;
         }
 
         @include largest(){

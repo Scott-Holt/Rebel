@@ -283,22 +283,22 @@ header {
   .services {
     margin-top: -53px; } }
 
-.services-header {
+.main-section-header {
   flex-direction: column;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 30px; }
   @media (min-width: 550px) {
-    .services-header {
+    .main-section-header {
       margin-top: 87px; } }
   @media (min-width: 768px) {
-    .services-header {
+    .main-section-header {
       margin-top: -18px; } }
-  .services-header h1 {
+  .main-section-header h1 {
     color: #585858;
     font-size: 2.4em;
     padding: 10px; }
-  .services-header span {
+  .main-section-header span {
     color: #636363;
     font-size: 1.2em;
     font-family: "Roboto", sans-serif;
@@ -313,6 +313,9 @@ header {
       .icons-container .icons {
         flex-direction: row;
         width: 100%; } }
+    @media (min-width: 1150px) {
+      .icons-container .icons {
+        margin-top: 3em; } }
     @media (min-width: 1700px) {
       .icons-container .icons {
         justify-content: space-between; } }
@@ -638,5 +641,14 @@ footer {
 
 header {
   background-image: url("../../images/Services/BG-V2.jpg"); }
+
+main .container {
+  flex-direction: column; }
+main .main-section-header p {
+  color: #636363;
+  margin-top: 1em; }
+
+.blocks {
+  text-align: center; }
 
 /*# sourceMappingURL=services.css.map */
