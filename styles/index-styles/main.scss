@@ -93,7 +93,6 @@ $largest:1700px;
     margin:0;
     padding:0;
     box-sizing:border-box;
-    text-transform: uppercase;
     font-family:$main;
     overflow-x: hidden;
     letter-spacing: 1px;
@@ -108,9 +107,13 @@ html{
 body{
     max-width:2100px;
     width: 100%;
+    overflow-y: scroll;   
+    // background: blue;
 }
 
-
+h1, h2, span, a, button{
+    text-transform:uppercase;
+}
 
 
 img{
@@ -129,6 +132,11 @@ img{
     background-position: center;
     background-size:cover;
 }
+
+p{
+    font-family:$secondary;
+}
+
 
 
 a{
@@ -226,7 +234,7 @@ a{
 //HEADER/////////////////////////////////////////////////////////////
 
 header{
-    background-image:url("../websiteassetshomepageonly/Mobile-Hero.jpg");
+    background-image:url("../../images/index-images/Mobile-Hero.jpg");
     background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -234,7 +242,7 @@ header{
 
 
     @include ipad{
-    background-image:url("../websiteassetshomepageonly/Hero-V2.jpg");
+    background-image:url("../../images/index-images/Hero-V2.jpg");
     background-position-x: right;
     }
 
@@ -514,7 +522,7 @@ header{
         display:block;
         width:100%;
         height:100px;
-        background-image: url("../websiteassetshomepageonly/Tri-Break.png");
+        background-image: url("../../images/index-images/Tri-Break.png");
         margin-top: -34px;
     }
 
@@ -544,7 +552,7 @@ header{
 
 }
 
- .services-header{
+ .main-section-header{
     flex-direction: column;
     text-align: center;
     margin-top: 15px;
@@ -588,6 +596,10 @@ header{
         @include desktop(){
             flex-direction: row;
             width: 100%;
+        }
+
+        @include large-desktop(){
+            margin-top: 3em;
         }
 
         @include largest(){
@@ -676,7 +688,7 @@ header{
 //WHY REBEL/////////////////////////////////////////////
 
 .why-rebel{
-    background-image:url("../websiteassetshomepageonly/BG-V2.jpg");
+    background-image:url("../../images/index-images/BG-V2.jpg");
     background-attachment: fixed;
     color:white;
 
@@ -811,15 +823,17 @@ header{
     .b2b-assets{
         flex-direction:column;
 
-        @include desktop(){
+        @include med-desktop(){
             flex-direction:row;
+            text-align: left;
+            align-items: flex-start;
         }
             
             .b2b-content{
                 text-align: center;
                 flex-direction:column;
             
-                @include desktop(){
+                @include med-desktop(){
                     text-align: left;
                     align-items: flex-start;
                 }
@@ -846,6 +860,10 @@ header{
                     color:$dark-green;
                     font-family:$secondary;
                     // text-shadow: none;
+
+                    @include large-desktop(){
+                        font-size: 1em;
+                    }
                     
                 }
                 
@@ -861,6 +879,10 @@ header{
                         margin: 1em 0em 0em 0em;
                         width: 60%;
                     }
+
+                    @include med-desktop(){
+                        width:80%;
+                    }
                 }
             
             }  
@@ -874,7 +896,7 @@ header{
     order: -1;
     margin-bottom: 2em;
 
-    @include desktop(){
+    @include med-desktop(){
         order: 0;
     }
 
@@ -896,7 +918,7 @@ header{
 
     
 .commitment{
-    background-image:url("../websiteassetshomepageonly/Carousel-1.jpg");
+    background-image:url("../../images/index-images/Carousel-1.jpg");
     // color: white;
     height:740px;
 
@@ -986,7 +1008,7 @@ header{
     color:white;
 
     @include desktop(){
-        background-image: url("../websiteassetshomepageonly/Form_BG.jpg");
+        background-image: url("../../images/index-images/Form_BG.jpg");
 
         @include xtra-large-desktop(){
             background-position-y: top;
@@ -1148,21 +1170,38 @@ footer{
         }
     }
 
-}
+    .container{
 
-.footer-logo{
-    img{
-        width: 41%;
-        margin: 10px 0px;
+        .footer-logo{
+            flex-direction:column;
+            justify-content: space-around;
 
-        @include ipad(){
-            width: 20%;
+
+            @include desktop(){
+                width: 50%;
+                flex-direction:row;
+            }
+        
+            img{
+                width: 41%;
+                margin: 10px 0px;
+        
+                @include tablet(){
+                    width: 35%;
+                }
+
+                @include desktop(){
+                    width:35%;
+                }
+
+            }
         }
-        // @include xtra-large-desktop(){
-        //     width: 13%;  
-        // }
+
     }
+
 }
+
+
 
 
 
