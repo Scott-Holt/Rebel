@@ -642,13 +642,65 @@ footer {
 header {
   background-image: url("../../images/Services/BG-V2.jpg"); }
 
-main .container {
+main {
   flex-direction: column; }
-main .main-section-header p {
-  color: #636363;
-  margin-top: 1em; }
+  main .container {
+    flex-direction: column; }
+  main .main-section-header span {
+    font-size: 1em; }
+  main .main-section-header p {
+    color: #636363;
+    margin-top: 1em; }
 
 .blocks {
-  text-align: center; }
+  text-align: center;
+  flex-direction: column; }
+  .blocks .text-right-box {
+    color: #585858; }
+  .blocks .row {
+    padding: 3em 0em; }
+    .blocks .row span {
+      margin-bottom: 1em;
+      display: inline-block; }
+  .blocks .row1 {
+    background: #587F77;
+    color: white; }
+  .blocks .row2 .retail-list {
+    flex-direction: column; }
+    .blocks .row2 .retail-list p {
+      margin-top: 1em; }
+    .blocks .row2 .retail-list ul {
+      margin-top: 1em;
+      flex-direction: column;
+      align-items: flex-start; }
+      .blocks .row2 .retail-list ul li {
+        font-family: "Roboto", sans-serif;
+        list-style-position: inside;
+        list-style-type: circle; }
+  .blocks .row3 {
+    background: #585858;
+    color: white; }
+  .blocks .row4 {
+    border-bottom: 1px solid #587F77; }
+
+section {
+  flex-direction: column;
+  color: #585858; }
+  section .container {
+    text-align: center;
+    padding-top: 4em; }
+  section .arrow {
+    background-image: url("../../images/Services/arrow.png");
+    background-size: auto;
+    width: 100%;
+    height: 3em;
+    margin-bottom: 3em; }
+
+@media (min-width: 802px) {
+  .form-section {
+    background-image: url("../../images/Services/50-50.jpg"); } }
+  @media (min-width: 802px) and (min-width: 1400px) {
+    .form-section {
+      background-position-y: bottom; } }
 
 /*# sourceMappingURL=services.css.map */
