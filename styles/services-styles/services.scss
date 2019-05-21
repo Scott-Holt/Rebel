@@ -53,26 +53,12 @@ main{
     text-align: center;
     flex-direction: column;
 
-<<<<<<< HEAD
-
-    .text-right-box{
-        color:$dark-gray;
-    }
-
-=======
->>>>>>> blocks-experiment
     .row{
         display: flex;
         justify-content: center;
         align-content: center;
         padding: 4em 0em;
 
-<<<<<<< HEAD
-
-        span{
-            margin-bottom: 1em;
-            display: inline-block;
-=======
         @include large-desktop(){
             justify-content:flex-start;
         }
@@ -93,7 +79,6 @@ main{
             p{
                 margin-top:1em;
             }
->>>>>>> blocks-experiment
         }
 
         .row-img{
@@ -106,22 +91,12 @@ main{
     }
 
     .row1{
-<<<<<<< HEAD
-        background-color: $dark-green;
-        color:white;
-
-        @include med-desktop(){
-            background-image:url("../../images/Services/cross dock.jpg");
-        }
-
-=======
         background-color:$dark-green;
         color:white;
 
         @include large-desktop(){
             background-image:url("../../images/Services/cross dock.jpg");
         }
->>>>>>> blocks-experiment
     }
 
     .row2{
