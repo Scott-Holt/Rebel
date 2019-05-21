@@ -662,9 +662,17 @@ main {
     .blocks .row span {
       margin-bottom: 1em;
       display: inline-block; }
+    .blocks .row .row-img {
+      display: none; }
+      @media (min-width: 920px) {
+        .blocks .row .row-img {
+          display: block; } }
   .blocks .row1 {
-    background: #587F77;
+    background-color: #587F77;
     color: white; }
+    @media (min-width: 920px) {
+      .blocks .row1 {
+        background-image: url("../../images/Services/cross dock.jpg"); } }
   .blocks .row2 .retail-list {
     flex-direction: column; }
     .blocks .row2 .retail-list p {

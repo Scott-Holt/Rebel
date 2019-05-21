@@ -1,5 +1,6 @@
 @import "../index-styles/main.scss";
 
+
 /////////HEADER////////////////////////////////////////
 
 header{
@@ -35,6 +36,7 @@ main{
     text-align: center;
     flex-direction: column;
 
+
     .text-right-box{
         color:$dark-gray;
     }
@@ -42,15 +44,29 @@ main{
     .row{
         padding: 3em 0em;
 
+
         span{
             margin-bottom: 1em;
             display: inline-block;
         }
+
+        .row-img{
+            display:none;
+
+            @include med-desktop(){
+                display:block;
+            }
+        }
     }
 
     .row1{
-        background: $dark-green;
+        background-color: $dark-green;
         color:white;
+
+        @include med-desktop(){
+            background-image:url("../../images/Services/cross dock.jpg");
+        }
+
     }
 
     .row2{
