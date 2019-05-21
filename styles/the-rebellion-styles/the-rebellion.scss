@@ -9,6 +9,7 @@
     flex-direction:column;
     margin-bottom: 3em;
 
+
     @include large-desktop(){
         // width: 85%;
         width: 1020px;
@@ -32,6 +33,10 @@ header{
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0) 100%);
         width: 100%;
         flex-direction:column;
+        
+        @include xtra-large-desktop(){
+            height: 100%;
+        }
     }
 
     .hero{

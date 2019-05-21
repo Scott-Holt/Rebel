@@ -1,10 +1,23 @@
 @import "../index-styles/main.scss";
+/////////BODY//////////////////////////////////
+
+// body{
+
+//     @include xtra-large-desktop(){  
+//         font-size: 1.2em;
+//     }
+
+//     @include largest(){
+//         font-size: 1.2em;
+//     }
+// }
 
 
 /////////HEADER////////////////////////////////////////
 
 header{
     background-image:url("../../images/Services/BG-V2.jpg");
+
 }
 /////////MAIN////////////////////////////////////////
 
@@ -16,6 +29,10 @@ main{
     }
 
     .main-section-header{
+
+        @include desktop(){
+            margin: 0em 0em 5em 0em;
+        }
 
         span{
             font-size:1em;
@@ -36,18 +53,47 @@ main{
     text-align: center;
     flex-direction: column;
 
+<<<<<<< HEAD
 
     .text-right-box{
         color:$dark-gray;
     }
 
+=======
+>>>>>>> blocks-experiment
     .row{
-        padding: 3em 0em;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 4em 0em;
 
+<<<<<<< HEAD
 
         span{
             margin-bottom: 1em;
             display: inline-block;
+=======
+        @include large-desktop(){
+            justify-content:flex-start;
+        }
+
+        @include largest(){
+            padding: 4em 5em;
+        }
+
+        .container{
+
+            @include large-desktop(){
+                width: 50%;
+                padding: 4em;
+                text-align: left;
+            }
+
+
+            p{
+                margin-top:1em;
+            }
+>>>>>>> blocks-experiment
         }
 
         .row-img{
@@ -60,6 +106,7 @@ main{
     }
 
     .row1{
+<<<<<<< HEAD
         background-color: $dark-green;
         color:white;
 
@@ -67,12 +114,27 @@ main{
             background-image:url("../../images/Services/cross dock.jpg");
         }
 
+=======
+        background-color:$dark-green;
+        color:white;
+
+        @include large-desktop(){
+            background-image:url("../../images/Services/cross dock.jpg");
+        }
+>>>>>>> blocks-experiment
     }
 
     .row2{
+        color:$dark-gray;
+
 
         .retail-list{
             flex-direction: column;
+            color: black;
+
+            @include large-desktop(){
+                align-items: flex-start;
+            }
 
             p{
                 margin-top:1em;
@@ -82,26 +144,46 @@ main{
                 margin-top:1em;
                 flex-direction:column;
                 align-items: flex-start;
-        
+
+                @include large-desktop(){
+                    width: 100%;
+                }
+
 
                 li{
                     font-family: $secondary;
                     list-style-position: inside;
                     list-style-type:circle;
+
+                    @include large-desktop(){
+                        width: 100%;
+                    }
                 }
             }
-        }   
+        }
     }
 
     .row3{
-        background:$dark-gray;
+        background-color:$dark-gray;
         color:white;
+
+        @include large-desktop(){
+            background-image:url("../../images/Services/Final Mile.jpg");
+        }
     }
 
     .row4{
-        border-bottom: 1px solid $dark-green;
+        color:$dark-gray;
+    }
+
+    .row2, .row4{
+        @include large-desktop(){
+            justify-content:flex-end;
+
+        }
     }
 }
+
 
 
 //////LEARN MORE//////////////////////////////////////////////////////////////////////////////
@@ -112,7 +194,7 @@ section{
 
     .container{
         text-align: center;
-        padding-top:4em;
+-top:4em;
     }
 
     .arrow{
@@ -136,3 +218,75 @@ section{
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // .row{
+    //       : 3em 0em;
+    
+    //         span{
+    //             margin-bottom: 1em;
+    //             display: inline-block;
+    //         }
+    //     }
+    
+    //     .row1{
+    //         background: $dark-green;
+    //         color:white;
+    //     }
+    
+    //     .row2{
+    
+    //         .retail-list{
+    //             flex-direction: column;
+    
+    //             p{
+    //                 margin-top:1em;
+    //             }
+    
+    //             ul{
+    //                 margin-top:1em;
+    //                 flex-direction:column;
+    //                 align-items: flex-start;
+            
+    
+    //                 li{
+    //                     font-family: $secondary;
+    //                     list-style-position: inside;
+    //                     list-style-type:circle;
+    //                 }
+    //             }
+    //         }   
+    //     }
+    
+    //     .row3{
+    //         background:$dark-gray;
+    //         color:white;
+    //     }
+    
+    //     .row4{
+    //         border-bottom: 1px solid $dark-green;
+    //     }
+    // }
