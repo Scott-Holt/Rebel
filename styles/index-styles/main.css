@@ -503,11 +503,8 @@ header {
     .column-2 .b2b-logo {
       width: 100%; } }
 
-.commitment {
-  background-image: url("../../images/index-images/Carousel-1.jpg");
-  height: 740px; }
-  .commitment img {
-    width: 17%; }
+video {
+  width: 100%; }
 
 .form-section {
   background-image: linear-gradient(to bottom, #587F77, #A8BAB5);
