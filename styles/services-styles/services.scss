@@ -102,6 +102,10 @@ main{
     .row2{
         color:$dark-gray;
 
+        @include large-desktop(){
+            background-image: url("../../images/Services/IMG-Retail-FullRow.jpg");
+        }
+
 
         .retail-list{
             flex-direction: column;
@@ -149,6 +153,10 @@ main{
 
     .row4{
         color:$dark-gray;
+
+        @include large-desktop(){
+            background-image:url("../../images/Services/IMG-Software-FullRow.jpg");
+        }
     }
 
     .row2, .row4{
@@ -169,7 +177,12 @@ section{
 
     .container{
         text-align: center;
--top:4em;
+        font-size: 1.3em;
+
+        @include large-desktop(){
+            margin-top: 8em;
+            font-size: 1.3em;
+        }
     }
 
     .arrow{

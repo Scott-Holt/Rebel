@@ -503,11 +503,8 @@ header {
     .column-2 .b2b-logo {
       width: 100%; } }
 
-.commitment {
-  background-image: url("../../images/index-images/Carousel-1.jpg");
-  height: 740px; }
-  .commitment img {
-    width: 17%; }
+video {
+  width: 100%; }
 
 .form-section {
   background-image: linear-gradient(to bottom, #587F77, #A8BAB5);
@@ -689,6 +686,9 @@ main {
         background-image: url("../../images/Services/cross dock.jpg"); } }
   .blocks .row2 {
     color: #585858; }
+    @media (min-width: 1150px) {
+      .blocks .row2 {
+        background-image: url("../../images/Services/IMG-Retail-FullRow.jpg"); } }
     .blocks .row2 .retail-list {
       flex-direction: column;
       color: black; }
@@ -719,6 +719,9 @@ main {
         background-image: url("../../images/Services/Final Mile.jpg"); } }
   .blocks .row4 {
     color: #585858; }
+    @media (min-width: 1150px) {
+      .blocks .row4 {
+        background-image: url("../../images/Services/IMG-Software-FullRow.jpg"); } }
   @media (min-width: 1150px) {
     .blocks .row2, .blocks .row4 {
       justify-content: flex-end; } }
@@ -728,7 +731,11 @@ section {
   color: #585858; }
   section .container {
     text-align: center;
-    -top: 4em; }
+    font-size: 1.3em; }
+    @media (min-width: 1150px) {
+      section .container {
+        margin-top: 8em;
+        font-size: 1.3em; } }
   section .arrow {
     background-image: url("../../images/Services/arrow.png");
     background-size: auto;
