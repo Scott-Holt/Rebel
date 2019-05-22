@@ -1,0 +1,115 @@
+@import '../index-styles/main.scss';
+
+
+///////HEADER////////////////////////////////////////
+header{
+    background-image:url("../../images/contact/BG.jpg");
+}
+
+
+/////////MAIN///////////////////////////////////////
+
+main{
+    .container{
+        flex-direction: column;
+
+        @include desktop(){
+            width:80%;
+        }
+        
+        .contact-box{
+            display: none;
+
+            @include med-desktop(){
+                display:block;
+                width:100%;
+                height:200px;
+                border: 1px solid $dark-gray;
+            }
+
+            @include xtra-large-desktop(){
+                height: 250px;
+            }
+        }
+
+        .contact-form{
+            background-image: url("../../images/contact/Contact-Form_IMG.jpg");
+            height: 600px;
+            width: 100%;
+            flex-direction:column;
+            color:white;
+
+            @include med-desktop(){
+                margin-top: -4em;
+                width:80%;
+            }
+
+            @include xtra-large-desktop(){
+                height: 700px;
+            }
+
+
+            form{
+                margin: 0em 1em;
+
+                @include tablet(){
+                    width:80%;
+                }
+
+                @include xtra-large-desktop(){
+                    width: 60%;
+                }
+
+                input{
+
+                    @include xtra-large-desktop(){
+                        height: 4em;
+                    }
+                }
+
+                .message{
+                    @include xtra-large-desktop(){
+                        height: 17em;
+                    }
+                }
+
+                .submit{
+                    height: 2em;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+///////////////////MAP SECTION////////////////////////////////////
+
+.map-section{
+    color:$dark-gray;
+    margin-top:2em;
+
+    @include desktop(){
+        margin: 7em 0em;
+    }
+
+    .container{
+        flex-direction: column;
+
+        h1,span{
+            text-align: center;
+        }
+
+        h1{
+            font-size: 3em;
+        }
+
+        span{
+            margin-bottom: 2em;
+            font-size: 2em;
+        }
+
+    }
+
+}
