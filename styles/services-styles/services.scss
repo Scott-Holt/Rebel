@@ -1,16 +1,13 @@
 @import "../index-styles/main.scss";
-/////////BODY//////////////////////////////////
 
-// body{
 
-//     @include xtra-large-desktop(){  
-//         font-size: 1.2em;
-//     }
+$servcies-button:1910px;
 
-//     @include largest(){
-//         font-size: 1.2em;
-//     }
-// }
+@mixin services-button {
+    @media(min-width:#{$servcies-button}){
+        @content;
+    }
+}
 
 
 /////////HEADER////////////////////////////////////////
@@ -26,6 +23,7 @@ main{
 
     .container{
         flex-direction:column;
+
     }
 
     .main-section-header{
@@ -75,6 +73,10 @@ main{
                 text-align: left;
             }
 
+            @include services-button(){
+                width: 44%;
+            }
+
 
             p{
                 margin-top:1em;
@@ -86,6 +88,16 @@ main{
 
             @include med-desktop(){
                 display:block;
+            }
+        }
+
+        .button{
+            display: inline-block;
+            margin-top: 3em;
+            text-align: center;
+
+            @include desktop(){
+                width:60%;
             }
         }
     }
@@ -180,7 +192,7 @@ section{
         font-size: 1.3em;
 
         @include large-desktop(){
-            margin-top: 8em;
+            margin-top: 4em;
             font-size: 1.3em;
         }
     }
