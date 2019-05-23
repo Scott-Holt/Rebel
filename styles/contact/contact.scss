@@ -13,9 +13,9 @@ main{
     .container{
         flex-direction: column;
 
-        @include desktop(){
-            width:80%;
-        }
+        // @include desktop(){
+        //     width:80%;
+        // }
         
         .contact-box{
             display: none;
@@ -113,3 +113,33 @@ main{
     }
 
 }
+
+//////////////////FOOTER//////////////////////////////////////////////////////////////
+
+
+
+
+// .footer-logo{
+//     flex-direction:column;
+//     justify-content: space-around;
+
+
+//     @include desktop(){
+//         width: 50%;
+//         flex-direction:row;
+//     }
+
+//     a{
+//         width: 41%;
+//         margin: 10px 0px;
+
+//         @include tablet(){
+//             width: 35%;
+//         }
+
+//         @include desktop(){
+//             width:35%;
+//         }
+
+//     }
+// }

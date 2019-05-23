@@ -109,7 +109,6 @@ body{
     max-width:2100px;
     width: 100%;
     overflow-y: scroll;   
-    // background: blue;
 }
 
 h1, h2, span, a, button{
@@ -338,18 +337,37 @@ header{
 
     ul{
         justify-content: space-around;
+        height: 4em;
 
         @include large-desktop(){
             font-size: 1.2em;
         }
 
         li{
+            height: 100%;
+            display:flex;
+            align-items: center;
+
             a{
+                padding: .3em;
                 // text-shadow: 2px 2px 3px black;
                 &:hover{
                     color:$dark-green;
                 }
+
             }
+
+            .active{
+                color: white;
+                border-bottom: 2px solid #587F77;
+                padding-bottom: 3px;
+            
+
+                &:hover{
+                    color:white;
+                }
+            }
+
         }
 
     }
@@ -1175,22 +1193,25 @@ footer{
 
 
             @include desktop(){
-                width: 50%;
+                // width: 50%;
                 flex-direction:row;
             }
-        
-            img{
-                width: 41%;
-                margin: 10px 0px;
-        
-                @include tablet(){
-                    width: 35%;
-                }
 
-                @include desktop(){
-                    width:35%;
-                }
+            a{
+        
+                img{
+                    width: 41%;
+                    margin: 10px 0px;
+            
+                    @include tablet(){
+                        width: 35%;
+                    }
 
+                    @include desktop(){
+                        width:35%;
+                    }
+
+                }
             }
         }
 
