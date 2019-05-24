@@ -1185,38 +1185,40 @@ footer{
         }
     }
 
-    .container{
-
-        .footer-logo{
-            flex-direction:column;
-            justify-content: space-around;
 
 
-            @include desktop(){
-                // width: 50%;
-                flex-direction:row;
-            }
+    .footer-logo{
+        flex-direction: column;
+        padding:2em;
+        // border:1px solid white;
 
-            a{
-        
-                img{
-                    width: 41%;
-                    margin: 10px 0px;
-            
-                    @include tablet(){
-                        width: 35%;
-                    }
+        @include desktop(){
+            flex-direction:row;
+            width: 50%;
+        }
 
-                    @include desktop(){
-                        width:35%;
-                    }
+        @include large-desktop(){
+            width: 40%;
+        }
+
+        @include largest(){ 
+            width: 30%;
+        }
+
+        a{
+
+            img{
+                width: 45%;
+
+                @include desktop(){
+                    width: 70%;
 
                 }
+
             }
         }
 
     }
-
 }
 
 
