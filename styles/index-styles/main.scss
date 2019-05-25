@@ -933,86 +933,65 @@ header{
 
 
 
-//COMMITMENT//////////////////////////////////////////
+//CAROUSEL//////////////////////////////////////////
 
-    
-video{
-    width:100%;
+ .carousel{
+     flex-direction: column;
+     background-image:url('../../images/Services/IMG-Crossdock.jpg');
+     height:400px;
+     justify-content: space-around;
+     color:white;
 
+     h1{
+         font-family:$main;
+     }
+
+     span{
+         font-family:$secondary;
+     }
+
+     #image-text{
+        position: relative;
+        right: 1500px;
+        transition:ease .6s;
+        -webkit-transition:ease .6s;
+        -moz-transition:ease .6s;
+        -ms-transition:ease .6s;
+        -o-transition:ease .6s;
 }
 
-//     .container{
-//         flex-direction:column;
-//         margin:20px;
 
-//         @include tablet(){
-//             margin:50px;
-//         }
+    .slide-buttons{
 
-//         @include desktop(){
-//             margin: 58px;
-//             font-size: 1.2em;
-//     justify-content: flex-end;
-//     align-items: flex-end;
-//     margin-right: 132px;
-// }
+        @include desktop(){
+            // border: 1px solid blue;
+            width: 45%;
+            height: 100px;
+            // margin-top: -100px;
+            justify-content: space-around;
 
+        }
 
-//         @include med-desktop(){
-//             margin-right: 186px;
-//             margin: 73px 20px;
+        .slide-button{
+            width:40px;
+            height:40px;
+            background-color: #ffffffab;
+            border-radius:100%;
+            -moz-border-radius:100%;
+            -ms-border-radius:100%;
+            -o-border-radius:100%;
+            -webkit-border-radius:100%;
 
-//             margin-right:132px;
-//         }
+            &:hover{
+                background-color:#ffffff;
+                transition: ease-in-out .3s;
+                cursor: pointer;
 
-//         @include large-desktop(){
-//             margin-right: 220px;
-//         }
+            }
+        }
+    }           
+ }   
 
-//     h1{
-//         font-family:$secondary;
-//         font-style: italic;
-//         // text-shadow: 3px 2px 5px black;
-//         padding: 0px 10px;
-
-//         @include ipad(){
-//             font-size: 2.4em;
-//         }
-//     }
-
-//     span{
-//         color: $dark-green;
-//     font-size: 1.2em;
-//     // text-shadow: 2px 1px 2px #000000d4;
-//     font-weight: 800;
-//         padding: 0px 10px;
-
-//     }
-
-//     p{
-//         text-align: center;
-//         font-size: .8em;
-//         padding: 12px;
-//         line-height: 19px;
-//         // text-shadow: 2px 3px 8px black;
-
-//         @include ipad(){
-//             width: 400px;
-//         }
-
-//         @include desktop(){
-//             text-align: right;
-//             width: 500px;
-//             line-height: 24px;
-//         }
-
-//         @include large-desktop(){
-//             width: 600px;
-//         }
-
-//     }
-// }
-// }
 
 //FORM///////////////////////////////////////////////// 
 

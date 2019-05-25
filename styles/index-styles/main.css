@@ -516,8 +516,42 @@ header {
     .column-2 .b2b-logo {
       width: 100%; } }
 
-video {
-  width: 100%; }
+.carousel {
+  flex-direction: column;
+  background-image: url("../../images/Services/IMG-Crossdock.jpg");
+  height: 400px;
+  justify-content: space-around;
+  color: white; }
+  .carousel h1 {
+    font-family: "Montserrat", sans-serif; }
+  .carousel span {
+    font-family: "Roboto", sans-serif; }
+  .carousel #image-text {
+    position: relative;
+    right: 1500px;
+    transition: ease .6s;
+    -webkit-transition: ease .6s;
+    -moz-transition: ease .6s;
+    -ms-transition: ease .6s;
+    -o-transition: ease .6s; }
+  @media (min-width: 802px) {
+    .carousel .slide-buttons {
+      width: 45%;
+      height: 100px;
+      justify-content: space-around; } }
+  .carousel .slide-buttons .slide-button {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffffab;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-border-radius: 100%; }
+    .carousel .slide-buttons .slide-button:hover {
+      background-color: #ffffff;
+      transition: ease-in-out .3s;
+      cursor: pointer; }
 
 .form-section {
   background-image: linear-gradient(to bottom, #587F77, #A8BAB5);
