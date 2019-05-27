@@ -24,6 +24,8 @@ $text-bp2:1560px;
 $largest:1700px;
 
 
+
+
 //mixins
 
 @mixin small-iphone{
@@ -1167,13 +1169,14 @@ footer{
             flex-direction:row;
             }
 
-            @include med-desktop(){
-                width: 42%;
-            }
+            // @include med-desktop(){
+            //     width: 50%;
+            // }
 
             @include large-desktop(){
                 font-size: 1.3em;
-                width: 37%;
+                width: 41%;
+
             }
 
             a{
