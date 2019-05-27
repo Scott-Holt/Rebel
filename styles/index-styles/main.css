@@ -463,58 +463,56 @@ header {
       width: 60%; } }
 
 @media (min-width: 802px) {
-  .back2basics .container {
-    margin: 125px 0px; } }
-.back2basics .container .b2b-assets {
-  flex-direction: column; }
-  @media (min-width: 920px) {
-    .back2basics .container .b2b-assets {
-      flex-direction: row;
-      text-align: left;
-      align-items: flex-start; } }
-  .back2basics .container .b2b-assets .b2b-content {
-    text-align: center;
-    flex-direction: column; }
-    @media (min-width: 920px) {
-      .back2basics .container .b2b-assets .b2b-content {
-        text-align: left;
-        align-items: flex-start; } }
-    @media (min-width: 1150px) {
-      .back2basics .container .b2b-assets .b2b-content {
-        width: 62%; } }
-    @media (min-width: 1700px) {
-      .back2basics .container .b2b-assets .b2b-content {
-        width: 50%; } }
-    .back2basics .container .b2b-assets .b2b-content h1 {
-      color: #585858; }
-    .back2basics .container .b2b-assets .b2b-content span {
-      color: #587F77;
-      font-family: "Roboto", sans-serif; }
-      @media (min-width: 1150px) {
-        .back2basics .container .b2b-assets .b2b-content span {
-          font-size: 1em; } }
-    .back2basics .container .b2b-assets .b2b-content p {
-      margin-top: 15px; }
-    .back2basics .container .b2b-assets .b2b-content a {
-      margin: 1em 0em 3em 0em;
-      text-align: center; }
-      @media (min-width: 802px) {
-        .back2basics .container .b2b-assets .b2b-content a {
-          margin: 1em 0em 0em 0em;
-          width: 60%; } }
-      @media (min-width: 920px) {
-        .back2basics .container .b2b-assets .b2b-content a {
-          width: 80%; } }
-
-.column-2 {
-  order: -1;
-  margin-bottom: 2em; }
-  @media (min-width: 920px) {
-    .column-2 {
-      order: 0; } }
+  .back2basics {
+    background-image: url("/images/index-images/B2B_BG.jpg");
+    justify-content: flex-start; } }
+.back2basics .container {
+  flex-direction: column;
+  text-align: center;
+  padding: 0em 2em; }
   @media (min-width: 802px) {
-    .column-2 .b2b-logo {
-      width: 100%; } }
+    .back2basics .container {
+      margin: 125px 0px;
+      width: 50%; } }
+  @media (min-width: 920px) {
+    .back2basics .container {
+      flex-direction: row;
+      flex-direction: column;
+      padding: 0em 4em; } }
+  @media (min-width: 1400px) {
+    .back2basics .container {
+      align-items: flex-start;
+      text-align: left;
+      padding: 0em 7em; } }
+  @media (min-width: 1700px) {
+    .back2basics .container {
+      padding: 0em 12em; } }
+  .back2basics .container h1 {
+    color: #585858; }
+  .back2basics .container span {
+    color: #587F77;
+    font-family: "Roboto", sans-serif; }
+    @media (min-width: 1150px) {
+      .back2basics .container span {
+        font-size: 1em; } }
+  .back2basics .container p {
+    margin-top: 15px; }
+  .back2basics .container a {
+    margin: 1em 0em 3em 0em;
+    text-align: center; }
+    @media (min-width: 802px) {
+      .back2basics .container a {
+        margin: 1em 0em 0em 0em;
+        width: 60%; } }
+    @media (min-width: 920px) {
+      .back2basics .container a {
+        width: 80%; } }
+    @media (min-width: 1150px) {
+      .back2basics .container a {
+        width: 60%; } }
+    @media (min-width: 1700px) {
+      .back2basics .container a {
+        width: 54%; } }
 
 video {
   width: 100%; }

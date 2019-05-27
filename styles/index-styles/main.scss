@@ -826,109 +826,78 @@ header{
 
 .back2basics{
 
+    @include desktop(){
+        background-image:url("/images/index-images/B2B_BG.jpg");
+        justify-content: flex-start;
+    }
+
     .container{
+        flex-direction: column;
+        text-align: center;
+        padding: 0em 2em;
 
         @include desktop(){
             margin: 125px 0px;
+            width: 50%;
         }
 
-    //     @include large-desktop(){
-    //         width: 70%;
-    //     }
-
-    //     @include xtra-large-desktop(){
-    //         width: 62%;
-    //     }
-
-
-    .b2b-assets{
-        flex-direction:column;
 
         @include med-desktop(){
             flex-direction:row;
-            text-align: left;
-            align-items: flex-start;
+            flex-direction: column;
+            padding: 0em 4em;
         }
             
-            .b2b-content{
-                text-align: center;
-                flex-direction:column;
+        @include xtra-large-desktop(){
+            align-items: flex-start;
+            text-align: left;
+            padding: 0em 7em;
+        }
+
+        @include largest(){
+            padding: 0em 12em;
+        }
+        
+        h1{
+            color:$dark-gray;
             
-                @include med-desktop(){
-                    text-align: left;
-                    align-items: flex-start;
-                }
-                
-                // @include med-desktop(){
-                //     align-items: flex-start;
-                // }
+        }
+        
+        span{
+            color:$dark-green;
+            font-family:$secondary;
+            // text-shadow: none;
 
-                @include large-desktop(){
-                    width: 62%;
-                }
-
-                @include largest(){
-                    width: 50%;
-                }
+            @include large-desktop(){
+                font-size: 1em;
+            }
             
-            
-                h1{
-                    color:$dark-gray;
-                    
-                }
-                
-                span{
-                    color:$dark-green;
-                    font-family:$secondary;
-                    // text-shadow: none;
+        }
+        
+        p{
+            margin-top:15px;
+        }
 
-                    @include large-desktop(){
-                        font-size: 1em;
-                    }
-                    
-                }
-                
-                p{
-                    margin-top:15px;
-                }
+        a{
+            margin: 1em 0em 3em 0em;
+            text-align: center;
 
-                a{
-                    margin: 1em 0em 3em 0em;
-                    text-align: center;
+            @include desktop(){
+                margin: 1em 0em 0em 0em;
+                width: 60%;
+            }
 
-                    @include desktop(){
-                        margin: 1em 0em 0em 0em;
-                        width: 60%;
-                    }
+            @include med-desktop(){
+                width:80%;
+            }
 
-                    @include med-desktop(){
-                        width:80%;
-                    }
-                }
-            
-            }  
-              
-    }
-}
-}
+            @include large-desktop(){
+                width: 60%;
+            }
 
-
-.column-2{
-    order: -1;
-    margin-bottom: 2em;
-
-    @include med-desktop(){
-        order: 0;
-    }
-
-    .b2b-logo{  
-
-        // @include tablet(){
-        //     width:50%
-        // }
-
-        @include desktop(){
-            width: 100%;
+            @include largest(){
+                width: 54%;
+            }
         }
     }
 }
