@@ -827,7 +827,7 @@ header{
 .back2basics{
 
     @include desktop(){
-        background-image:url("/images/index-images/B2B_BG.jpg");
+        background-image:url("../images/index-images/B2B_BG.jpg");
         justify-content: flex-start;
     }
 

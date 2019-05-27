@@ -464,7 +464,7 @@ header {
 
 @media (min-width: 802px) {
   .back2basics {
-    background-image: url("/images/index-images/B2B_BG.jpg");
+    background-image: url("../images/index-images/B2B_BG.jpg");
     justify-content: flex-start; } }
 .back2basics .container {
   flex-direction: column;
