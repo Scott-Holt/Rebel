@@ -68,15 +68,39 @@ main{
                 height: 100%;
                 width: 100%;
                 justify-content: flex-start;
+                color:$dark-gray;
 
+
+                .call-us-mobile{
+                    margin-top: 1em;
+                    // color:$dark-gray;
+
+                    @include desktop(){
+                        display:none;
+                    }
+                }
 
                 .call-us{
-                    margin-top: 1em;
+                    margin-top:1em;
+                    display:none;
+                    // color:$dark-gray;
+
+                    @include desktop(){
+                        display:block;
+                    }
+                }
+
+                .email-us{
+                    // color:$dark-gray;
                 }
 
                 a{
-                    color:blue;
+                    color:$dark-gray;
                     text-decoration: underline;
+
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -138,6 +162,9 @@ main{
 .map-section{
     color:$dark-gray;
     margin-top:2em;
+    flex-direction: column;
+    margin-bottom: 3em;
+
 
     // @include desktop(){
     //     margin: 2em 0em;
