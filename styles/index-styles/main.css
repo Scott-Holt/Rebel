@@ -144,8 +144,11 @@ header {
   @media (min-width: 802px) {
     .desktop-nav {
       display: block;
-      width: 43%;
-      font-size: .75em; } }
+      width: 54%;
+      font-size: .65em; } }
+  @media (min-width: 920px) {
+    .desktop-nav {
+      width: 47%; } }
   @media (min-width: 1150px) {
     .desktop-nav {
       width: 41%; } }
@@ -250,21 +253,19 @@ header {
   width: 100%;
   height: 120px;
   justify-content: space-around;
-  margin-top: 1em; }
+  margin-top: 1em;
+  max-width: 815px; }
   @media (min-width: 802px) {
     .call-to-action {
       margin-top: 0px;
       margin-bottom: 32px;
-      flex-direction: row;
-      width: 75%; }
+      flex-direction: row; } }
+  @media (min-width: 802px) and (min-width: 920px) {
+    .call-to-action {
+      width: 75%; } }
+  @media (min-width: 802px) {
       .call-to-action a {
         margin: 10px; } }
-  @media (min-width: 1150px) {
-    .call-to-action {
-      width: 65%; } }
-  @media (min-width: 1400px) {
-    .call-to-action {
-      width: 70%; } }
 
 .green-line {
   width: 60%;

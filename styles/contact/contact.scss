@@ -16,9 +16,9 @@ header{
     background-image:url("../../images/contact/BG.jpg");
 
     .container{
-        @include xtra-large-desktop(){
-            width: 50%;
-        }
+        // @include xtra-large-desktop(){
+        //     width: 50%;
+        // }
     }
 }
 

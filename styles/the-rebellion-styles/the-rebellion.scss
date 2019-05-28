@@ -12,7 +12,7 @@
 
     @include large-desktop(){
         // width: 85%;
-        width: 1020px;
+        // width: 1020px;
     }
 
     @include xtra-large-desktop(){
@@ -47,7 +47,7 @@ header{
 
     .call-to-action{
         @include largest(){
-            width: 57%;
+            // width: 57%;
         }
     }
 

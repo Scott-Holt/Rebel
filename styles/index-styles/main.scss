@@ -325,9 +325,13 @@ header{
     display:none;
 
     @include desktop{
-        display:block;
-        width: 43%;
-        font-size: .75em;
+        display: block;
+        width: 54%;
+        font-size: .65em;
+    }
+
+    @include med-desktop(){
+        width: 47%;
     }
 
     @include large-desktop(){
@@ -500,13 +504,18 @@ header{
     height: 120px;
     justify-content: space-around;
     margin-top: 1em;
+    max-width: 815px;
  
     @include desktop(){
         margin-top:0px;
         margin-bottom: 32px;
         // font-size: 1.4em;
         flex-direction: row;
-        width:75%;
+        // width:75%;
+
+        @include med-desktop(){
+            width: 75%;
+        }
 
 
         a{
@@ -515,13 +524,13 @@ header{
 
     }
 
-    @include large-desktop(){
-        width: 65%;
-    }
+    // @include large-desktop(){
+    //     width: 65%;
+    // }
 
-    @include xtra-large-desktop(){
-        width: 70%;
-    }
+    // @include xtra-large-desktop(){
+    //     width: 70%;
+    // }
     
 }
 
