@@ -526,7 +526,7 @@ video {
     .form-section .container #contact {
       width: 42%; } }
   .form-section .container .section1 {
-    margin: 36px;
+    margin: 2px;
     flex-direction: column; }
     @media (min-width: 802px) {
       .form-section .container .section1 {
