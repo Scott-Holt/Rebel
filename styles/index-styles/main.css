@@ -332,7 +332,8 @@ header {
         margin-top: 3em; } }
     @media (min-width: 1700px) {
       .icons-container .icons {
-        justify-content: space-between; } }
+        justify-content: space-between;
+        width: 78%; } }
     .icons-container .icons .icon {
       flex-direction: column;
       margin-bottom: 2em; }
