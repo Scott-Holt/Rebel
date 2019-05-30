@@ -1,0 +1,87 @@
+@import '../index-styles/main.scss';
+
+///HEADER/////////////////////////////
+
+header{
+    background-image: url("../../images/news/NewsiBGMobile.jpg");
+
+    @include desktop(){
+        background-image:url("../../images/news/News-BG.jpg");
+    }
+
+    .header-text{
+
+        ul{
+            flex-direction:column;
+            color:white;
+
+            @include desktop(){
+                flex-direction:row;
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+
+/////////MAIN///////////////////////////
+
+main{
+    flex-direction: column;
+    color:$dark-gray;
+    margin-top: 5em;
+
+    .container{
+        flex-direction: column;
+        margin-bottom:4em;
+        text-align: center;
+
+        @include xtra-large-desktop(){
+            width: 67%;
+        }
+
+        @include largest(){
+            font-size: 1.2em;
+            width: 54%;
+        }
+
+        .all-content{
+            flex-direction:column;
+            align-items: flex-start;
+            margin-top: 2em;
+            font-weight: 100;
+
+
+
+            .date{
+                font-size:1.2em;
+                margin-bottom: 2em;
+            }
+
+            .contact-team{
+                flex-direction: column;
+                margin: 2em 0em;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .news-content{
+                flex-direction: column;
+                color:light-gray;
+                text-align: left;
+                align-items: flex-start;
+
+                p{
+                    font-family: $main;
+                }
+
+                            
+                .more-info{
+                    display: flex;
+                    text-align: center;
+                }
+            }
+        }     
+    }
+}   

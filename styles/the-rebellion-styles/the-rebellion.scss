@@ -9,9 +9,10 @@
     flex-direction:column;
     margin-bottom: 3em;
 
+
     @include large-desktop(){
         // width: 85%;
-        width: 1020px;
+        // width: 1020px;
     }
 
     @include xtra-large-desktop(){
@@ -32,6 +33,10 @@ header{
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0) 100%);
         width: 100%;
         flex-direction:column;
+        
+        @include xtra-large-desktop(){
+            height: 100%;
+        }
     }
 
     .hero{
@@ -42,7 +47,7 @@ header{
 
     .call-to-action{
         @include largest(){
-            width: 57%;
+            // width: 57%;
         }
     }
 
@@ -265,6 +270,88 @@ main{
 
 
 
+//FOOTER///////////////////////////////////////////////// 
+
+// footer{
+//     flex-direction: column;
+//     background-color: $light-gray;
+    
+//     nav{
+//         width: 100%;
+//         background-color: $dark-gray;
+//         color:white;
+//         text-align: center;
+
+//         @include ipad(){
+//             font-size: .7em;
+//         }
+
+//         ul{
+//             flex-direction: column;
+//             line-height: 30px;
+//             padding: 1em 0em;
+
+//             @include ipad(){
+//             width: 50%;
+//             display:flex;
+//             justify-content: space-around;
+//             margin: 20px auto;
+//             flex-direction:row;
+//             }
+
+//             @include med-desktop(){
+//                 width: 42%;
+//             }
+
+//             @include large-desktop(){
+//                 font-size: 1.3em;
+//                 width: 37%;
+//             }
+
+//             a{
+//                 &:hover{
+//                     color:$light-green;
+//                 }
+//             }
+
+//         }
+//     }
+
+
+
+//     .footer-logo{
+//         flex-direction: column;
+//         padding:2em;
+//         // border:1px solid white;
+
+//         @include desktop(){
+//             flex-direction:row;
+//             width: 50%;
+//         }
+
+//         @include large-desktop(){
+//             width: 40%;
+//         }
+
+//         @include largest(){ 
+//             width: 30%;
+//         }
+
+//         a{
+
+//             img{
+//                 width: 45%;
+
+//                 @include desktop(){
+//                     width: 70%;
+
+//                 }
+
+//             }
+//         }
+
+//     }
+// }
 
 
 

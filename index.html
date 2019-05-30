@@ -25,7 +25,6 @@
     <header id="home" class="flex">
 
         <!--desktop nav-->
-        <!-- <div class="nav-gradient"> -->
         <div class="icon-positioning flex">
             <a href="index.html"><img class="logo" src="./images/index-images/Logo.png" /></a>
             <span id="hamburger-icon">&#9776;</span>
@@ -33,10 +32,11 @@
 
             <nav class="desktop-nav flex">
                 <ul class="flex">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="the-rebellion.html">The Rebellion</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li class="flex"><a href="the-rebellion.html">The Rebellion</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -65,10 +65,11 @@
         <img class="nav-logo" src="./images/index-images/Logo-White.png" alt="rebel logo">
         <span id="close-icon">&#215;</span>
         <ul>
-            <li class="list-item"><a href="index.html">Home</a></li>
+            <li class="list-item"><a class="active" href="index.html">Home</a></li>
             <li class="list-item"><a href="the-rebellion.html">The Rebellion</a></li>
             <li class="list-item"><a href="services.html">Our Services</a></li>
-            <li class="list-item"><a href="#contact">Contact</a></li>
+            <li class="list-item"><a href="news.html">News</a></li>
+            <li class="list-item"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -90,17 +91,19 @@
 
             <div class="icons flex">
                 <div class="cross-dock-icon icon flex">
-                    <a href="#"><img src="./images/index-images/ICON-1.png" alt="rebel logo"></a>
+                    <a href="./services.html"><img src="./images/index-images/ICON-1.png" alt="rebel logo"></a>
                     <span>cross dock</span>
                 </div>
 
                 <div class="retail-icon icon flex">
-                    <a href="#"><img src="./images/index-images/ICON-2.png" alt="icon image of shipping package"></a>
+                    <a href="./services.html"><img src="./images/index-images/ICON-2.png"
+                            alt="icon image of shipping package"></a>
                     <span>retail</span>
                 </div>
 
                 <div class="final-mile-icon icon flex">
-                    <a href="#"><img src="./images/index-images/ICON-3.png" alt="icon image of highway"></a>
+                    <a href="./services.html"><img src="./images/index-images/ICON-3.png"
+                            alt="icon image of highway"></a>
                     <span>final mile</span>
                 </div>
 
@@ -133,7 +136,7 @@
             </div>
             <div class="col col-2 flex">
                 <a class="white-button button" href="the-rebellion.html">learn more</a>
-                <a class="green-button button" href="#contact">contact</a>
+                <a class="green-button button" href="contact.html">contact</a>
             </div>
         </div>
         <!-- </div> -->
@@ -141,43 +144,28 @@
 
 
     <!-- BACK 2 BASICS -------------------------------------------------------------------->
-    <div class="back2basics flex">
+    <div class="back2basics background-img-settings flex">
         <div class="row-container container flex">
 
-            <div class="b2b-assets flex">
-                <div class="b2b-content col-1 flex">
-                    <h1>Back 2 BASICS</h1>
-                    <span>getting straight to the point</span>
-                    <p>We recognize the commitment to our customers. Each of us wish for only positive solutions,
-                        fairness
-                        in our relationships and high standards for ourselves. At the end of the day we are proud of our
-                        efforts and seek to successfully meet the needs of our customers.</p>
-                    <a href="services.html" class="button green-button">our services</a>
-                </div>
-                <div class=" column-2 flex">
-                    <!--add col-2 back if needed-->
-                    <img class="b2b-logo" src="./images/index-images/IMG-DoubleUp.png"
-                        alt="fork lift loading semi truck">
-                </div>
+            <div class="wrapper flex">
+                <h1>Back 2 BASICS</h1>
+                <span>getting straight to the point</span>
+                <p>We recognize the commitment to our customers. Each of us wish for only positive solutions,
+                    fairness
+                    in our relationships and high standards for ourselves. At the end of the day we are proud of our
+                    efforts and seek to successfully meet the needs of our customers.</p>
+                <a href="services.html" class="button green-button">our services</a>
             </div>
-
         </div>
     </div>
 
 
 
-    <!-- COMMITMENT -------------------------------------------------------------------->
-    <div class="commitment background-img-settings flex">
-        <div class="container flex">
-            <!-- <h1>Commitment</h1>
-            <span>to excellence</span>
-            <p>we recognize the commitment to our customers. each of us wish for only positive solutions, fairness
-                in our relationships and high standards for ourselves. at the end of the day we are proud of our
-                efforts
-                and seek to successfully meet the needs of our customers.</p> -->
-            <img src="./images/index-images/PlayButton.png" alt="temporary play button icon">
-        </div>
-    </div>
+    <!-- video -------------------------------------------------------------------->
+    <video autoplay muted loop id="myVideo">
+        <source src="./images/index-images/rebel-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
 
     <!--FORM--------------------------------------------------------------------------------->
     <div class="form-section flex background-img-settings">
@@ -212,26 +200,20 @@
     <footer class="flex">
         <nav class="flex">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="the-rebellion.html">The Rebellion</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li class="flex"><a href="the-rebellion.html">The Rebellion</a></li>
+                <li class="flex"><a href="services.html">Our Services</a></li>
+                <li class="flex"><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <!-- <div class="direct-contact flex">
-            <ul>
-                <li>Jack Holt</li>
-                <li>847-899-2233</li>
-                <li>jack@go2rebel.com</li>
-            </ul>
-        </div> -->
-        <div class="container flex">
-            <div class="footer-logo flex">
-                <img src="./images/index-images/Logo-White.png" alt="rebel logo">
-                <img src="./images/index-images/Smartway Logo.png" alt="smartway logo">
-            </div>
 
+        <div class="footer-logo flex">
+            <a class="flex" href="index.html"><img src="./images/index-images/Logo-White.png" alt="rebel logo"></a>
+            <a class="flex" href="https://www.epa.gov/smartway" target="_blank"><img
+                    src="./images/index-images/Smartway Logo.png" alt="smartway logo"></a>
         </div>
+
     </footer>
 
     <div id="overlay"></div>

@@ -1,3 +1,5 @@
+// padding-top
+
 //colors
 $dark-gray:#585858;
 $light-gray:#636363;
@@ -20,6 +22,7 @@ $text-bp1:1290px;
 $xtra-large-desktop:1400px;
 $text-bp2:1560px;
 $largest:1700px;
+
 
 
 
@@ -90,8 +93,8 @@ $largest:1700px;
     
 
 *{
-    margin:0;
     padding:0;
+    margin:0;
     box-sizing:border-box;
     font-family:$main;
     overflow-x: hidden;
@@ -108,7 +111,6 @@ body{
     max-width:2100px;
     width: 100%;
     overflow-y: scroll;   
-    // background: blue;
 }
 
 h1, h2, span, a, button{
@@ -206,19 +208,20 @@ a{
     // border:1px solid red;
 
     @include desktop(){
-        width:80%;
+        width: 93%;
+
     }
 
     @include large-desktop(){
-        width:70%;
+        width: 84%;
     }
 
     @include xtra-large-desktop(){
-        width:60%;
+        width: 80%;
     }
 
     @include largest(){
-        width: 50%;
+        width: 77%;
     }
 }
 
@@ -322,9 +325,13 @@ header{
     display:none;
 
     @include desktop{
-        display:block;
-        width: 43%;
-        font-size: .75em;
+        display: block;
+        width: 54%;
+        font-size: .65em;
+    }
+
+    @include med-desktop(){
+        width: 47%;
     }
 
     @include large-desktop(){
@@ -337,18 +344,37 @@ header{
 
     ul{
         justify-content: space-around;
+        height: 4em;
 
         @include large-desktop(){
             font-size: 1.2em;
         }
 
         li{
+            height: 100%;
+            display:flex;
+            align-items: center;
+
             a{
+                padding: .3em;
                 // text-shadow: 2px 2px 3px black;
                 &:hover{
                     color:$dark-green;
                 }
+
             }
+
+            .active{
+                color: white;
+                border-bottom: 2px solid #587F77;
+                padding-bottom: 3px;
+            
+
+                &:hover{
+                    color:white;
+                }
+            }
+
         }
 
     }
@@ -478,13 +504,18 @@ header{
     height: 120px;
     justify-content: space-around;
     margin-top: 1em;
+    max-width: 815px;
  
     @include desktop(){
         margin-top:0px;
         margin-bottom: 32px;
         // font-size: 1.4em;
         flex-direction: row;
-        width:75%;
+        // width:75%;
+
+        @include med-desktop(){
+            width: 75%;
+        }
 
 
         a{
@@ -493,13 +524,13 @@ header{
 
     }
 
-    @include large-desktop(){
-        width: 65%;
-    }
+    // @include large-desktop(){
+    //     width: 65%;
+    // }
 
-    @include xtra-large-desktop(){
-        width: 70%;
-    }
+    // @include xtra-large-desktop(){
+    //     width: 70%;
+    // }
     
 }
 
@@ -604,6 +635,7 @@ header{
 
         @include largest(){
             justify-content: space-between;
+            width: 78%;
         }
 
         .icon{
@@ -703,7 +735,7 @@ header{
             // }
 
             @include desktop(){
-                flex-direction: row;
+                // flex-direction: row;
                 margin: 125px 0px;
             }
 
@@ -735,16 +767,15 @@ header{
     }
 
     @include desktop(){
-        text-align: left;
         padding: 0px;
         /* width: 54%; */
-        margin-right: 33px;
+
         /* height: 400px; */
     }
 
-    @include large-desktop(){
-        margin-right: 75px;
-    }
+    // @include large-desktop(){
+    //     margin-right: 75px;
+    // }
 
     h1{
         width: 100%;
@@ -777,6 +808,16 @@ header{
             line-height: 22px;
             width: 100%;
         }
+        
+        @include med-desktop(){
+            line-height: 1.6em;
+            width: 72%;
+            margin-bottom: 1em;
+        }
+
+        @include xtra-large-desktop(){
+            width: 59%;
+        }
     }
 }
 
@@ -789,6 +830,7 @@ header{
     justify-content: space-around;
     text-align: center;
     padding: 0px 10px;
+    max-width: 450px;
 
     @include desktop(){
         width: 48%;
@@ -797,7 +839,9 @@ header{
     }
 
     @include xtra-large-desktop(){
-        width: 60%;
+        width: 45%;
+        // margin-top: 2em;
+    
     }
 }
 
@@ -805,110 +849,97 @@ header{
 
 .back2basics{
 
+    @include desktop(){
+        background-image:url("../../images/index-images/B2B_BG.jpg");
+        // justify-content: flex-start;
+    }
+
     .container{
+        flex-direction: column;
+        text-align: center;
+        // padding: 0em 2em;
 
         @include desktop(){
             margin: 125px 0px;
+            align-items: flex-start;
+
         }
 
-    //     @include large-desktop(){
-    //         width: 70%;
-    //     }
-
-    //     @include xtra-large-desktop(){
-    //         width: 62%;
-    //     }
-
-
-    .b2b-assets{
-        flex-direction:column;
 
         @include med-desktop(){
             flex-direction:row;
-            text-align: left;
+            flex-direction: column;
+            // padding: 0em 4em;
+        }
+            
+        @include xtra-large-desktop(){
             align-items: flex-start;
+            text-align: left;
+            // padding: 0em 7em;
         }
-            
-            .b2b-content{
-                text-align: center;
-                flex-direction:column;
-            
-                @include med-desktop(){
-                    text-align: left;
-                    align-items: flex-start;
-                }
-                
-                // @include med-desktop(){
-                //     align-items: flex-start;
-                // }
 
+        @include largest(){
+            // padding: 0em 12em;
+        }
+
+        .wrapper{
+            flex-direction: column;
+
+            @include desktop(){
+                // align-items: flex-start;
+                // text-align: left;
+                width: 42%;
+
+            }
+    
+
+            h1{
+                color:$dark-gray;
+                
+            }
+            
+            span{
+                color:$dark-green;
+                font-family:$secondary;
+                // text-shadow: none;
+    
                 @include large-desktop(){
-                    width: 62%;
-                }
-
-                @include largest(){
-                    width: 50%;
-                }
-            
-            
-                h1{
-                    color:$dark-gray;
-                    
+                    font-size: 1em;
                 }
                 
-                span{
-                    color:$dark-green;
-                    font-family:$secondary;
-                    // text-shadow: none;
-
-                    @include large-desktop(){
-                        font-size: 1em;
-                    }
-                    
-                }
-                
-                p{
-                    margin-top:15px;
-                }
-
-                a{
-                    margin: 1em 0em 3em 0em;
-                    text-align: center;
-
-                    @include desktop(){
-                        margin: 1em 0em 0em 0em;
-                        width: 60%;
-                    }
-
-                    @include med-desktop(){
-                        width:80%;
-                    }
-                }
+            }
             
-            }  
-              
-    }
-}
-}
+            p{
+                margin: 15px 0px;
+                text-align: center;
 
+            }
+    
+            a{
+                margin: 1em 0em 3em 0em;
+                text-align: center;
+                max-width: 450px;
+    
+                @include desktop(){
+                    margin: 1em 0em 0em 0em;
+                    // width: 60%;
+                }
+    
+                // @include med-desktop(){
+                //     width:80%;
+                // }
+    
+                // @include large-desktop(){
+                //     width: 60%;
+                // }
+    
+                // @include largest(){
+                //     width: 54%;
+                // }
+            }
 
-.column-2{
-    order: -1;
-    margin-bottom: 2em;
-
-    @include med-desktop(){
-        order: 0;
-    }
-
-    .b2b-logo{  
-
-        // @include tablet(){
-        //     width:50%
-        // }
-
-        @include desktop(){
-            width: 100%;
         }
+        
     }
 }
 
@@ -917,14 +948,10 @@ header{
 //COMMITMENT//////////////////////////////////////////
 
     
-.commitment{
-    background-image:url("../../images/index-images/Carousel-1.jpg");
-    // color: white;
-    height:740px;
+video{
+    width:100%;
 
-    img{
-        width: 17%;
-    }
+}
 
 //     .container{
 //         flex-direction:column;
@@ -997,7 +1024,7 @@ header{
 
 //     }
 // }
-}
+// }
 
 //FORM///////////////////////////////////////////////// 
 
@@ -1030,7 +1057,7 @@ header{
         }
 
         .section1{
-            margin: 36px;
+            margin: 2px;
             flex-direction: column;
 
             @include desktop(){
@@ -1152,13 +1179,14 @@ footer{
             flex-direction:row;
             }
 
-            @include med-desktop(){
-                width: 42%;
-            }
+            // @include med-desktop(){
+            //     width: 50%;
+            // }
 
             @include large-desktop(){
                 font-size: 1.3em;
-                width: 37%;
+                width: 41%;
+
             }
 
             a{
@@ -1170,35 +1198,40 @@ footer{
         }
     }
 
-    .container{
-
-        .footer-logo{
-            flex-direction:column;
-            justify-content: space-around;
 
 
-            @include desktop(){
-                width: 50%;
-                flex-direction:row;
-            }
-        
+    .footer-logo{
+        flex-direction: column;
+        padding:2em;
+        // border:1px solid white;
+
+        @include desktop(){
+            flex-direction:row;
+            width: 50%;
+        }
+
+        @include large-desktop(){
+            width: 40%;
+        }
+
+        @include largest(){ 
+            width: 30%;
+        }
+
+        a{
+
             img{
-                width: 41%;
-                margin: 10px 0px;
-        
-                @include tablet(){
-                    width: 35%;
-                }
+                width: 45%;
 
                 @include desktop(){
-                    width:35%;
+                    width: 70%;
+
                 }
 
             }
         }
 
     }
-
 }
 
 
