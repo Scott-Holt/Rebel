@@ -209,22 +209,22 @@
             <div id="contact" class="section1 flex">
                 <h1>Contact Us</h1>
                 <span>for more information</span>
-                <form action="/action_page.php">
+                <form action="contact-form.php" method="POST">
                     First name:<br>
-                    <input class="first-name" type="text" name="firstname">
+                    <input class="first-name" type="text" name="first-name">
                     <br>
                     Last name:<br>
-                    <input class="last-name" type="text" name="lastname">
+                    <input class="last-name" type="text" name="last-name">
                     <br>
                     Email:<br>
-                    <input class="email" type="email">
+                    <input class="email" name="email" type="email">
                     <br>
                     Message:<br>
                     <!-- <input class="message" type="text"> -->
-                    <textarea class="message" rows="4" cols="50" name="comment" form="usrform"></textarea>
+                    <textarea class="message" rows="4" cols="50" name="message" form="usrform"></textarea>
                     <br>
                     <br>
-                    <input class="submit" type="submit" value="Submit">
+                    <input class="submit" name="submit" type="submit" value="Submit">
                 </form>
             </div>
         </div>
