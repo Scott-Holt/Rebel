@@ -332,7 +332,8 @@ header {
         margin-top: 3em; } }
     @media (min-width: 1700px) {
       .icons-container .icons {
-        justify-content: space-between; } }
+        justify-content: space-between;
+        width: 78%; } }
     .icons-container .icons .icon {
       flex-direction: column;
       margin-bottom: 2em; }
@@ -526,7 +527,7 @@ video {
     .form-section .container #contact {
       width: 42%; } }
   .form-section .container .section1 {
-    margin: 36px;
+    margin: 2px;
     flex-direction: column; }
     @media (min-width: 802px) {
       .form-section .container .section1 {
@@ -758,9 +759,11 @@ section {
     height: 3em;
     margin-bottom: 3em; }
 
-@media (min-width: 802px) {
-  .form-section {
-    background-image: url("../../images/Services/50-50.jpg"); } }
+.form-section {
+  width: 100%; }
+  @media (min-width: 802px) {
+    .form-section {
+      background-image: url("../../images/Services/50-50.jpg"); } }
   @media (min-width: 802px) and (min-width: 1400px) {
     .form-section {
       background-position-y: bottom; } }

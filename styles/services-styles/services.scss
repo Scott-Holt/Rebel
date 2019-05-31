@@ -9,6 +9,10 @@ $servcies-button:1910px;
     }
 }
 
+///////////GLOBAL STYLES////////////////////////
+
+
+
 
 /////////HEADER////////////////////////////////////////
 
@@ -211,6 +215,7 @@ section{
 
 /////////////////FORM SECTION////////////////////////////////////////////////////////////
 .form-section{
+    width:100%;
 
     @include desktop(){
         background-image:url("../../images/Services/50-50.jpg");
