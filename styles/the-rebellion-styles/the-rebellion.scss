@@ -10,6 +10,10 @@
     margin-bottom: 3em;
 
 
+    @include desktop(){
+        width: 70%;
+    }
+
     @include large-desktop(){
         // width: 85%;
         // width: 1020px;
@@ -115,6 +119,16 @@ main{
 
         .bio-top{
             flex-direction:column;
+
+            img{
+                @include ipad(){
+                    width:70%;
+                }
+
+                @include large-desktop(){
+                    width:100%;
+                }
+            }
 
             @include large-desktop(){
                 flex-direction: row;
