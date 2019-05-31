@@ -1,13 +1,16 @@
 <?php
-    if(isset($_POST['submit'])){
-        $firstName = $_POST['firstname'];
-        $lastName = $_POST['lastname'];
-        $mailFrom = $_POST['email'];
-        $message = $_POST['comment'];
 
-        $mailTo = 'jholt@go2rebel.com';
-        $headers = 'From: '.$mailFrom;
-        $txt = 'You have recieved an email from '.$firstName.' '.$lastName.'.\n\n.'. $message;
-        mail($mailTo, $txt, $headers);
-        header('Location: index.php?mailsend');
-    }
+$firstName = $_POST['first-name'];
+$lastName = $_POST['last-name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$formMessage = "Name: $firstName \n Message: $message";
+$recipient = "sarah@go2rebel.com";
+$subject = "Message from Website";
+$mailheader = "From: $email \r\n";
+
+mail($recipient, $subject, $formMessage, $mailheader) or die("Error!");
+echo "Thank You!";
+
+
+?>
