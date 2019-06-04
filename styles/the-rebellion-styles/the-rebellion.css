@@ -647,6 +647,9 @@ footer {
   @media (min-width: 802px) {
     .container {
       width: 70%; } }
+  @media (min-width: 1150px) {
+    .container {
+      width: 80%; } }
   @media (min-width: 1400px) {
     .container {
       width: 1110px; } }
@@ -689,7 +692,7 @@ main {
       width: 33%; }
   @media (min-width: 1150px) {
     main .bio-section {
-      font-size: .8em; } }
+      font-size: .75em; } }
   @media (min-width: 1400px) {
     main .bio-section {
       font-size: .89em; } }
@@ -722,6 +725,7 @@ main {
       @media (min-width: 1150px) {
         main .bio-section .bio-top .top-content {
           margin-bottom: 1%;
+          margin-top: 0em;
           height: 80%; } }
   @media (min-width: 1150px) and (min-width: 1400px) {
     main .bio-section .bio-top .top-content {

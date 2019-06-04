@@ -16,8 +16,7 @@
     }
 
     @include large-desktop(){
-        // width: 85%;
-        // width: 1020px;
+        width: 80%;
     }
 
     @include xtra-large-desktop(){
@@ -105,7 +104,8 @@ main{
     .bio-section{
 
         @include large-desktop(){
-            font-size: .8em;
+            // font-size: .8em;
+            font-size: .75em;
         }
 
         @include xtra-large-desktop(){
@@ -152,6 +152,7 @@ main{
 
                 @include large-desktop(){
                     margin-bottom: 1%;
+                    margin-top:0em;
                     height: 80%;
 
 
