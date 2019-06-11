@@ -1,5 +1,10 @@
 @import "../index-styles/main.scss";
 
+//fonts
+$main: 'Montserrat', sans-serif;
+// $main-bold:
+$secondary: 'Roboto', sans-serif;
+
 
 *{
     padding: 0;
@@ -31,10 +36,17 @@ body{
             // height:40%;
         }
 
+        h1{
+            font-family: $main;
+        }
+
         span{
-           @include desktop(){
+           
+            @include desktop(){
             margin-top: -3em;
            }
         }
+
+        
     }
 }

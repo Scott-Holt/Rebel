@@ -665,6 +665,8 @@ body {
     @media (min-width: 802px) {
       body .box {
         padding: 0; } }
+    body .box h1 {
+      font-family: "Montserrat", sans-serif; }
     @media (min-width: 802px) {
       body .box span {
         margin-top: -3em; } }
