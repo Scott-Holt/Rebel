@@ -1,0 +1,40 @@
+@import "../index-styles/main.scss";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height:100vh;
+}
+
+body{
+    background-color:$dark-gray;
+    height: 80%;
+
+    .box{
+        background-color: #587F77;
+        flex-direction: column;
+        height: 80%;
+        padding: 1em;
+        width: 90%;
+        font-size: 1.5em;
+        text-align: center;
+        color: white;
+        justify-content: space-around;
+
+        @include desktop(){
+            padding:0;
+            // height:40%;
+        }
+
+        span{
+           @include desktop(){
+            margin-top: -9em;
+           }
+        }
+    }
+}

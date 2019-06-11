@@ -10,7 +10,9 @@ $subject = "Message from Website";
 $mailheader = "From: $email \r\n";
 
 mail($recipient, $subject, $formMessage, $mailheader) or die("Error!");
-echo "Thank You!";
+
+header('Location: thankyou.html');
+exit();
 
 
 ?>
