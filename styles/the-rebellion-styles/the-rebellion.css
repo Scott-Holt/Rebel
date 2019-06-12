@@ -647,9 +647,12 @@ footer {
   @media (min-width: 802px) {
     .container {
       width: 70%; } }
-  @media (min-width: 1150px) {
+  @media (min-width: 1282px) {
     .container {
-      width: 80%; } }
+      width: 63%; } }
+  @media (min-width: 1300px) {
+    .container {
+      width: 61%; } }
   @media (min-width: 1400px) {
     .container {
       width: 1110px; } }
@@ -677,11 +680,17 @@ header {
 
 main {
   flex-direction: column; }
+  @media (min-width: 1150px) {
+    main {
+      font-size: 1em; } }
+  @media (min-width: 1400px) {
+    main {
+      font-size: 1.3em; } }
+  @media (min-width: 1700px) {
+    main {
+      font-size: 1.5em; } }
   main #main-section-header {
     margin-top: 1em; }
-    @media (min-width: 1150px) {
-      main #main-section-header {
-        margin-bottom: 4em; } }
     @media (min-width: 1150px) {
       main #main-section-header span {
         width: 80%; } }
@@ -690,43 +699,45 @@ main {
         width: 60%; } }
     main #main-section-header .green-line {
       width: 33%; }
-  @media (min-width: 1150px) {
-    main .bio-section {
-      font-size: .75em; } }
-  @media (min-width: 1400px) {
-    main .bio-section {
-      font-size: .89em; } }
-  @media (min-width: 1700px) {
-    main .bio-section {
-      font-size: .97em; } }
-  main .bio-section .bio-top {
-    flex-direction: column; }
-    @media (min-width: 768px) {
-      main .bio-section .bio-top img {
-        width: 70%; } }
-    @media (min-width: 1150px) {
-      main .bio-section .bio-top img {
-        width: 100%; } }
-    @media (min-width: 1150px) {
-      main .bio-section .bio-top {
-        flex-direction: row;
-        height: 377px;
-        align-items: flex-end; } }
+    main #main-section-header p {
+      margin-top: 2em;
+      color: #636363; }
+      @media (min-width: 1150px) {
+        main #main-section-header p {
+          width: 60%; } }
+  main .bio-section {
+    color: #636363;
+    margin-top: 3em; }
+    main .bio-section .bio-top {
+      flex-direction: column; }
+      @media (min-width: 768px) {
+        main .bio-section .bio-top img {
+          width: 70%; } }
+      @media (min-width: 1150px) {
+        main .bio-section .bio-top img {
+          width: 100%; } }
+      @media (min-width: 1150px) {
+        main .bio-section .bio-top {
+          flex-direction: row;
+          align-items: flex-end; } }
   @media (min-width: 1150px) and (min-width: 1400px) {
     main .bio-section .bio-top {
       height: 478px; } }
 
+      main .bio-section .bio-top .top-content {
+        overflow-y: hidden;
+        margin-top: 3em; }
+        @media (min-width: 802px) {
+          main .bio-section .bio-top .top-content {
+            width: 100%; } }
+        @media (min-width: 1150px) {
+          main .bio-section .bio-top .top-content {
+            margin-bottom: 1%;
+            margin-top: 0em;
+            height: 65%; } }
+  @media (min-width: 1150px) and (min-width: 1300px) {
     main .bio-section .bio-top .top-content {
-      overflow-y: hidden;
-      margin-top: 3em; }
-      @media (min-width: 802px) {
-        main .bio-section .bio-top .top-content {
-          width: 100%; } }
-      @media (min-width: 1150px) {
-        main .bio-section .bio-top .top-content {
-          margin-bottom: 1%;
-          margin-top: 0em;
-          height: 80%; } }
+      height: 70%; } }
   @media (min-width: 1150px) and (min-width: 1400px) {
     main .bio-section .bio-top .top-content {
       height: 68%; } }
@@ -734,36 +745,60 @@ main {
     main .bio-section .bio-top .top-content {
       height: 76%; } }
 
-      main .bio-section .bio-top .top-content h2 {
-        color: #585858;
-        font-size: 2em; }
-      main .bio-section .bio-top .top-content span {
-        color: #587F77;
-        font-size: 1.5em; }
-      main .bio-section .bio-top .top-content p {
-        margin-top: .5em; }
-    main .bio-section .bio-top img {
-      margin-right: 2em; }
-  main .bio-section .bio-bottom {
-    display: none; }
-    @media (min-width: 802px) {
-      main .bio-section .bio-bottom {
-        display: block;
-        margin-bottom: 8em; } }
+        main .bio-section .bio-top .top-content h2 {
+          color: #585858;
+          font-size: 2em; }
+        main .bio-section .bio-top .top-content span {
+          color: #587F77;
+          font-size: 1.5em; }
+        main .bio-section .bio-top .top-content p {
+          margin-top: .5em; }
+      main .bio-section .bio-top img {
+        margin-right: 2em; }
+    main .bio-section .bio-bottom {
+      display: none; }
+      @media (min-width: 802px) {
+        main .bio-section .bio-bottom {
+          display: block;
+          margin-bottom: 8em; } }
 
 .kare-container {
   width: 100%;
   background-color: #ECECEC; }
-  @media (min-width: 1150px) {
-    .kare-container .container .bio-top {
-      margin-top: 5em; } }
-  @media (min-width: 1150px) {
-    .kare-container .container .bio-top img {
-      order: 1;
-      padding-left: 2em; } }
-  @media (min-width: 1150px) {
-    .kare-container .container .bio-top .top-content h2 {
-      margin-top: 2em; } }
+  .kare-container .container .bio-top {
+    margin-top: 4em; }
+    @media (min-width: 1150px) {
+      .kare-container .container .bio-top {
+        margin-top: 5em; } }
+    @media (min-width: 1150px) {
+      .kare-container .container .bio-top img {
+        order: 1;
+        padding-left: 2em;
+        margin-bottom: 2em; } }
+    @media (min-width: 1190px) {
+      .kare-container .container .bio-top img {
+        margin-bottom: 0; } }
+    @media (min-width: 1282px) {
+      .kare-container .container .bio-top img {
+        margin-bottom: 2em; } }
+    @media (min-width: 1362px) {
+      .kare-container .container .bio-top img {
+        margin-bottom: 0em; } }
+    @media (min-width: 1700px) {
+      .kare-container .container .bio-top img {
+        margin-bottom: 2em; } }
+    @media (min-width: 1150px) {
+      .kare-container .container .bio-top .top-content h2 {
+        margin-top: 2em; } }
+    @media (min-width: 1400px) {
+      .kare-container .container .bio-top .top-content {
+        margin-bottom: 5%; } }
+    @media (min-width: 1700px) {
+      .kare-container .container .bio-top .top-content {
+        height: 91%; } }
+    @media (min-width: 1700px) {
+      .kare-container .container .bio-top img {
+        width: 95%; } }
 
 .why {
   background-image: url("../../images/the-rebellion-images/BG-1Row.jpg");

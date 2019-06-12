@@ -1,6 +1,15 @@
 
 @import "../index-styles/main.scss";
 
+$bio-top:1300px;
+
+
+@mixin top-content {
+    @media(min-width:#{$bio-top}){
+        @content;
+    }
+}
+
 
 
 ////GLOBAL STYLES////////////////////////////////////////////////////////
@@ -15,8 +24,12 @@
         width: 70%;
     }
 
-    @include large-desktop(){
-        width: 80%;
+    @media(min-width:1282px) {
+        width: 63%;
+    }
+
+    @include top-content(){
+        width: 61%;
     }
 
     @include xtra-large-desktop(){
@@ -70,19 +83,35 @@ header{
 
 
 
-
 //////////WHO WE ARE///////////////////////////////////////////////////////////
 
 main{
     flex-direction: column;
 
+    @include large-desktop(){
+        // font-size: .8em;
+        // font-size: .75em;
+        font-size: 1em;
+    }
+
+
+    @include xtra-large-desktop(){
+        font-size: 1.3em;
+    }
+
+    @include largest(){
+        font-size: 1.5em;
+    }
+
+
+
 
     #main-section-header{
         margin-top:1em;
 
-        @include large-desktop(){
-            margin-bottom: 4em;
-        }
+        // @include large-desktop(){
+        //     margin-bottom: 4em;
+        // }
 
         span{
 
@@ -98,25 +127,25 @@ main{
         .green-line{
             width: 33%;
         }
+
+        p{
+            margin-top:2em;
+            color:$light-gray;
+
+            @include large-desktop(){
+                width: 60%;
+            }
+        }
     }
 
 
     .bio-section{
-
-        @include large-desktop(){
-            // font-size: .8em;
-            font-size: .75em;
-        }
-
-        @include xtra-large-desktop(){
-            font-size: .89em;
-        }
-
-        @include largest(){
-            font-size: .97em;
-        }
+        color:$light-gray;
+        margin-top: 3em;
   
+        @include desktop(){
 
+        }
 
         .bio-top{
             flex-direction:column;
@@ -133,7 +162,7 @@ main{
 
             @include large-desktop(){
                 flex-direction: row;
-                height: 377px;
+                // height: 377px;
                 align-items: flex-end;
 
                 @include xtra-large-desktop(){
@@ -153,16 +182,20 @@ main{
                 @include large-desktop(){
                     margin-bottom: 1%;
                     margin-top:0em;
-                    height: 80%;
+                    height: 65%;
+
+                @include top-content(){
+                    height: 70%;
+                }
 
 
-                    @include xtra-large-desktop(){
-                        height: 68%;
-                    }
+                @include xtra-large-desktop(){
+                    height: 68%;
+                }
 
-                    @include largest(){
-                        height: 76%;
-                    }
+                @include largest(){
+                    height: 76%;
+                }
 
 
                 }
@@ -208,6 +241,9 @@ main{
     .container{
 
         .bio-top{
+
+            margin-top: 4em;
+            
             @include large-desktop(){
                 margin-top: 5em;
             }
@@ -216,6 +252,23 @@ main{
                 @include large-desktop(){
                     order: 1;
                     padding-left: 2em;
+                    margin-bottom: 2em;
+                }
+
+                @media(min-width:1190px){
+                    margin-bottom:0;
+                }
+
+                @media(min-width:1282px){
+                    margin-bottom: 2em;
+                }
+
+                @media(min-width:1362px){
+                    margin-bottom: 0em;
+                }
+
+                @include largest(){
+                    margin-bottom: 2em;
                 }
             }
 
@@ -224,6 +277,20 @@ main{
                     h2{
                         margin-top: 2em;
                     }
+                }
+
+                @include xtra-large-desktop(){
+                    margin-bottom: 5%;
+                }
+
+                @include largest(){
+                    height: 91%;
+                }
+            }
+
+            img{
+                @include largest(){
+                    width: 95%;
                 }
             }
         }
