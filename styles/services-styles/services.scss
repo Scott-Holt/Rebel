@@ -19,6 +19,14 @@ $servcies-button:1910px;
 header{
     background-image:url("../../images/Services/BG-V2.jpg");
 
+    .hero{
+        font-size: .69em;
+
+        @include tablet(){
+            font-size: 1em;
+        }
+    }
+
 }
 /////////MAIN////////////////////////////////////////
 
@@ -34,6 +42,10 @@ main{
 
         @include desktop(){
             margin: 0em 0em 5em 0em;
+        }
+
+        @include xtra-large-desktop(){
+            width: 65%;
         }
 
         span{

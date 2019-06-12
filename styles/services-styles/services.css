@@ -643,6 +643,11 @@ footer {
 
 header {
   background-image: url("../../images/Services/BG-V2.jpg"); }
+  header .hero {
+    font-size: .69em; }
+    @media (min-width: 550px) {
+      header .hero {
+        font-size: 1em; } }
 
 main {
   flex-direction: column; }
@@ -651,6 +656,9 @@ main {
   @media (min-width: 802px) {
     main .main-section-header {
       margin: 0em 0em 5em 0em; } }
+  @media (min-width: 1400px) {
+    main .main-section-header {
+      width: 65%; } }
   main .main-section-header span {
     font-size: 1em; }
   main .main-section-header p {
