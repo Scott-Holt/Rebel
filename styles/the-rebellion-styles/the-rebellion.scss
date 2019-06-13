@@ -190,7 +190,8 @@ main{
 
 
                 @include xtra-large-desktop(){
-                    height: 68%;
+                    // height: 68%;
+                    height: 81%;
                 }
 
                 @include largest(){
@@ -267,8 +268,8 @@ main{
                     margin-bottom: 0em;
                 }
 
-                @include largest(){
-                    margin-bottom: 2em;
+                @include xtra-large-desktop(){
+                    margin-bottom:2em;
                 }
             }
 

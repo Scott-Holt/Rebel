@@ -740,7 +740,7 @@ main {
       height: 70%; } }
   @media (min-width: 1150px) and (min-width: 1400px) {
     main .bio-section .bio-top .top-content {
-      height: 68%; } }
+      height: 81%; } }
   @media (min-width: 1150px) and (min-width: 1700px) {
     main .bio-section .bio-top .top-content {
       height: 76%; } }
@@ -784,7 +784,7 @@ main {
     @media (min-width: 1362px) {
       .kare-container .container .bio-top img {
         margin-bottom: 0em; } }
-    @media (min-width: 1700px) {
+    @media (min-width: 1400px) {
       .kare-container .container .bio-top img {
         margin-bottom: 2em; } }
     @media (min-width: 1150px) {
