@@ -4,9 +4,9 @@ $firstName = $_POST['first-name'];
 $lastName = $_POST['last-name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$formMessage = "Name: $firstName \n Message: $message";
-$recipient = "operations@go2rebel.com";
 $subject = "Message from Website";
+$formMessage = "Name: $firstName $lastName \n Message: $message ";
+$recipient = "operations@go2rebel.com";
 $mailheader = "From: $email \r\n";
 
 mail($recipient, $subject, $formMessage, $mailheader) or die("Error!");
