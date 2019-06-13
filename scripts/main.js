@@ -20,3 +20,26 @@ hamIcon.addEventListener('click', openNav);
 closeIcon.addEventListener('click', closeNav);
 listItem.forEach(item => item.addEventListener('click', closeNav));
 
+///FORM VALIDATION//////////////////////////////////////////////////////
+
+const submit = document.querySelector('.submit');
+
+submit.addEventListener('click', checkInputs);
+
+function checkInputs(e) {
+    const inputField = document.querySelectorAll('input');
+    const textArea = document.querySelector('textarea')
+    const notify = document.querySelectorAll('.validate');
+
+    inputField.forEach(input => {
+        if (input.value === '' || textArea.value === '') {
+            // console.log(input);
+            notify.forEach(notification => notification.style.display = 'inline');
+            e.preventDefault();
+        } else {
+            console.log('yay');
+        }
+    });
+
+
+}

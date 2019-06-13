@@ -110,7 +110,7 @@ html{
 body{
     max-width:2100px;
     width: 100%;
-    overflow-y: scroll;   
+    overflow-y: scroll; 
 }
 
 h1, h2, span, a, button{
@@ -724,33 +724,15 @@ header{
     background-attachment: fixed;
     color:white;
 
-    // .why-rebel-overlay{
-    //     background:#2e2e2ebd;
 
         .container{
             flex-direction:column;
 
-            // @include tablet(){
-            //     margin: 90px;
-            // }
 
             @include desktop(){
                 // flex-direction: row;
                 margin: 125px 0px;
             }
-
-            // @include large-desktop(){
-            //     width: 70%;
-            // }
-
-            // @include xtra-large-desktop(){
-            //     width: 62%;
-            // }
-
-            // .row-container{
-            //     margin: 125px 0px;
-            // }
-
         }
     }
 // }
@@ -953,79 +935,6 @@ video{
 
 }
 
-//     .container{
-//         flex-direction:column;
-//         margin:20px;
-
-//         @include tablet(){
-//             margin:50px;
-//         }
-
-//         @include desktop(){
-//             margin: 58px;
-//             font-size: 1.2em;
-//     justify-content: flex-end;
-//     align-items: flex-end;
-//     margin-right: 132px;
-// }
-
-
-//         @include med-desktop(){
-//             margin-right: 186px;
-//             margin: 73px 20px;
-
-//             margin-right:132px;
-//         }
-
-//         @include large-desktop(){
-//             margin-right: 220px;
-//         }
-
-//     h1{
-//         font-family:$secondary;
-//         font-style: italic;
-//         // text-shadow: 3px 2px 5px black;
-//         padding: 0px 10px;
-
-//         @include ipad(){
-//             font-size: 2.4em;
-//         }
-//     }
-
-//     span{
-//         color: $dark-green;
-//     font-size: 1.2em;
-//     // text-shadow: 2px 1px 2px #000000d4;
-//     font-weight: 800;
-//         padding: 0px 10px;
-
-//     }
-
-//     p{
-//         text-align: center;
-//         font-size: .8em;
-//         padding: 12px;
-//         line-height: 19px;
-//         // text-shadow: 2px 3px 8px black;
-
-//         @include ipad(){
-//             width: 400px;
-//         }
-
-//         @include desktop(){
-//             text-align: right;
-//             width: 500px;
-//             line-height: 24px;
-//         }
-
-//         @include large-desktop(){
-//             width: 600px;
-//         }
-
-//     }
-// }
-// }
-
 //FORM///////////////////////////////////////////////// 
 
 
@@ -1045,13 +954,8 @@ video{
 
     .container{
 
-        // @include xtra-large-desktop(){
-        //     width: 75%;
-        // }
-
         #contact{
             @include desktop(){
-                // border: 3px solid white;
                 width: 42%;
             }
         }
@@ -1066,12 +970,8 @@ video{
                 margin: 60px 0px;
             }
 
-            // @include large-desktop(){
-            //     margin: 60px 37px;
-            // }
 
             h1{
-                // text-shadow: 1px 3px 4px black;
                 font-size: 1.67em;
 
                 @include ipad(){
@@ -1081,8 +981,6 @@ video{
                 @include desktop(){
                     font-size: 3em;
                     width: 100%;
-                    /* justify-content: center; */
-                    /* align-items: center; */
                     text-align: center;
                 }
             }
@@ -1095,6 +993,17 @@ video{
                 @include desktop(){
                     width: 100%;
                 }
+            }
+
+            .validate{
+                color: #bf1313;
+                font-size: 1.3em;
+                display:none;
+                transition:ease-in-out .4s;     
+                -webkit-transition:ease-in-out .4s;
+                -moz-transition:ease-in-out .4s;
+                -ms-transition:ease-in-out .4s;
+                -o-transition:ease-in-out .4s;
             }
         }
     }
@@ -1115,13 +1024,15 @@ form{
     input{
         background-color: #fafafa;
         width: 100%;
-        height: 2.3em;
+        // height: 2.3em;
+        height: 3.3em;
         margin-bottom: 1em;
     }
 
     .message{
         width: 100%;
         margin-bottom:0px;
+        height: 16em;
     }
 
     .submit{
@@ -1129,8 +1040,7 @@ form{
         border-radius: 30px;
         background-color: transparent;
         color: white;
-        // text-shadow: 2px 1px 2px black;
-        // box-shadow: 0px 2px 3px 0px #0000008a;
+
 
         &:hover{
             background-color:$light-green;

@@ -112,13 +112,25 @@ main{
             flex-direction:column;
             color:white;
 
+
             @include med-desktop(){
                 margin-top: -4em;
                 width:80%;
             }
 
             @include xtra-large-desktop(){
-                height: 700px;
+                height: 788px;
+            }
+
+            .validate{
+                color: #bf1313;
+                font-size: 1.3em;
+                display:none;
+                transition:ease-in-out .4s;     
+                -webkit-transition:ease-in-out .4s;
+                -moz-transition:ease-in-out .4s;
+                -ms-transition:ease-in-out .4s;
+                -o-transition:ease-in-out .4s;
             }
 
 
@@ -139,6 +151,7 @@ main{
                         height: 4em;
                     }
                 }
+
 
                 .message{
                     @include xtra-large-desktop(){

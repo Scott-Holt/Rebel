@@ -271,16 +271,20 @@
                 <form action="contact-form.php" method="POST">
                     First name:<br>
                     <input class="first-name" type="text" name="first-name">
+                    <span class="validate">*Please Fill Out All Fields</span>
                     <br>
                     Last name:<br>
                     <input class="last-name" type="text" name="last-name">
+                    <span class="validate">*Please Fill Out All Fields</span>
                     <br>
                     Email:<br>
                     <input class="email" name="email" type="email">
+                    <span class="validate">*Please Fill Out All Fields</span>
                     <br>
                     Message:<br>
                     <!-- <input class="message" type="text"> -->
-                    <textarea class="message" rows="4" cols="50" name="message" form="usrform"></textarea>
+                    <textarea class="message" rows="4" cols="100" name="message" form="usrform"></textarea>
+                    <span class="validate">*Please Fill Out All Fields</span>
                     <br>
                     <br>
                     <input class="submit" name="submit" type="submit" value="Submit">
