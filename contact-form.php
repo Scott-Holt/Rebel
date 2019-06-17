@@ -26,7 +26,7 @@ $senderMessage = "Message: $message";
 $recipient = "operations@go2rebel.com";
 $mailheader = "From: $email \r\n";
 
-mail($recipient, $subject, $senderName, $senderMessage) or die("Error!");
+mail($recipient, $subject, $senderName, $mailheader) or die("Error!");
 
 header('Location: thankyou.html');
 exit();
