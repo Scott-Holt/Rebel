@@ -21,12 +21,12 @@ $lastName = $_POST['last-name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $subject = "Message from Website";
-$senderName = "Name: $firstName $lastName";
+$senderInfo = "Name: $firstName $lastName \n $senderMessage";
 $senderMessage = "Message: $message";
 $recipient = "operations@go2rebel.com";
 $mailheader = "From: $email \r\n";
 
-mail($recipient, $subject, $senderName, $mailheader) or die("Error!");
+mail($recipient, $subject, $senderInfo, $mailheader) or die("Error!");
 
 header('Location: thankyou.html');
 exit();
