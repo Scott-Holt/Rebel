@@ -22,7 +22,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 $subject = "Message from Website";
 $senderInfo = "Name: $firstName $lastName \n Message: $message";
-$recipient = "operations@go2rebel.com";
+$recipient = "operations@go2rebel.com, scottwesleymusic@gmail.com";
 $mailheader = "From: $email \r\n";
 
 mail($recipient, $subject, $senderInfo, $mailheader) or die("Error!");
