@@ -21,8 +21,7 @@ $lastName = $_POST['last-name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $subject = "Message from Website";
-$senderInfo = "Name: $firstName $lastName \n $senderMessage";
-$senderMessage = "Message: $message";
+$senderInfo = "Name: $firstName $lastName \n Message: $message";
 $recipient = "operations@go2rebel.com";
 $mailheader = "From: $email \r\n";
 
