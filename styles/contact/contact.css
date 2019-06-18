@@ -562,7 +562,8 @@ video {
       -o-transition: ease-in-out .4s; }
 
 form {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  width: 100%; }
   @media (min-width: 802px) {
     form {
       width: 100%; } }
@@ -724,7 +725,8 @@ main .container {
       -ms-transition: ease-in-out .4s;
       -o-transition: ease-in-out .4s; }
     main .container .contact-form form {
-      margin: 0em 1em; }
+      margin: 0em 1em;
+      width: 80%; }
       @media (min-width: 550px) {
         main .container .contact-form form {
           width: 80%; } }

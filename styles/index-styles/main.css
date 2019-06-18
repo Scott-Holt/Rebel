@@ -562,7 +562,8 @@ video {
       -o-transition: ease-in-out .4s; }
 
 form {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  width: 100%; }
   @media (min-width: 802px) {
     form {
       width: 100%; } }
