@@ -64,6 +64,14 @@ main{
                 margin: 2em 0em;
                 align-items: flex-start;
                 text-align: left;
+
+                .team{
+                    text-align: left;
+
+                    @include tablet(){
+                        text-align: center;
+                    }
+                }
             }
 
             .news-content{
