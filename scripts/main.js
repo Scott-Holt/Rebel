@@ -55,4 +55,3 @@ function addVideoControls() {
     }
 }
 
-console.log('fuck');
