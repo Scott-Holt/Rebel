@@ -36,10 +36,23 @@ function checkInputs(e) {
             // console.log(input);
             notify.forEach(notification => notification.style.display = 'inline');
             e.preventDefault();
-        } else {
-            console.log('yay');
         }
     });
-
-
 }
+
+
+
+////////////ADDS VIDEO PLAYER TO IPAD AND < WINDOW BROWSER SIZES/////////////////////////////
+
+window.addEventListener('load', addVideoControls);
+
+function addVideoControls() {
+    const video = document.getElementById('myVideo');
+
+    if (window.innerWidth < 802) {
+        video.setAttribute('controls', 'true');
+        console.log(video);
+    }
+}
+
+console.log('fuck');
