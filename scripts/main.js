@@ -51,7 +51,7 @@ function addVideoControls() {
 
     if (window.innerWidth < 802) {
         video.setAttribute('controls', 'true');
-        console.log(video);
+        // console.log(video);
     }
 }
 
